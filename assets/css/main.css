@@ -321,7 +321,9 @@ header{
 .advantages-cards{
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
+    /*justify-content: space-around;*/
 }
 .advantages-cards__item{
     display: flex;
@@ -351,4 +353,26 @@ header{
     line-height: normal;
 }
 
+.acceptance-conditions{
+    display: flex;
+    justify-content: space-between;
+}
+.accept-approval__items, .accept-rejection__items{
+    display: flex;
+}
+.accept-approval__img,.accept-rejection__img{
+    width: 23px;
+    height: 29px;
+    margin-right: 9px;
+}
+.accept-approval__img img, .accept-rejection__img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/*.accept-rejection__img{*/
+/*    width: 25px;*/
+/*    height: 25px;*/
+/*    margin-right: 5px;*/
+/*}*/
 
