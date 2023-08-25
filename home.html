@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat:wght@500&display=swap"
           rel="stylesheet">
 </head>
-<body background="assets/images/icons/background.svg">
+<body background="assets/images/icons/background.svg" class="body">
 <header>
     <div class="wrap">
         <div class="header-wrap">
@@ -100,7 +100,7 @@
                     </div>
 
                     <div class="banner-contacts__phone">
-                        <a href="" class="banner-contacts__buttom">Позвонить нам</a>
+                        <a href="" class="banner-contacts__buttom btn-hover">Позвонить нам</a>
                         <div class="banner-contacts__number">
                             <div class="contacts__img">
                                 <img src="assets/images/icons/phone.svg">
@@ -370,17 +370,17 @@
             <form action="" class="application-form">
                 <div class="application-form__title">Оставьте свою заявку</div>
                 <div class="application-form__description">и наш менеджер свяжется с вами в течение 10 минут</div>
-                <input type="text" placeholder="Имя" class="application-form__name">
-                <input type="number" placeholder="Телефон" class="application-form__phone">
-                <input type="email" placeholder="Email" class="application-form__email">
-                <input type="text" placeholder="Регион" class="application-form__region">
-                <textarea placeholder="Ваше предложение" class="application-form__proposal"></textarea>
+                <input type="text" placeholder="Имя" class="application-form__name input-hover">
+                <input type="number" placeholder="Телефон" class="application-form__phone input-hover">
+                <input type="email" placeholder="Email" class="application-form__email input-hover">
+                <input type="text" placeholder="Регион" class="application-form__region input-hover">
+                <textarea placeholder="Ваше предложение" class="application-form__proposal input-hover"></textarea>
 
                 <div>
                     <input type="file" id="file" hidden="hidden">
                     <label for="file" class="application-form__file"><span class="application-form__proposal_left">Добавить файл</span><span
-                            class="application-form__proposal_right">Обзор</span></label>
-                    <div class="application-form__button">
+                            class="application-form__proposal_right btn-hover">Обзор</span></label>
+                    <div class="application-form__button btn-hover">
                         <input type="submit" value="Оставить заявку">
                     </div>
                 </div>
@@ -419,7 +419,7 @@
             </div>
         </div>
         <div class="rating-slider">
-            <div class="prev"><img src="assets/images/icons/prev.svg"></div>
+            <div class="prev btn-hover"><img src="assets/images/icons/prev.svg"></div>
             <div class="rating-slider__items">
                 <div class="rating-slider__item">
                     <div class="rating-slider__stars"></div>
@@ -445,7 +445,7 @@
                     </div>
                 </div>
             </div>
-            <div class="next"><img src="assets/images/icons/next.svg"></div>
+            <div class="next btn-hover"><img src="assets/images/icons/next.svg"></div>
         </div>
     </div>
 </div>
@@ -487,9 +487,9 @@
             <div class="feedback-form__title">Оставьте свои контактные данные и наш менеджер вам перезвонит в течение 10
                 минут
             </div>
-            <input type="text" placeholder="Имя" class="feedback-form__name">
-            <input type="number" placeholder="Телефон" class="feedback-form__number">
-            <div class="feedback-form__button">
+            <input type="text" placeholder="Имя" class="feedback-form__name input-hover">
+            <input type="number" placeholder="Телефон" class="feedback-form__number input-hover">
+            <div class="feedback-form__button  btn-hover">
                 <input type="submit" value="Оставить">
             </div>
         </form>
@@ -576,5 +576,7 @@
         </div>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -145,6 +145,15 @@ header {
     border: 1px solid #8194A6;
     background: #FFF;
 }
+/*.form-search__input:focus{*/
+/*    width: 824px;*/
+/*}*/
+.menu-block{
+    display: none;
+}
+.search-aaa{
+    width: 824px;
+}
 
 .form-search__img {
     width: 24px;
@@ -1222,7 +1231,9 @@ footer{
     line-height: normal;
     text-transform: capitalize;
 }
-
+.price-info{
+    padding-bottom: 100px;
+}
 .price-info__title{
     color: var(--dark_blue);
     font-family: Karla;
@@ -1364,6 +1375,9 @@ footer{
 .contacts-contact-icons .contacts-icons{
     gap: 30px;
 }
+.contacts-icons__item:hover{
+    opacity: 50%;
+}
 
 .location-img{
     padding-bottom: 50px;
@@ -1463,7 +1477,8 @@ footer{
     height: 53px;
 }
 .catalog-table-wrap{
-    padding-bottom: 100px;Л
+    padding-bottom: 100px;
+    display: flex;
 }
 table{
     margin: 0 auto;
@@ -1474,20 +1489,23 @@ table{
     border-spacing: 0;
     border-radius: 10px;
 }
+th{
+    height: 80px;
+}
 th:not(:last-child){
     border-right: 1px solid #99A1AB;
 }
 .catalog-table__column_one{
-    padding: 25px 63px 14px 62px;
+    padding: 0px 63px 0px 62px;
 }
 .catalog-table__column_two{
-    padding: 25px 106px 14px 106px;
+    padding: 0px 106px 0px 106px;
 }
 .catalog-table__column_three{
-    padding: 25px 133px 14px 132px;
+    padding: 0px 133px 0px 132px;
 }
 .catalog-table__column_four{
-    padding: 25px 35px 14px 37px;
+    padding: 0px 35px 0px 37px;
 }
 td{
     border-top: 1px solid #99A1AB;
@@ -1513,17 +1531,28 @@ td:not(:last-child){
     font-weight: 500;
     line-height: normal;
 }
+td{
+    height: 80px;
+}
 .catalog-table__line_one{
-    padding: 27px 62px 27px 63px;
+    padding: 0px 62px 0px 63px;
 }
 .catalog-table__line_two{
-    padding: 27px 99px 27px 100px;
+    padding: 0px 99px 0px 100px;
 }
 .catalog-table__line_three{
-    padding: 27px 132px 27px 133px;
+    padding: 0px 132px 0px 133px;
 }
 .catalog-table__line_four{
-    padding: 27px 30px 27px 29px;
+    padding: 0px 30px 0px 29px;
+}
+
+.btn-hover:hover{
+    transition: all 0.3s;
+    background: var(--light_gray_blue);
+}
+.input-hover:hover{
+    border: 1px solid var(--azure, #0085FF);
 }
 
 
