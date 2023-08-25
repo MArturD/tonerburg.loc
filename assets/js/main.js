@@ -19,3 +19,32 @@ $(document).click(function (e) {
 });
 }
 searchClose();
+
+// $('.autoplay').slick({
+//     arrows: true,
+//     prevArrow: $('.prev'),
+//     nextArrow: $('.next'),
+//     slidesToShow: 3,
+//     infinite: true,
+//     slidesToScroll: 1,
+//     variableWidth: true,
+//     // autoplay: true,
+//     centerMode: true,
+// });
+$('.autoplay').slick({
+    arrows: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    // centerMode: true,
+});
+
+// $('.autoplay').slick({
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+// });
