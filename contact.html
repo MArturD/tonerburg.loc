@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/main.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat:wght@500&display=swap"
         rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 <body background="assets/images/icons/background.svg">
 <header>
@@ -69,6 +72,7 @@
   <div class="line">
   </div>
 </header>
+
 <div class="pages">
   <div class="wrap">
     <div class="pages-name">
@@ -86,35 +90,62 @@
     <div class="contacts-contact-wrap">
 
 
-    <div class="contacts-contacts-item">
-      <div class="contacts-contacts-item__img"><img src="assets/images/icons/address.svg"></div>
-      <div class="contacts-contacts-item__info">
-      <div class="contacts-contacts-item__title">Адрес</div>
-      <div class="contacts-contacts-item__description">г.Санкт-Петербург Рижский пр. д.37Т</div>
+<!--    <div class="contacts-contacts-item">-->
+<!--      <div class="contacts-contacts-item__img"><img src="assets/images/icons/address.svg"></div>-->
+<!--      <div class="contacts-contacts-item__info">-->
+<!--      <div class="contacts-contacts-item__title">Адрес</div>-->
+<!--      <div class="contacts-contacts-item__description">г.Санкт-Петербург Рижский пр. д.37Т</div>-->
+<!--      </div>-->
+<!--    </div>-->
+      <div class="contacts-contacts-item">
+        <div class="contacts-contacts-item__info">
+          <div class="contacts-contacts-item__title"><div class="contacts-contacts-item__img"><img src="assets/images/icons/address.svg"></div>Адрес</div>
+          <div class="contacts-contacts-item__description">г.Санкт-Петербург Рижский пр. д.37Т</div>
+        </div>
       </div>
-    </div>
 
-    <div class="contacts-contacts-item">
-      <div class="contacts-contacts-item__img"><img src="assets/images/icons/phone.svg"></div>
-      <div class="contacts-contacts-item__info">
-      <div class="contacts-contacts-item__title">Телефон</div>
-      <div class="contacts-contacts-item__description">+7(953)363-50-50</div>
+      <div class="contacts-contacts-item">
+        <div class="contacts-contacts-item__info">
+          <div class="contacts-contacts-item__title"><div class="contacts-contacts-item__img"><img src="assets/images/icons/phone.svg"></div>Телефон</div>
+          <div class="contacts-contacts-item__description">+7(953)363-50-50</div>
+        </div>
       </div>
-    </div>
-    <div class="contacts-contacts-item">
-      <div class="contacts-contacts-item__img"><img src="assets/images/icons/mail-contact.svg"></div>
-      <div class="contacts-contacts-item__info">
-      <div class="contacts-contacts-item__title">Почта</div>
-      <div class="contacts-contacts-item__description">info@tonerburg.ru</div>
+
+      <div class="contacts-contacts-item">
+        <div class="contacts-contacts-item__info">
+          <div class="contacts-contacts-item__title"><div class="contacts-contacts-item__img"><img src="assets/images/icons/mail-contact.svg"></div>Почта</div>
+          <div class="contacts-contacts-item__description">info@tonerburg.ru</div>
+        </div>
       </div>
-    </div>
-    <div class="contacts-contacts-item contacts-contacts-item__time">
-      <div class="contacts-contacts-item__img"><img src="assets/images/icons/time.svg"></div>
-      <div class="contacts-contacts-item__info">
-      <div class="contacts-contacts-item__title">Часы работы</div>
-      <div class="contacts-contacts-item__description">Пн-Пт С 10 До 18 Сб-Вс выходной</div>
+
+      <div class="contacts-contacts-item">
+        <div class="contacts-contacts-item__info">
+          <div class="contacts-contacts-item__title"><div class="contacts-contacts-item__img"><img src="assets/images/icons/time.svg"></div>Часы работы</div>
+          <div class="contacts-contacts-item__description">Пн-Пт С 10 До 18 Сб-Вс выходной</div>
+        </div>
       </div>
-    </div>
+
+<!--    <div class="contacts-contacts-item">-->
+<!--      <div class="contacts-contacts-item__img"><img src="assets/images/icons/phone.svg"></div>-->
+<!--      <div class="contacts-contacts-item__info">-->
+<!--      <div class="contacts-contacts-item__title">Телефон</div>-->
+<!--      <div class="contacts-contacts-item__description">+7(953)363-50-50</div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="contacts-contacts-item">-->
+<!--      <div class="contacts-contacts-item__img"><img src="assets/images/icons/mail-contact.svg"></div>-->
+<!--      <div class="contacts-contacts-item__info">-->
+<!--      <div class="contacts-contacts-item__title">Почта</div>-->
+<!--      <div class="contacts-contacts-item__description">info@tonerburg.ru</div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="contacts-contacts-item contacts-contacts-item__time">-->
+<!--      <div class="contacts-contacts-item__img"><img src="assets/images/icons/time.svg"></div>-->
+<!--      <div class="contacts-contacts-item__info">-->
+<!--      <div class="contacts-contacts-item__title">Часы работы</div>-->
+<!--      <div class="contacts-contacts-item__description">Пн-Пт С 10 До 18 Сб-Вс выходной</div>-->
+<!--      </div>-->
+<!--    </div>-->
       <div class="contacts-contact-icons">
 
       <div class="contacts-icons">
@@ -175,46 +206,72 @@
     </div>
     <div class="rating-slider">
       <div class="prev btn-hover"><img src="assets/images/icons/prev.svg"></div>
-      <div class="rating-slider__items">
-        <div class="rating-slider__item">
-          <div class="rating-slider__stars"></div>
-          <div class="rating-slider__title">Сергей</div>
-          <div class="rating-slider__description">Продавал картриджи как то. Приятная контора. Быстро ответили
-            на запрос и согласовали встречу в удобное время. Сравнил цены с другими и у них оказались самые
-            интересные. Рекомендую! Нравится
+
+
+      <div class="slider-wrap">
+
+
+        <div class="rating-slider__items autoplay">
+          <div class="rating-slider__item">
+            <div class="rating-slider__stars"></div>
+            <div class="rating-slider__title">Сергей</div>
+            <div class="rating-slider__description">Продавал картриджи как то. Приятная контора. Быстро ответили
+              на запрос и согласовали встречу в удобное время. Сравнил цены с другими и у них оказались самые
+              интересные. Рекомендую! Нравится
+            </div>
           </div>
-        </div>
-        <div class="rating-slider__item">
-          <div class="rating-slider__stars"></div>
-          <div class="rating-slider__title">Даниил</div>
-          <div class="rating-slider__description">Это третья скупка в Питере, куда я возил картриджи. Честно,
-            цена самая лучшая. Закупщик свое дело знает, все по времени четко. Однозначно можно с ними
-            работать
+          <div class="rating-slider__item">
+            <div class="rating-slider__stars"></div>
+            <div class="rating-slider__title">Даниил</div>
+            <div class="rating-slider__description">Это третья скупка в Питере, куда я возил картриджи. Честно,
+              цена самая лучшая. Закупщик свое дело знает, все по времени четко. Однозначно можно с ними
+              работать
+            </div>
           </div>
-        </div>
-        <div class="rating-slider__item">
-          <div class="rating-slider__stars"></div>
-          <div class="rating-slider__title">Павел</div>
-          <div class="rating-slider__description">Приезжал только из-за цен. далеко было ехать, но приемщик
-            повеселил, даже кофе угостил
+          <div class="rating-slider__item">
+            <div class="rating-slider__stars"></div>
+            <div class="rating-slider__title">Павел</div>
+            <div class="rating-slider__description">Приезжал только из-за цен. далеко было ехать, но приемщик
+              повеселил, даже кофе угостил
+            </div>
+          </div>
+          <div class="rating-slider__item">
+            <div class="rating-slider__stars"></div>
+            <div class="rating-slider__title">Павел</div>
+            <div class="rating-slider__description">Приезжал только из-за цен. далеко было ехать, но приемщик
+              повеселил, даже кофе угостил
+            </div>
+          </div>
+          <div class="rating-slider__item">
+            <div class="rating-slider__stars"></div>
+            <div class="rating-slider__title">Павел</div>
+            <div class="rating-slider__description">Приезжал только из-за цен. далеко было ехать, но приемщик
+              повеселил, даже кофе угостил
+            </div>
           </div>
         </div>
       </div>
+
       <div class="next btn-hover"><img src="assets/images/icons/next.svg"></div>
     </div>
   </div>
 </div>
 <div class="feedback">
   <div class="wrap">
-    <div class="feedback__title">Остались вопросы?</div>
     <form action="" class="feedback-form">
-      <div class="feedback-form__title">Оставьте свои контактные данные и наш менеджер вам перезвонит в течение 10
-        минут
+      <div class="feedback-form__info">
+        <div class="feedback-form__title">Остались вопросы?</div>
+        <div class="feedback-form__description">Оставьте свои контактные данные и наш менеджер вам перезвонит в течение 10
+          минут
+        </div>
       </div>
-      <input type="text" placeholder="Имя" class="feedback-form__name input-hover">
-      <input type="number" placeholder="Телефон" class="feedback-form__number input-hover ">
-      <div class="feedback-form__button btn-hover">
-        <input type="submit" value="Оставить">
+      <div class="feedback-form__input">
+
+        <input type="text" placeholder="Имя" class="feedback-form__name input-hover">
+        <input type="number" placeholder="Телефон" class="feedback-form__number input-hover">
+        <div class="feedback-form__button  btn-hover">
+          <input type="submit" value="Оставить">
+        </div>
       </div>
     </form>
   </div>
@@ -234,12 +291,12 @@
           <li>Нам доверяют</li>
           <li>Формат работы</li>
         </ul>
-        <div class="footer_politics">
+        <div class="footer-politics">
           <a href="">Все права защищены</a>
           <a href="">Политика конфиденциальности </a>
         </div>
       </nav>
-      <div class="footer-line"></div>
+      <div class="footer-line__one"></div>
 
       <div class="footer-cartridges">
         <div class="footer-cartridges__title">Представленные бренды</div>
@@ -259,7 +316,7 @@
         </ul>
       </div>
 
-      <div class="footer-line"></div>
+      <div class="footer-line__two"></div>
 
       <div class="footer-info">
         <div class="footer-info__description">
@@ -294,6 +351,10 @@
           <div class="footer-contacts__mail">
             <a href="mailto:">info@tonerburg.ru</a>
           </div>
+          <div class="footer-politics-phone">
+            <a href="">Все права защищены</a>
+            <a href="">Политика конфиденциальности </a>
+          </div>
         </div>
       </div>
 
@@ -301,6 +362,7 @@
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
