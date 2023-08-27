@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Article</title>
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat:wght@500&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body background="assets/images/icons/background.svg">
 <header>
@@ -135,15 +137,20 @@
 </div>
 <div class="feedback">
     <div class="wrap">
-        <div class="feedback__title">Остались вопросы?</div>
         <form action="" class="feedback-form">
-            <div class="feedback-form__title">Оставьте свои контактные данные и наш менеджер вам перезвонит в течение 10
-                минут
+            <div class="feedback-form__info">
+                <div class="feedback-form__title">Остались вопросы?</div>
+                <div class="feedback-form__description">Оставьте свои контактные данные и наш менеджер вам перезвонит в течение 10
+                    минут
+                </div>
             </div>
-            <input type="text" placeholder="Имя" class="feedback-form__name input-hover">
-            <input type="number" placeholder="Телефон" class="feedback-form__number input-hover">
-            <div class="feedback-form__button btn-hover">
-                <input type="submit" value="Оставить">
+            <div class="feedback-form__input">
+
+                <input type="text" placeholder="Имя" class="feedback-form__name input-hover">
+                <input type="number" placeholder="Телефон" class="feedback-form__number input-hover">
+                <div class="feedback-form__button  btn-hover">
+                    <input type="submit" value="Оставить">
+                </div>
             </div>
         </form>
     </div>
@@ -163,12 +170,12 @@
                     <li>Нам доверяют</li>
                     <li>Формат работы</li>
                 </ul>
-                <div class="footer_politics">
+                <div class="footer-politics">
                     <a href="">Все права защищены</a>
                     <a href="">Политика конфиденциальности </a>
                 </div>
             </nav>
-            <div class="footer-line"></div>
+            <div class="footer-line__one"></div>
 
             <div class="footer-cartridges">
                 <div class="footer-cartridges__title">Представленные бренды</div>
@@ -188,7 +195,7 @@
                 </ul>
             </div>
 
-            <div class="footer-line"></div>
+            <div class="footer-line__two"></div>
 
             <div class="footer-info">
                 <div class="footer-info__description">
@@ -223,6 +230,10 @@
                     <div class="footer-contacts__mail">
                         <a href="mailto:">info@tonerburg.ru</a>
                     </div>
+                    <div class="footer-politics-phone">
+                        <a href="">Все права защищены</a>
+                        <a href="">Политика конфиденциальности </a>
+                    </div>
                 </div>
             </div>
 
@@ -230,6 +241,7 @@
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
