@@ -416,9 +416,11 @@ header {
 }
 
 .advantages-cards__title {
+    /*@todo блоковый элемент берет всю ширину контейнера */
     max-width: 160px;
     margin-top: 20px;
     color: var(--dark_blue);
+    /*@todo добавить шрифт по умолчанию*/
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
@@ -639,8 +641,26 @@ header {
 }
 
 .purchase-cards__img {
+    position: relative;
     width: 413px;
     height: 315px;
+}
+
+/*@todo доработать цифры для плиток*/
+.purchase-cards__img[data-count]:after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 50px;
+    content: attr(data-count);
+    width: 153px;
+    height: 138px;
+    background: green;
+    color:magenta;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .purchase-cards__img img {
