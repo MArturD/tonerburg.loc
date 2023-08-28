@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="assets/css/main.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat:wght@500&display=swap"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 </head>
@@ -21,12 +21,14 @@
         <img src="assets/images/icons/header-logo.svg">
       </div>
 
-      <nav class="menu">
+      <nav class="menu menu-font">
         <ul>
-          <li><a href="">Главная</a></li>
-          <li class="menu__item_drop-down">Прайс <img src="assets/images/icons/arrow1.svg">
+          <!--					@todo поставить href="#" если нет ссылки, аттрибут href надо заполнить-->
+          <li><a href="#">Главная</a></li>
+          <li class="menu__item_drop-down ">Прайс <img src="assets/images/icons/arrow1.svg">
             <ul>
-              <li>fff</li>
+              <!--							@todo элементы так же должны быть ссылками -->
+              <li><a href="#">fff</a></li>
             </ul>
           </li>
           <li><a href="">Статьи</a></li>
@@ -48,10 +50,10 @@
           <div class="contacts__img">
             <img src="assets/images/icons/phone.svg">
           </div>
-          <a href="tel:">+7(953)363-50-50</a>
+          <a href="tel:" class="text-font">+7(953)363-50-50</a>
         </div>
         <div class="contacts__button">
-          <a href="">ЗАКАЗАТЬ ЗВОНОК</a>
+          <a href="#" class="menu-font">ЗАКАЗАТЬ ЗВОНОК</a>
         </div>
         <div class="contacts-icons">
           <div class="contacts-icons__item">
@@ -85,43 +87,36 @@
 <div class="contacts-contact">
   <div class="wrap">
 
-    <div class="contacts-contact__title">Наши контакты</div>
+    <p class="contacts-contact__title heading">Наши контакты</p>
 
     <div class="contacts-contact-wrap">
 
 
-<!--    <div class="contacts-contacts-item">-->
-<!--      <div class="contacts-contacts-item__img"><img src="assets/images/icons/address.svg"></div>-->
-<!--      <div class="contacts-contacts-item__info">-->
-<!--      <div class="contacts-contacts-item__title">Адрес</div>-->
-<!--      <div class="contacts-contacts-item__description">г.Санкт-Петербург Рижский пр. д.37Т</div>-->
-<!--      </div>-->
-<!--    </div>-->
       <div class="contacts-contacts-item">
         <div class="contacts-contacts-item__info">
-          <div class="contacts-contacts-item__title"><div class="contacts-contacts-item__img"><img src="assets/images/icons/address.svg"></div>Адрес</div>
-          <div class="contacts-contacts-item__description">г.Санкт-Петербург Рижский пр. д.37Т</div>
+          <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="assets/images/icons/address.svg"></div>Адрес</div>
+          <div class="contacts-contacts-item__description text-font">г.Санкт-Петербург Рижский пр. д.37Т</div>
         </div>
       </div>
 
       <div class="contacts-contacts-item">
         <div class="contacts-contacts-item__info">
-          <div class="contacts-contacts-item__title"><div class="contacts-contacts-item__img"><img src="assets/images/icons/phone.svg"></div>Телефон</div>
-          <div class="contacts-contacts-item__description">+7(953)363-50-50</div>
+          <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="assets/images/icons/phone.svg"></div>Телефон</div>
+          <div class="contacts-contacts-item__description text-font">+7(953)363-50-50</div>
         </div>
       </div>
 
       <div class="contacts-contacts-item">
         <div class="contacts-contacts-item__info">
-          <div class="contacts-contacts-item__title"><div class="contacts-contacts-item__img"><img src="assets/images/icons/mail-contact.svg"></div>Почта</div>
-          <div class="contacts-contacts-item__description">info@tonerburg.ru</div>
+          <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="assets/images/icons/mail-contact.svg"></div>Почта</div>
+          <div class="contacts-contacts-item__description text-font">info@tonerburg.ru</div>
         </div>
       </div>
 
       <div class="contacts-contacts-item">
         <div class="contacts-contacts-item__info">
-          <div class="contacts-contacts-item__title"><div class="contacts-contacts-item__img"><img src="assets/images/icons/time.svg"></div>Часы работы</div>
-          <div class="contacts-contacts-item__description">Пн-Пт С 10 До 18 Сб-Вс выходной</div>
+          <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="assets/images/icons/time.svg"></div>Часы работы</div>
+          <div class="contacts-contacts-item__description text-font">Пн-Пт С 10 До 18 Сб-Вс выходной</div>
         </div>
       </div>
 
@@ -165,7 +160,7 @@
 </div>
 <div class="location-img">
   <div class="wrap">
-    <div class="location-imt__title">Где мы находимся</div>
+    <p class="location-imt__title heading">Где мы находимся</p>
     <div class="location-img-cards">
       <div class="location-img-cards__item">
         <img src="assets/images/others/location-img.png">
@@ -198,10 +193,11 @@
 <div class="rating">
   <div class="wrap">
     <div class="rating-wrap">
-      <div class="rating-wrap__title">Нам доверяют</div>
+      <div class="rating-wrap__title heading">Нам доверяют</div>
       <div class="rating-wrap__info">
         <div class="rating-wrap__img"><img src="assets/images/icons/check-mark.svg"></div>
-        <div class="rating-wrap__description">Официальные отзывы яндекса</div>
+        <!--				@todo тег ссылка -->
+        <p class="rating-wrap__description"><a href="#" class="text-font">Официальные отзывы яндекса</a></p>
       </div>
     </div>
     <div class="rating-slider">
@@ -214,38 +210,45 @@
         <div class="rating-slider__items autoplay">
           <div class="rating-slider__item">
             <div class="rating-slider__stars"></div>
-            <div class="rating-slider__title">Сергей</div>
-            <div class="rating-slider__description">Продавал картриджи как то. Приятная контора. Быстро ответили
+            <div class="rating-slider__title subtitle-font">Сергей</div>
+            <div class="rating-slider__description text-font-two">Продавал картриджи как то. Приятная контора. Быстро ответили
               на запрос и согласовали встречу в удобное время. Сравнил цены с другими и у них оказались самые
               интересные. Рекомендую! Нравится
             </div>
           </div>
           <div class="rating-slider__item">
-            <div class="rating-slider__stars"></div>
-            <div class="rating-slider__title">Даниил</div>
-            <div class="rating-slider__description">Это третья скупка в Питере, куда я возил картриджи. Честно,
+            <div class="rating-slider__stars">
+              <!--						@todo дописать звездочки-->
+              <div class="star">
+                <img src="" alt="">
+              </div>
+              <div class="star">
+                <img src="" alt="">
+              </div>
+              <div class="star">
+                <img src="" alt="">
+              </div>
+              <div class="star">
+                <img src="" alt="">
+              </div>
+            </div>
+            <div class="rating-slider__title subtitle-font">Даниил</div>
+            <div class="rating-slider__description text-font-two">Это третья скупка в Питере, куда я возил картриджи. Честно,
               цена самая лучшая. Закупщик свое дело знает, все по времени четко. Однозначно можно с ними
               работать
             </div>
           </div>
           <div class="rating-slider__item">
             <div class="rating-slider__stars"></div>
-            <div class="rating-slider__title">Павел</div>
-            <div class="rating-slider__description">Приезжал только из-за цен. далеко было ехать, но приемщик
+            <div class="rating-slider__title subtitle-font">Павел</div>
+            <div class="rating-slider__description text-font-two">Приезжал только из-за цен. далеко было ехать, но приемщик
               повеселил, даже кофе угостил
             </div>
           </div>
           <div class="rating-slider__item">
             <div class="rating-slider__stars"></div>
-            <div class="rating-slider__title">Павел</div>
-            <div class="rating-slider__description">Приезжал только из-за цен. далеко было ехать, но приемщик
-              повеселил, даже кофе угостил
-            </div>
-          </div>
-          <div class="rating-slider__item">
-            <div class="rating-slider__stars"></div>
-            <div class="rating-slider__title">Павел</div>
-            <div class="rating-slider__description">Приезжал только из-за цен. далеко было ехать, но приемщик
+            <div class="rating-slider__title subtitle-font">Павел</div>
+            <div class="rating-slider__description text-font-two">Приезжал только из-за цен. далеко было ехать, но приемщик
               повеселил, даже кофе угостил
             </div>
           </div>
@@ -256,12 +259,13 @@
     </div>
   </div>
 </div>
+
 <div class="feedback">
   <div class="wrap">
     <form action="" class="feedback-form">
       <div class="feedback-form__info">
-        <div class="feedback-form__title">Остались вопросы?</div>
-        <div class="feedback-form__description">Оставьте свои контактные данные и наш менеджер вам перезвонит в течение 10
+        <div class="feedback-form__title heading">Остались вопросы?</div>
+        <div class="feedback-form__description text-font">Оставьте свои контактные данные и наш менеджер вам перезвонит в течение 10
           минут
         </div>
       </div>
@@ -269,50 +273,52 @@
 
         <input type="text" placeholder="Имя" class="feedback-form__name input-hover">
         <input type="number" placeholder="Телефон" class="feedback-form__number input-hover">
-        <div class="feedback-form__button  btn-hover">
+        <div class="feedback-form__button  btn-hover button-font">
           <input type="submit" value="Оставить">
         </div>
       </div>
     </form>
   </div>
 </div>
+
 <footer>
   <div class="wrap">
     <div class="footer-menu">
       <nav>
-        <ul class="footer-navigation">
-          <li>Главная</li>
-          <li>Статьи</li>
-          <li>О нас</li>
-          <li>Прайс</li>
-          <li>Контакты</li>
-          <li>Бренды</li>
-          <li>Полезные статьи</li>
-          <li>Нам доверяют</li>
-          <li>Формат работы</li>
+        <ul class="footer-navigation footer-font">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Статьи</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Прайс</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Бренды</a></li>
+          <li><a href="#">Полезные статьи</a></li>
+          <li><a href="#">Нам доверяют</a></li>
+          <li><a href="#">Формат работы</a></li>
         </ul>
         <div class="footer-politics">
-          <a href="">Все права защищены</a>
-          <a href="">Политика конфиденциальности </a>
+          <a href="" class="politic-font">Все права защищены</a>
+          <a href="" class="politic-font">Политика конфиденциальности </a>
         </div>
       </nav>
       <div class="footer-line__one"></div>
 
-      <div class="footer-cartridges">
-        <div class="footer-cartridges__title">Представленные бренды</div>
-        <ul class="footer-cartridges__navigation">
-          <li>Brother</li>
-          <li>XEROX</li>
-          <li>Kyocera Mita</li>
-          <li>Бренд</li>
-          <li>Бренд</li>
-          <li>Бренд</li>
-          <li>Samsung</li>
-          <li>Panasonic</li>
-          <li>Бренд</li>
-          <li>Бренд</li>
-          <li>Бренд</li>
-          <li>Бренд</li>
+      <div class="footer-cartridges footer-font">
+        <div class="footer-cartridges__title footer-font-title">Представленные бренды</div>
+        <ul class="footer-cartridges__navigation ">
+          <!--					@todo ссылки должны быть-->
+          <li><a href="">Brother</a></li>
+          <li><a href="">XEROX</a></li>
+          <li><a href="">Kyocera Mita</a></li>
+          <li><a href="">Бренд</a></li>
+          <li><a href="">Бренд</a></li>
+          <li><a href="">Бренд</a></li>
+          <li><a href="">Samsung</a></li>
+          <li><a href="">Panasonic</a></li>
+          <li><a href="">Бренд</a></li>
+          <li><a href="">Бренд</a></li>
+          <li><a href="">Бренд</a></li>
+          <li><a href="">Бренд</a></li>
         </ul>
       </div>
 
@@ -332,10 +338,10 @@
             <div class="contacts__img">
               <img src="assets/images/icons/phone.svg">
             </div>
-            <a href="tel:">+7(953)363-50-50</a>
+            <a href="tel:" class="text-font">+7(953)363-50-50</a>
           </div>
           <div class="contacts__button">
-            <a href="">ЗАКАЗАТЬ ЗВОНОК</a>
+            <a href="#" class="menu-font">ЗАКАЗАТЬ ЗВОНОК</a>
           </div>
           <div class="contacts-icons">
             <div class="contacts-icons__item">
@@ -349,11 +355,11 @@
             </div>
           </div>
           <div class="footer-contacts__mail">
-            <a href="mailto:">info@tonerburg.ru</a>
+            <a href="mailto:" class="text-font">info@tonerburg.ru</a>
           </div>
           <div class="footer-politics-phone">
-            <a href="">Все права защищены</a>
-            <a href="">Политика конфиденциальности </a>
+            <a href="#" class="politic-font">Все права защищены</a>
+            <a href="#" class="politic-font">Политика конфиденциальности </a>
           </div>
         </div>
       </div>
@@ -361,6 +367,7 @@
     </div>
   </div>
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/main.js"></script>
