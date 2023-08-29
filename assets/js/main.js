@@ -6,6 +6,14 @@ function searchClick() {
 }
 searchClick();
 
+function burgerClose() {
+    $('.burger-btn').click(function() {
+        $('.menu').addClass('menu-active');
+        $('.contacts').addClass('contacts-active');
+    });
+}
+burgerClose()
+
 
 function searchClose(){
 $(document).click(function (e) {
