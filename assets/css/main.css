@@ -346,7 +346,9 @@ header {
     margin-top: 17px;
     border: 1px solid #8A97B3;;
 }
-
+.banner{
+    margin-bottom: 100px;
+}
 .banner-wrap {
     margin: 0 auto;
     max-width: 1040px;
@@ -480,8 +482,8 @@ header {
     text-transform: uppercase;
 }
 
-.advantages-wrap {
-    padding: 100px 0px;
+.advantages {
+    margin-bottom: 100px;
 }
 
 .advantages-wrap__title {
@@ -525,8 +527,8 @@ header {
     text-align: center;
 }
 
-.accept-wrap {
-    padding-bottom: 100px;
+.accept{
+    margin-bottom: 100px;
 }
 
 .accept-wrap-title {
@@ -606,8 +608,8 @@ header {
 
 }
 
-.benefit-wrap {
-    padding-bottom: 100px;
+.benefit{
+    margin-bottom: 100px;
 }
 
 
@@ -747,8 +749,8 @@ header {
     max-width: 450px;
 }
 
-.cartridge-brands-wrap {
-    padding-bottom: 100px;
+.cartridge-brands{
+    margin-bottom: 100px;
 }
 
 
@@ -784,7 +786,7 @@ header {
 }
 
 .application {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .application-wrap {
@@ -921,7 +923,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .about-wrap {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .about-wrap__info {
@@ -938,7 +940,7 @@ input::placeholder, textarea::placeholder {
 
 
 .rating {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .rating-wrap {
@@ -969,6 +971,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .rating-slider {
+    position: relative;
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -991,7 +994,12 @@ input::placeholder, textarea::placeholder {
     justify-content: center;
     padding: 15px 16px;
 }
-
+.rating-slider-arrow{
+    width: 1160px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
 .prev img, .next img {
     object-fit: contain;
     width: 100%;
@@ -1049,7 +1057,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .articles {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .articles-cards {
@@ -1118,7 +1126,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .feedback {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 
@@ -1630,7 +1638,9 @@ td {
     .contacts {
         display: none;
     }
-
+.banner{
+    margin-bottom: 80px;
+}
     .banner-wrap {
         margin-top: 82px;
         width: 620px;
@@ -1662,8 +1672,8 @@ td {
         display: none;
     }
 
-    .advantages-wrap {
-        padding: 80px 0;
+    .advantages {
+        margin-bottom: 80px;
     }
 
     .advantages-cards {
@@ -1704,8 +1714,8 @@ td {
         text-align: left;
     }
 
-    .accept-wrap {
-        padding-bottom: 80px;
+    .accept {
+        margin-bottom: 80px;
     }
 
     .accept-wrap-title {
@@ -1749,8 +1759,8 @@ td {
         font-size: 18px;
     }
 
-    .benefit-wrap {
-        padding-bottom: 80px;
+    .benefit {
+        margin-bottom: 80px;
     }
 
     .benefit-wrap__title {
@@ -1833,8 +1843,8 @@ td {
         max-width: 295px;
     }
 
-    .cartridge-brands-wrap {
-        padding-bottom: 80px;
+    .cartridge-brands{
+        margin-bottom: 80px;
     }
 
     .cartridge-brands-wrap__title {
@@ -1852,7 +1862,7 @@ td {
     }
 
     .application {
-        padding-bottom: 80px;
+        margin-bottom: 80px;
     }
 
     .application-form {
@@ -1917,7 +1927,7 @@ td {
     }
 
     .about-wrap {
-        padding-bottom: 75px;
+        margin-bottom: 75px;
     }
 
     .about-wrap__info {
@@ -1932,7 +1942,7 @@ td {
     }
 
     .rating {
-        padding-bottom: 113px;
+        margin-bottom: 113px;
     }
 
     .rating-wrap__title {
@@ -1948,6 +1958,13 @@ td {
         width: 47px;
         height: 68px;
     }
+    .rating-slider-arrow{
+        width: 728px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+
 
     .slick-slide {
         width: 283px;
@@ -1963,7 +1980,7 @@ td {
     }
 
     .articles {
-        padding-bottom: 80px;
+        margin-bottom: 80px;
     }
 
     .articles-cards {
@@ -2362,6 +2379,9 @@ td {
 }
 
 @media (max-width: 390px) {
+    .margin-bottom{
+        margin-bottom: 50px;
+    }
     .heading {
         font-size: 22px;
     }
@@ -2382,8 +2402,8 @@ td {
     .form-search input {
         display: none;
     }
-
     .banner-wrap {
+        margin-top: 50px;
         width: 100%;
         height: 100%;
         display: block;
@@ -2547,7 +2567,138 @@ td {
         text-align: center;
         align-items: end;
     }
+    .cartridge-cards{
+        margin-top: 30px;
+        gap: 25px;
+    }
+    .cartridge-cards-item{
+        width: 146px;
+        height: 114px;
+    }
+    .application{
+        display: none;
+    }
+    .about{
+        display: none;
+    }
 
+    .rating-wrap{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .rating-slider{
+        flex-wrap: wrap;
+    }
+    .slick-slide{
+        width: 283px;
+        display: flex;
+        justify-content: center;
+        /*margin: 0px 33px;*/
+    }
+    .slider-wrap{
+        width: 320px;
+    }
+    .rating-slider-arrow{
+        width: 320px;
+        position: absolute;
+        bottom: -95px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .articles-cards{
+        margin-top: 30px;
+        gap: 25px;
+    }
+    .articles-cards__item{
+        width: 320px;
+        height: 250px;
+    }
+    .feedback-form__description{
+        margin-top: 10px;
+    }
+    .feedback-form__input{
+        max-width: 320px;
+        margin-top: 20px;
+        gap: 15px;
+    }
+    .feedback-form__name, .feedback-form__number{
+        width: 320px;
+    }
+    .feedback-form__button{
+        width: 320px;
+    }
+    .feedback-form__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-line__one{
+        width: 100%;
+        height: 1px;
+    }
+    .footer-line__two{
+        display: none;
+    }
+    .footer-info{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        height: 247px;
+        position: relative;
+    }
+    .contacts__number a{
+        font-size: 14px;
+    }
+    .footer-contacts .contacts__button a{
+        font-size: 16px;
+    }
+    .footer-info__description{
+        margin-top: 30px;
+        max-width: 145px;
+        align-items: start;
+    }
+    .footer-info__title{
+        margin-top: 15px;
+    }
+    .footer-info__address{
+        margin-top: 15px;
+    }
+    .footer-info__title,
+    .footer-info__address,
+    .footer-info__mode{
+        font-size: 12px;
+        width: 122px;
+    }
+    .footer-contacts{
+        margin-top: 70px;
+        align-items: flex-end;
+    }
+    .contacts-icons__item{
+        width: 23px;
+        height: 23px;
+    }
+    .contacts-icons{
+        gap: 11px;
+    }
+    .footer-contacts__mail{
+        font-size: 14px;
+    }
+    .footer-info__title,
+    .footer-info__address,
+    .footer-info__mode{
+        text-align: left;
+    }
+    .footer-politics-phone a{
+        font-size: 12px;
+    }
+    .footer-politics-phone{
+        gap: 0;
+        margin-top: 25px;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+    }
 }
 
 

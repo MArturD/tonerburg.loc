@@ -37,7 +37,6 @@ searchClose();
 //     slidesToScroll: 1,
 //     variableWidth: true,
 //     // autoplay: true,
-//     centerMode: true,
 // });
 $('.autoplay').slick({
     arrows: true,
@@ -47,7 +46,7 @@ $('.autoplay').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
-    // centerMode: true,
+    centerMode: true,
 });
 
 // $('.autoplay').slick({
