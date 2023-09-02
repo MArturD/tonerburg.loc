@@ -346,9 +346,11 @@ header {
     margin-top: 17px;
     border: 1px solid #8A97B3;;
 }
-.banner{
+
+.banner {
     margin-bottom: 100px;
 }
+
 .banner-wrap {
     margin: 0 auto;
     max-width: 1040px;
@@ -527,18 +529,10 @@ header {
     text-align: center;
 }
 
-.accept{
+.accept {
     margin-bottom: 100px;
 }
 
-.accept-wrap-title {
-    color: var(--dark_blue);
-    font-family: Karla;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
 
 .acceptance-conditions {
     margin-top: 55px;
@@ -599,16 +593,9 @@ header {
     margin-top: 30px;
 }
 
-.accept-more a {
-    padding: 0;
-    color: #5D6D8C;
-    font-weight: 600;
-    border-bottom: 1px solid;
-    /*text-decoration-line: underline;*/
 
-}
 
-.benefit{
+.benefit {
     margin-bottom: 100px;
 }
 
@@ -704,8 +691,12 @@ header {
     height: 315px;
 }
 
+.purchase-cards__item_right .purchase-cards__img[data-count]:after{
+    right: 0 ;
+}
+
 /*@todo доработать цифры для плиток*/
-.purchase-cards__img[data-count]:after {
+.purchase-cards__item .purchase-cards__img[data-count]:after {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -721,6 +712,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 
 .purchase-cards__img img {
     object-fit: contain;
@@ -749,7 +741,7 @@ header {
     max-width: 450px;
 }
 
-.cartridge-brands{
+.cartridge-brands {
     margin-bottom: 100px;
 }
 
@@ -994,12 +986,14 @@ input::placeholder, textarea::placeholder {
     justify-content: center;
     padding: 15px 16px;
 }
-.rating-slider-arrow{
+
+.rating-slider-arrow {
     width: 1160px;
     position: absolute;
     display: flex;
     justify-content: space-between;
 }
+
 .prev img, .next img {
     object-fit: contain;
     width: 100%;
@@ -1144,7 +1138,7 @@ input::placeholder, textarea::placeholder {
 
 .feedback-form__description {
     margin-top: 50px;
-    width: 1120px;
+    max-width: 1120px;
 }
 
 .feedback-form__name, .feedback-form__number {
@@ -1179,7 +1173,9 @@ footer {
     background: var(--light_blue);
     padding: 40px 0px;
 }
-
+.footer-contacts__mail-img{
+    display: none;
+}
 .footer-menu {
     display: flex;
     justify-content: space-between;
@@ -1625,6 +1621,9 @@ td {
 
 
 @media (max-width: 768px) {
+    .text-font{
+        font-size: 18px;
+    }
     .wrap {
         max-width: 728px;
         margin: 0 auto;
@@ -1638,9 +1637,11 @@ td {
     .contacts {
         display: none;
     }
-.banner{
-    margin-bottom: 80px;
-}
+
+    .banner {
+        margin-bottom: 80px;
+    }
+
     .banner-wrap {
         margin-top: 82px;
         width: 620px;
@@ -1755,9 +1756,7 @@ td {
         width: 302px;
     }
 
-    .accept-more a {
-        font-size: 18px;
-    }
+
 
     .benefit {
         margin-bottom: 80px;
@@ -1843,7 +1842,7 @@ td {
         max-width: 295px;
     }
 
-    .cartridge-brands{
+    .cartridge-brands {
         margin-bottom: 80px;
     }
 
@@ -1958,7 +1957,8 @@ td {
         width: 47px;
         height: 68px;
     }
-    .rating-slider-arrow{
+
+    .rating-slider-arrow {
         width: 728px;
         position: absolute;
         display: flex;
@@ -2012,7 +2012,7 @@ td {
     }
 
     .feedback-form__description {
-        width: 333px;
+        max-width: 333px;
         font-size: 20px;
     }
 
@@ -2118,6 +2118,9 @@ td {
         font-weight: 500;
         line-height: 200%; /* 30px */
         text-decoration-line: underline;
+    }
+    .footer-contacts__mail-img{
+        display: none;
     }
 
     .contacts-contact-wrap {
@@ -2379,10 +2382,18 @@ td {
 }
 
 @media (max-width: 390px) {
-    .margin-bottom{
+    .margin-bottom {
         margin-bottom: 50px;
     }
+    .button-font input{
+        font-size: 18px;
+    }
+    .footer-font a{
+        font-size: 18px;
+    }
+
     .heading {
+
         font-size: 22px;
     }
 
@@ -2402,6 +2413,7 @@ td {
     .form-search input {
         display: none;
     }
+
     .banner-wrap {
         margin-top: 50px;
         width: 100%;
@@ -2456,6 +2468,11 @@ td {
         text-align: center;
     }
 
+    .advantages-cards {
+        margin-top: 30px;
+        gap: 25px;
+    }
+
     .acceptance-conditions {
         flex-direction: column;
         gap: 25px;
@@ -2469,6 +2486,23 @@ td {
         width: 100%;
         flex-direction: row;
         gap: 10px;
+    }
+
+    .accept-approval__img {
+        width: 22px;
+        height: 24px;
+        margin-right: 15px;
+    }
+    .accept-approval, .accept-rejection{
+        gap: 13px;
+    }
+    .accept-approval__title, .accept-rejection__title {
+        margin-bottom: 7px;
+    }
+    .accept-more{
+        margin-top: 25px;
+        max-width: 265px;
+        padding-bottom: 15px;
     }
 
     .advantages-cards__img {
@@ -2510,11 +2544,15 @@ td {
 
     .benefit-cards__item {
         gap: 15px;
+        align-items: center;
     }
 
     .benefit-cards__img {
         width: 100px;
         height: 100px;
+    }
+    .benefit-cards__info{
+        max-width: 200px;
     }
 
     .purchase-wrap {
@@ -2530,6 +2568,10 @@ td {
         align-items: start;
         flex-direction: column;
         gap: 15px;
+    }
+    .purchase-cards__item .purchase-cards__img[data-count]:after{
+        width: 104px;
+        height: 76px;
     }
 
     .purchase-cards__img {
@@ -2548,10 +2590,12 @@ td {
         width: 104px;
         height: 76px;
     }
-    .purchase-cards__info{
+
+    .purchase-cards__info {
         width: 100%;
         gap: 10px;
     }
+
     .purchase-cards__info p {
         text-align: left;
     }
@@ -2563,42 +2607,50 @@ td {
         align-items: end;
     }
 
-    .purchase-cards__item_right .purchase-cards__info{
+    .purchase-cards__item_right .purchase-cards__info {
         text-align: center;
         align-items: end;
     }
-    .cartridge-cards{
+
+    .cartridge-cards {
         margin-top: 30px;
         gap: 25px;
     }
-    .cartridge-cards-item{
+
+    .cartridge-cards-item {
         width: 146px;
         height: 114px;
     }
-    .application{
-        display: none;
-    }
-    .about{
+
+    .application {
         display: none;
     }
 
-    .rating-wrap{
+    .about {
+        display: none;
+    }
+
+    .rating-wrap {
         flex-direction: column;
         gap: 10px;
     }
-    .rating-slider{
+
+    .rating-slider {
         flex-wrap: wrap;
     }
-    .slick-slide{
+
+    .slick-slide {
         width: 283px;
         display: flex;
         justify-content: center;
         /*margin: 0px 33px;*/
     }
-    .slider-wrap{
+
+    .slider-wrap {
         width: 320px;
     }
-    .rating-slider-arrow{
+
+    .rating-slider-arrow {
         width: 320px;
         position: absolute;
         bottom: -95px;
@@ -2606,98 +2658,169 @@ td {
         display: flex;
         justify-content: center;
     }
-    .articles-cards{
+
+    .articles-cards {
         margin-top: 30px;
         gap: 25px;
     }
-    .articles-cards__item{
+
+    .articles-cards__item {
         width: 320px;
         height: 250px;
     }
-    .feedback-form__description{
+
+    .feedback-form__description {
+        width: 288px;
         margin-top: 10px;
+        font-size: 18px;
     }
-    .feedback-form__input{
+
+    .feedback-form__input {
         max-width: 320px;
         margin-top: 20px;
         gap: 15px;
     }
-    .feedback-form__name, .feedback-form__number{
+
+    .feedback-form__name, .feedback-form__number {
         width: 320px;
     }
-    .feedback-form__button{
+
+    .feedback-form__button {
         width: 320px;
     }
-    .feedback-form__button{
+
+    .feedback-form__button {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .footer-line__one{
+
+    .footer-line__one {
         width: 100%;
         height: 1px;
     }
-    .footer-line__two{
+
+    .footer-line__two {
         display: none;
     }
-    .footer-info{
+    .footer-navigation{
+        gap: 10px 122px;
+        height: 201px;
+    }
+    .footer-cartridges__navigation{
+        gap: 11px 75px;
+        height: 201px;
+    }
+    .footer-info {
         flex-direction: row;
         justify-content: space-between;
         gap: 0;
         height: 247px;
         position: relative;
     }
-    .contacts__number a{
+
+    .contacts__number a {
         font-size: 14px;
     }
-    .footer-contacts .contacts__button a{
-        font-size: 16px;
+
+    .footer-contacts .contacts__button a {
+        font-size: 14px;
     }
-    .footer-info__description{
-        margin-top: 30px;
-        max-width: 145px;
+    .footer-contacts__mail a{
+        font-size: 14px;
+    }
+    .footer-info__description {
+        margin-top: 5px;
+        max-width: 155px;
         align-items: start;
     }
+
+    .footer-info__title {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .footer-info__title_img{
+        width: 27px;
+        height: 34px;
+    }
+    .footer-info__title_img img{
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer-info__address {
+        margin-top: 15px;
+    }
+
     .footer-info__title{
-        margin-top: 15px;
+        max-width: 150px;
     }
-    .footer-info__address{
-        margin-top: 15px;
-    }
-    .footer-info__title,
     .footer-info__address,
-    .footer-info__mode{
+    .footer-info__mode {
         font-size: 12px;
         width: 122px;
     }
-    .footer-contacts{
-        margin-top: 70px;
+
+    .footer-contacts {
+        margin-top: 45px;
         align-items: flex-end;
     }
-    .contacts-icons__item{
+    .footer-contacts .contacts-icons, .footer-contacts__mail{
+        margin-top: 15px;
+    }
+
+    .contacts-icons__item {
         width: 23px;
         height: 23px;
     }
-    .contacts-icons{
+
+
+    .contacts-icons {
         gap: 11px;
     }
-    .footer-contacts__mail{
+
+    .footer-contacts__mail {
         font-size: 14px;
     }
+
     .footer-info__title,
     .footer-info__address,
-    .footer-info__mode{
+    .footer-info__mode {
         text-align: left;
     }
-    .footer-politics-phone a{
+
+    .footer-politics-phone a {
         font-size: 12px;
     }
-    .footer-politics-phone{
+
+    .footer-politics-phone {
         gap: 0;
-        margin-top: 25px;
         position: absolute;
-        bottom: -30px;
+        bottom: -25px;
         left: 0;
+    }
+    .footer-contacts__mail{
+        display: flex;
+        gap: 5px;
+    }
+    .footer-contacts__mail-img{
+        display: block;
+        width: 20px;
+        height: 17px;
+    }
+    .footer-contacts__mail-img img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+    .footer-info__title,
+    .footer-info__address, .footer-info__mode{
+        font-size: 12px;
+    }
+    .footer-info__address, .footer-info__mode{
+        font-weight: 400;
     }
 }
 
