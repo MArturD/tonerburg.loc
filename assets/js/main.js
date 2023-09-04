@@ -1,15 +1,25 @@
 function searchClick() {
     $('.form-search').click(function() {
         $('.menu').addClass('menu-block');
+        $('.logo').addClass('logo-none');
         $('.form-search__input').addClass('search-aaa');
     });
 }
 searchClick();
 
+// function burgerClose() {
+//     $('.burger-btn').click(function() {
+//         $('.menu').addClass('menu-active');
+//         $('.contacts').addClass('contacts-active');
+//     });
+// }
+// burgerClose()
 function burgerClose() {
     $('.burger-btn').click(function() {
-        $('.menu').addClass('menu-active');
-        $('.contacts').addClass('contacts-active');
+        $('.menu').toggleClass('menu-visible');
+        $('.contacts').toggleClass('contacts-visible');
+        $('.burger-btn').toggleClass('active-burger');
+        $('.form-search').toggleClass('form-none');
     });
 }
 burgerClose()
@@ -23,6 +33,7 @@ $(document).click(function (e) {
     }
     // клик снаружи элемента
     $(".menu").removeClass('menu-block');
+    $('.logo').removeClass('logo-none');
     $(".form-search__input").removeClass('search-aaa');
 });
 }
