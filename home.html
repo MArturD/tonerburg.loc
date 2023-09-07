@@ -14,9 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
-<!--@todo все стили через css-->
 <body background="assets/images/icons/background.svg" class="body">
-<!--@todo шапка должна прилипать-->
 <header>
     <div class="wrap">
         <div class="header-wrap">
@@ -95,9 +93,6 @@
                 <span></span>
             </div>
         </div>
-    </div>
-<!--	@todo убрать лишний -->
-    <div class="line">
     </div>
 </header>
 <div class="banner margin-bottom">
@@ -179,7 +174,8 @@
                     <p class="advantages-cards__title subtitle-font">
                         Заработать
                     </p>
-                    <p class="advantages-cards__description text-font">Выгодно, конфиденциально и безопасно, так как все сделки осуществляются квалифицированными специалистами</p>
+                    <p class="advantages-cards__description text-font">Выгодно,
+                        конфиденциально и безопасно, так как все сделки осуществляются квалифицированными специалистами</p>
 
                     </div>
                 </div>
@@ -284,11 +280,11 @@
                     </div>
                 </div>
                 <div class="benefit-cards__item">
-                    <div class="benefit-cards__description benefit-cards__description_right">
+                    <div class="benefit-cards__img"><img src="assets/images/others/benefit2.svg"></div>
+                    <div class="benefit-cards__description">
                         <p class="benefit-cards__title subtitle-font">Работаем</p>
                         <p class="benefit-cards__info benefit-cards__info_right text-font">По Санкт-Петербургу и регионам России</p>
                     </div>
-                    <div class="benefit-cards__img"><img src="assets/images/others/benefit2.svg"></div>
                 </div>
                 <div class="benefit-cards__item">
                     <div class="benefit-cards__img"><img src="assets/images/others/benefit3.svg"></div>
@@ -298,11 +294,11 @@
                     </div>
                 </div>
                 <div class="benefit-cards__item">
-                    <div class="benefit-cards__description benefit-cards__description_right">
+                    <div class="benefit-cards__img"><img src="assets/images/others/benefit4.svg"></div>
+                    <div class="benefit-cards__description">
                         <p class="benefit-cards__title subtitle-font">Ответственный</p>
                         <p class="benefit-cards__info benefit-cards__info_right text-font">Персонал, нацеленный на долгосрочное сотрудничество</p>
                     </div>
-                    <div class="benefit-cards__img"><img src="assets/images/others/benefit4.svg"></div>
                 </div>
             </div>
         </div>
@@ -321,7 +317,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="purchase-cards__item purchase-cards__item_right">
+                <div class="purchase-cards__item">
                     <div class="purchase-cards__img" data-count="02"><img src="assets/images/others/purchase2.svg"></div>
                     <div class="purchase-cards__info">
                         <p class="purchase-cards__title subtitle-font">Перечислите наименования</p>
@@ -337,7 +333,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="purchase-cards__item purchase-cards__item_right">
+                <div class="purchase-cards__item">
                     <div class="purchase-cards__img" data-count="04"><img src="assets/images/others/purchase4.svg"></div>
                     <div class="purchase-cards__info">
                         <p class="purchase-cards__title subtitle-font">Оплата</p>
@@ -451,7 +447,11 @@
 
             <div class="rating-slider__items autoplay">
                 <div class="rating-slider__item">
-                    <div class="rating-slider__stars"></div>
+                    <div class="rating-slider__stars">
+                        <div class="star">
+                            <img src="assets/images/icons/stars.png">
+                        </div>
+                    </div>
                     <div class="rating-slider__title subtitle-font">Сергей</div>
                     <div class="rating-slider__description text-font-two">Продавал картриджи как то. Приятная контора. Быстро ответили
                         на запрос и согласовали встречу в удобное время. Сравнил цены с другими и у них оказались самые
@@ -461,9 +461,9 @@
                 <div class="rating-slider__item">
                     <div class="rating-slider__stars">
 <!--						@todo дописать звездочки-->
-						<div class="star">
-							<img src="assets/images/icons/stars.png" alt="">
-						</div>
+                        <div class="star">
+                            <img src="assets/images/icons/stars.png">
+                        </div>
 						<div class="star">
 							<img src="" alt="">
 						</div>
@@ -481,14 +481,22 @@
                     </div>
                 </div>
                 <div class="rating-slider__item">
-                    <div class="rating-slider__stars"></div>
+                    <div class="rating-slider__stars">
+                        <div class="star">
+                            <img src="assets/images/icons/stars.png">
+                        </div>
+                    </div>
                     <div class="rating-slider__title subtitle-font">Павел</div>
                     <div class="rating-slider__description text-font-two">Приезжал только из-за цен. далеко было ехать, но приемщик
                         повеселил, даже кофе угостил
                     </div>
                 </div>
                 <div class="rating-slider__item">
-                    <div class="rating-slider__stars"></div>
+                    <div class="rating-slider__stars">
+                        <div class="star">
+                            <img src="assets/images/icons/stars.png">
+                        </div>
+                    </div>
                     <div class="rating-slider__title subtitle-font">Павел</div>
                     <div class="rating-slider__description text-font-two">Приезжал только из-за цен. далеко было ехать, но приемщик
                         повеселил, даже кофе угостил
@@ -509,13 +517,12 @@
     <div class="wrap">
         <p class="articles-title heading">Полезные статьи</p>
         <div class="articles-cards">
-<!--				@todo сделать блок ссылкой-->
             <div class="articles-cards__item">
                 <img src="assets/images/others/purchase1.svg">
                 <div class="articles-cards__opacity"></div>
                 <div class="articles-cards__info">
 <!--					@todo add link for title-->
-                    <div class="articles-cards__title"><a href="#" class="subtitle-font">Заголовок</a></div>
+                    <div class="articles-cards__title subtitle-font">Заголовок</div>
                     <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
                 </div>
             </div>
@@ -523,17 +530,19 @@
                 <img src="assets/images/others/purchase1.svg">
                 <div class="articles-cards__opacity"></div>
                 <div class="articles-cards__info">
-                    <div class="articles-cards__title"><a href="#" class="subtitle-font">Заголовок</a></div>
+                    <div class="articles-cards__title subtitle-font">Заголовок</div>
                     <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
                 </div>
             </div>
             <div class="articles-cards__item">
+                <a href="#">
                 <img src="assets/images/others/purchase1.svg">
                 <div class="articles-cards__opacity"></div>
                 <div class="articles-cards__info">
-                    <div class="articles-cards__title"><a href="#" class="subtitle-font">Заголовок</a></div>
+                    <div class="articles-cards__title subtitle-font">Заголовок</div>
                     <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
                 </div>
+                </a>
             </div>
         </div>
     </div>
@@ -583,7 +592,6 @@
             <div class="footer-cartridges footer-font">
                 <div class="footer-cartridges__title footer-font-title">Представленные бренды</div>
                 <ul class="footer-cartridges__navigation ">
-<!--					@todo ссылки должны быть-->
                     <li><a href="#">Brother</a></li>
                     <li><a href="#">XEROX</a></li>
                     <li><a href="#">Kyocera Mita</a></li>

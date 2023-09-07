@@ -227,16 +227,18 @@ button:focus, button:active {
 
 header {
     background-color: var(--background);
+    border-bottom: 1px solid #8A97B3;
 }
 
 .header-wrap {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px 0 17.3px 0;
 }
 
 
 .logo {
-    margin-top: 74px;
     width: 110px;
     height: 62px;
 }
@@ -249,14 +251,15 @@ header {
 }
 
 .menu {
-    margin-top: 110px;
 }
 
 
 
 .menu ul {
     display: flex;
+    align-items: center;
     gap: 15px;
+    flex-shrink: 0;
 }
 
 .menu li {
@@ -286,7 +289,6 @@ header {
     /*position: absolute;*/
     left: 0;
     top: 100%;
-    /* @todo 5s ?*/
     transition: all 5s;
 }
 
@@ -311,7 +313,6 @@ header {
     padding: 10px 10px 10px 10px;
 }
 
-/* @todo сделать на <a> исправить цвет*/
 .menu__item_drop-down li:hover {
     background: var(--light_blue, #A6DAFF);
 }
@@ -334,14 +335,15 @@ header {
 }
 
 .form-search {
-    margin-top: 87px;
     display: flex;
     position: relative;
+    flex-grow: 1;
 }
 
 .form-search__input {
-    width: 323px;
     height: 53px;
+    display: flex;
+    flex-grow: 1;
     padding: 10px 20px;
     border-radius: 10px;
     border: 1px solid #8194A6;
@@ -349,16 +351,12 @@ header {
     transition: all 0.2s ease;
 
 }
-
-/*.form-search__input:focus{*/
-/*    width: 824px;*/
-/*}*/
 .menu-block {
     display: none;
 }
 
 .search-aaa {
-    width: 824px;
+
 }
 
 .form-search__img {
@@ -376,7 +374,6 @@ header {
 }
 
 .contacts {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -424,10 +421,8 @@ header {
     width: 100%;
     height: 100%;
 }
-
-.line {
-    margin-top: 17px;
-    border: 1px solid #8A97B3;;
+.burger-btn{
+    display: none;
 }
 
 .banner {
@@ -575,16 +570,21 @@ header {
 }
 
 .advantages-cards {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
     margin-top: 50px;
     display: flex;
-    justify-content: center;
+    /*justify-content: space-between;*/
     gap: 40px;
-    /*justify-content: space-around;*/
 }
 
 .advantages-cards__img {
     width: 140px;
     height: 136px;
+}
+.benefit-cards__item:nth-child(even) .benefit-cards__img{
+    order: 2;
 }
 
 .advantages-cards__img img {
@@ -594,21 +594,28 @@ header {
 }
 
 .advantages-cards__item {
-    max-width: 260px;
+    /*max-width: 260px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.advantages-cards__info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
 .advantages-cards__title {
     /*@todo блоковый элемент берет всю ширину контейнера */
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
 .advantages-cards__description {
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
-    /* @todo pre-line не нужно*/
+    flex-shrink: 2;
     white-space: pre-line;
     text-align: center;
 }
@@ -619,7 +626,7 @@ header {
 
 
 .acceptance-conditions {
-    margin-top: 55px;
+    margin-top: 49px;
     display: flex;
     justify-content: space-between;
     /*gap: 280px;*/
@@ -628,18 +635,18 @@ header {
 .accept-approval, .accept-rejection {
     display: flex;
     flex-direction: column;
-    gap: 27px;
+    gap: 24px;
 }
 
 
 .accept-approval__title {
     color: var(--dark_green);
-    margin-bottom: 30px;
+    margin-bottom: 7px;
 }
 
 .accept-rejection__title {
     color: var(--dark_red);
-    margin-bottom: 33px;
+    margin-bottom: 6px;
 }
 
 .accept-approval__items, .accept-rejection__items {
@@ -648,19 +655,19 @@ header {
 
 .accept-approval__img {
     width: 23px;
-    height: 29px;
+    height: 30px;
     margin-right: 9px;
 }
 
 .accept-approval__img img, .accept-rejection__img img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
 
 .accept-rejection__img {
-    width: 26px;
-    height: 26px;
+    width: 33.5px;
+    height: 33.5px;
     margin-right: 5px;
 }
 
@@ -700,6 +707,8 @@ header {
 .benefit-cards__img {
     width: 160px;
     height: 142px;
+    display: flex;
+    flex-shrink: 0;
 }
 
 .benefit-cards__img img {
@@ -710,7 +719,7 @@ header {
 
 .benefit-cards__title {
     color: var(--purple_blue);
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -720,7 +729,7 @@ header {
 .benefit-cards__description {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .benefit-cards__info {
@@ -731,8 +740,7 @@ header {
 .benefit-cards__info_left {
     text-align: left;
 }
-
-.benefit-cards__description_right p {
+.benefit-cards__item:nth-child(even) p{
     text-align: right;
 }
 
@@ -747,6 +755,9 @@ header {
 
 
 .purchase-cards {
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -755,28 +766,27 @@ header {
 }
 
 .purchase-cards__item {
-    /*max-width: 905px;*/
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 45px;
-    white-space: pre-line;
+    /*white-space: pre-line;*/
 }
-
-.purchase-cards__item_right {
+.purchase-cards__item:nth-child(even){
+    outline: 1px solid red;
     display: flex;
     flex-direction: row-reverse;
+    text-align: right;
+    gap: 45px;
 }
 
 .purchase-cards__img {
+    flex-shrink: 0;
     position: relative;
     width: 413px;
     height: 315px;
 }
 
-.purchase-cards__item_right .purchase-cards__img[data-count]:after {
-    right: 0;
-}
 
 /*@todo доработать цифры для плиток*/
 .purchase-cards__item .purchase-cards__img[data-count]:after {
@@ -795,6 +805,9 @@ header {
     justify-content: center;
     align-items: center;
 }
+.purchase-cards__item:nth-child(even) .purchase-cards__img[data-count]:after{
+    left: calc(100% - 123px);
+}
 
 
 .purchase-cards__img img {
@@ -809,19 +822,14 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
 }
 
-.purchase-cards__item_right .purchase-cards__info p {
-    text-align: right;
-}
 
 .purchase-cards__title {
     font-weight: 500;
 }
 
 .purchase-cards__description {
-    max-width: 450px;
 }
 
 .cartridge-brands {
@@ -842,7 +850,6 @@ header {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-/*@todo родитель ссылка, а не блок, исправить*/
 .cartridge-cards-item {
     width: 199px;
     height: 173px;
@@ -850,7 +857,12 @@ header {
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
+.cartridge-cards-item a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .cartridge-cards-item img {
     display: block;
@@ -1063,6 +1075,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .prev, .next {
+    cursor: pointer;
     position: static;
     width: 60px;
     height: 68px;
@@ -1130,6 +1143,7 @@ input::placeholder, textarea::placeholder {
 
 .rating-slider__title {
     margin-top: 20px;
+    font-size: 20px;
 }
 
 .rating-slider__description {
@@ -1153,6 +1167,11 @@ input::placeholder, textarea::placeholder {
     width: 359px;
     height: 288px;
     border-radius: 10px;
+}
+.articles-cards__item a{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 .articles-cards__item img {
@@ -1193,12 +1212,10 @@ input::placeholder, textarea::placeholder {
 .articles-cards__title {
     display: flex;
     align-items: center;
-
-}
-
-.articles-cards__title a {
     color: #FFFCFC;
+    font-size: 20px;
 }
+
 
 .articles-cards__description {
     color: #FFFCFC;
@@ -2179,10 +2196,6 @@ td {
         margin-top: 40px;
     }
 
-    .footer-info__description .logo {
-        /*width: 130px;*/
-        /*height: 80px;*/
-    }
 
     .footer-contacts__mail a {
         font-size: 18px;
@@ -2336,7 +2349,6 @@ td {
         margin-top: 10px;
     }
     .logo{
-        margin-top: 10px;
     }
     .form-search{
         margin-top: 16px;
