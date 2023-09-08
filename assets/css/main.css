@@ -755,7 +755,8 @@ header {
 
 
 .purchase-cards {
-    max-width: 850px;
+    outline: 1px solid red;
+    max-width: 840px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 50px;
@@ -783,7 +784,7 @@ header {
 .purchase-cards__img {
     flex-shrink: 0;
     position: relative;
-    width: 413px;
+    width: 400px;
     height: 315px;
 }
 
@@ -793,7 +794,7 @@ header {
     position: absolute;
     left: 0;
     bottom: 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 64px;
     content: attr(data-count);
     width: 123px;
@@ -818,10 +819,10 @@ header {
 }
 
 .purchase-cards__info {
-    max-width: 440px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    flex-shrink: 2;
 }
 
 
