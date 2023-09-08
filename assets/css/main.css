@@ -228,6 +228,10 @@ button:focus, button:active {
 header {
     background-color: var(--background);
     border-bottom: 1px solid #8A97B3;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .header-wrap {
