@@ -1,498 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Catalog</title>
-  <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body background="assets/images/icons/background.svg">
 <header>
-  <div class="wrap">
-    <div class="header-wrap">
+    <div class="wrap">
+        <div class="header-wrap">
 
-      <div class="logo">
-        <img src="assets/images/icons/header-logo.svg">
-      </div>
-
-      <nav class="menu  menu-font">
-        <ul>
-          <!--					@todo поставить href="#" если нет ссылки, аттрибут href надо заполнить-->
-          <li><a href="#">Главная</a></li>
-
-          <li class="menu__item_drop-down"><p>Прайс <img src="assets/images/icons/arrow1.svg"></p>
-
-            <div class="menu__item_drop-down_block-close">
-              <ul>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                <li><a href="#">Прайс-лист БРЕНД</a></li>
-              </ul>
+            <div class="logo">
+                <img src="assets/images/icons/header-logo.svg">
             </div>
 
-          </li>
+            <nav class="menu  menu-font">
+                <ul>
+                    <!--					@todo поставить href="#" если нет ссылки, аттрибут href надо заполнить-->
+                    <li><a href="#">Главная</a></li>
 
-          <li><a href="#">Статьи</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Условия
-            приемки</a></li>
-        </ul>
-      </nav>
+                    <li class="menu__item_drop-down"><p>Прайс <img src="assets/images/icons/arrow1.svg"></p>
 
-      <form action="" class="form-search ">
-        <input type="text" class="form-search__input" placeholder="Поиск">
-        <div class="form-search__img">
-          <img alt="" src="assets/images/icons/search.svg">
-        </div>
-      </form>
+                        <div class="menu__item_drop-down_block-close">
+                            <ul>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                                <li><a href="#">Прайс-лист БРЕНД</a></li>
+                            </ul>
+                        </div>
 
-      <div class="contacts ">
-        <div class="contacts__number">
-          <div class="contacts__img">
-            <img src="assets/images/icons/phone.svg">
-          </div>
-          <a href="tel:" class="text-font">+7(953)363-50-50</a>
-        </div>
-        <div class="contacts__button">
-          <a href="#" class="menu-font">ЗАКАЗАТЬ ЗВОНОК</a>
-        </div>
-        <div class="contacts-icons">
-          <div class="contacts-icons__item">
-            <a href="#"><img src="assets/images/icons/mail.svg"></a>
-          </div>
-          <div class="contacts-icons__item">
-            <a href="#"><img src="assets/images/icons/tg.svg"></a>
-          </div>
-          <div class="contacts-icons__item">
-            <a href="#"><img src="assets/images/icons/whats.svg"></a>
-          </div>
-        </div>
-      </div>
+                    </li>
 
-      <div class="burger-btn">
-        <span></span>
-      </div>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Условия
+                        приемки</a></li>
+                </ul>
+            </nav>
+
+            <form action="" class="form-search ">
+                <input type="text" class="form-search__input" placeholder="Поиск">
+                <div class="form-search__img">
+                    <img alt="" src="assets/images/icons/search.svg">
+                </div>
+            </form>
+
+            <div class="contacts ">
+                <div class="contacts__number">
+                    <div class="contacts__img">
+                        <img src="assets/images/icons/phone.svg">
+                    </div>
+                    <a href="tel:" class="text-font">+7(953)363-50-50</a>
+                </div>
+                <div class="contacts__button">
+                    <a href="#" class="menu-font">ЗАКАЗАТЬ ЗВОНОК</a>
+                </div>
+                <div class="contacts-icons">
+                    <div class="contacts-icons__item">
+                        <a href="#"><img src="assets/images/icons/mail.svg"></a>
+                    </div>
+                    <div class="contacts-icons__item">
+                        <a href="#"><img src="assets/images/icons/tg.svg"></a>
+                    </div>
+                    <div class="contacts-icons__item">
+                        <a href="#"><img src="assets/images/icons/whats.svg"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="burger-btn">
+                <span></span>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="line">
-  </div>
+    <div class="line">
+    </div>
 </header>
 
 
-
 <div class="pages">
-  <div class="wrap">
-    <div class="pages-name">
-      <a href="#">Главная</a>
-      <span>|</span>
-      <a href="#">Прайс</a>
+    <div class="wrap">
+        <div class="pages-name">
+            <a href="#">Главная</a>
+            <span>|</span>
+            <a href="#">Прайс</a>
+        </div>
     </div>
-  </div>
 </div>
-<!--<div class="catalog-table">-->
-<!--  <div class="wrap">-->
-<!--    <div class="catalog-table-wrap">-->
-
-<!--      <table class="catalog-table__one">-->
-<!--        <thead>-->
-<!--        <tr>-->
-<!--          <th class="catalog-table__column_one">Артикул</th>-->
-<!--          <th class="catalog-table__column_two">Цена</th>-->
-<!--          <th class="catalog-table__column_three">Артикул</th>-->
-<!--          <th class="catalog-table__column_four">Цена</th>-->
-<!--        </tr>-->
-<!--        </thead>-->
-<!--        <tbody>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--          <td class="catalog-table__line_three">11515151</td>-->
-<!--          <td class="catalog-table__line_four">500 р</td>-->
-<!--        </tr>-->
-
-<!--        </tbody>-->
-<!--      </table>-->
-
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
 <div class="brand-info">
-  <div class="wrap">
-    <p class="brand-info__title heading">Brother</p>
-    <div class="brand-info-wrap">
-      <div class="brand-info__img cartridge-cards-item"><img src="assets/images/others/cartrige2.svg"></div>
-      <div class="brand-info__description text-font">Картриджи фирмы Brother - это качественные расходные материалы, разработанные специально для принтеров и многофункциональных устройств этой компании. Они предлагают высокую надёжность и отличное качество печати. Картриджи Brother обеспечивают чёткое и ровное изображение, а также имеют долгий срок службы. Они доступны в разных вариантах, включая чёрные картриджи для печати текстовых документов и цветные для печати фотографий и цветной график. Картриджи brother также изготавливаются с учётом экологических стандартов и легко поддаются переработке.</div>
+    <div class="wrap">
+        <p class="brand-info__title heading">Brother</p>
+        <div class="brand-info-wrap">
+            <div class="brand-info__img cartridge-cards-item"><img src="assets/images/others/cartrige2.svg"></div>
+            <div class="brand-info__description text-font">Картриджи фирмы Brother - это качественные расходные
+                материалы, разработанные специально для принтеров и многофункциональных устройств этой компании. Они
+                предлагают высокую надёжность и отличное качество печати. Картриджи Brother обеспечивают чёткое и ровное
+                изображение, а также имеют долгий срок службы. Они доступны в разных вариантах, включая чёрные картриджи
+                для печати текстовых документов и цветные для печати фотографий и цветной график. Картриджи brother
+                также изготавливаются с учётом экологических стандартов и легко поддаются переработке.
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <div class="catalog-search">
-  <div class="wrap">
-    <p class="catalog-search__title button-font">Быстрый поиск</p>
-    <div class="catalog-search-wrap">
-    <form action="" class="form-search">
-      <input type="text" class="form-search__input" placeholder="Поиск">
-      <div class="form-search__img">
-        <img alt="" src="assets/images/icons/search.svg">
-      </div>
-    </form>
-    <p class="catalog-search__total text-font-two ">Всего в базе: <span class="text-bold">1567 </span>картриджей</p>
+    <div class="wrap">
+
     </div>
-  </div>
 </div>
 <div class="catalog-table margin-bottom">
-  <div class="wrap">
-    <div class="catalog-table-wrap">
+    <div class="wrap">
+        <div class="catalog-table-wrap">
+            <div class="catalog-search">
+                <p class="catalog-search__title button-font">Быстрый поиск</p>
+                <div class="catalog-search-wrap">
+                    <form action="" class="form-search">
+                        <input type="text" class="form-search__input" placeholder="Поиск">
+                        <div class="form-search__img">
+                            <img alt="" src="assets/images/icons/search.svg">
+                        </div>
+                    </form>
+                    <p class="catalog-search__total text-font-two ">Всего в базе: <span class="text-bold">1567 </span>картриджей
+                    </p>
+                </div>
+            </div>
+            <table class="catalog-table__one">
+                <thead>
+                <tr>
+                    <th class="catalog-table__column_one">Артикул</th>
+                    <th class="catalog-table__column_two">Цена</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="catalog-table__line_one">11515151</td>
+                    <td class="catalog-table__line_two">500 р</td>
+                </tr>
+                <tr>
+                    <td class="catalog-table__line_one">11515151</td>
+                    <td class="catalog-table__line_two">500 р</td>
+                </tr>
+                <tr>
+                    <td class="catalog-table__line_one">11515151</td>
+                    <td class="catalog-table__line_two">500 р</td>
+                </tr>
 
-    <table class="catalog-table__one">
-      <thead>
-      <tr>
-        <th class="catalog-table__column_one">Артикул</th>
-        <th class="catalog-table__column_two">Цена</th>
-      </tr>
-      <tr>
-        <th class="catalog-table__column_three">Артикул</th>
-        <th class="catalog-table__column_four">Цена</th>
-      </tr>
-      <tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td class="catalog-table__line_three">11515151</td>
-        <td class="catalog-table__line_four">500 р</td>
-      </tr>
-      <tr>
-        <td class="catalog-table__line_three">11515151</td>
-        <td class="catalog-table__line_four">500 р</td>
-      </tr>
+                </tbody>
+            </table>
 
-      <td class="catalog-table__line_three">11515151</td>
-      <td class="catalog-table__line_four">500 р</td>
-      </tr>
-      <tr>
-        <td class="catalog-table__line_three">11515151</td>
-        <td class="catalog-table__line_four">500 р</td>
-      </tr>
-
-      </tbody>
-    </table>
-
+        </div>
     </div>
-  </div>
 </div>
 <div class="accept margin-bottom">
-  <div class="wrap">
-    <div class="accept-wrap">
-      <p class="accept-wrap-title heading">Какие картриджи</p>
+    <div class="wrap">
+        <div class="accept-wrap">
+            <p class="accept-wrap-title heading">Какие картриджи</p>
 
-      <div class="acceptance-conditions">
-        <div class="accept-approval">
-          <div class="accept-approval__title subtitle-font">Принимаем</div>
-          <div class="accept-approval__items">
-            <div class="accept-approval__img">
-              <img src="assets/images/icons/check-mark.svg">
+            <div class="acceptance-conditions">
+                <div class="accept-approval">
+                    <div class="accept-approval__title subtitle-font">Принимаем</div>
+                    <div class="accept-approval__items">
+                        <div class="accept-approval__img">
+                            <img src="assets/images/icons/check-mark.svg">
+                        </div>
+                        <p class="accept-approval__item text-font">Новые и в заводской коробке</p>
+                    </div>
+                    <div class="accept-approval__items">
+                        <div class="accept-approval__img">
+                            <img src="assets/images/icons/check-mark.svg">
+                        </div>
+                        <p class="accept-approval__item text-font">Официальные и оригинальные</p>
+                    </div>
+                    <div class="accept-approval__items">
+                        <div class="accept-approval__img">
+                            <img src="assets/images/icons/check-mark.svg">
+                        </div>
+                        <p class="accept-approval__item text-font">Картриджи до 2020 года включительно.
+                            (Старше приобретаем с уценкой)
+                        </p>
+                    </div>
+
+                </div>
+                <div class="accept-rejection">
+                    <div class="accept-rejection__title subtitle-font">Не принимаем</div>
+                    <div class="accept-rejection__items">
+                        <div class="accept-rejection__img">
+                            <img src="assets/images/icons/the-cross.svg">
+                        </div>
+                        <p class="accept-rejection__item text-font">Б/У и использованные картриджи</p>
+                    </div>
+                    <div class="accept-rejection__items">
+                        <div class="accept-rejection__img">
+                            <img src="assets/images/icons/the-cross.svg">
+                        </div>
+                        <p class="accept-rejection__item text-font">Совместимые, подделки и реплики</p>
+                    </div>
+                    <div class="accept-rejection__items">
+                        <div class="accept-rejection__img">
+                            <img src="assets/images/icons/the-cross.svg">
+                        </div>
+                        <p class="accept-rejection__item text-font">Заправленные и восстановленные</p>
+                    </div>
+                </div>
             </div>
-            <p class="accept-approval__item text-font">Новые и в заводской коробке</p>
-          </div>
-          <div class="accept-approval__items">
-            <div class="accept-approval__img">
-              <img src="assets/images/icons/check-mark.svg">
-            </div>
-            <p class="accept-approval__item text-font">Официальные и оригинальные</p>
-          </div>
-          <div class="accept-approval__items">
-            <div class="accept-approval__img">
-              <img src="assets/images/icons/check-mark.svg">
-            </div>
-            <p class="accept-approval__item text-font">Картриджи до 2020 года включительно.
-              (Старше приобретаем с уценкой)
-            </p>
-          </div>
+
+            <div class="accept-more "><a href="#" class="text-font">Подробные условия приемки и уценки</a></div>
 
         </div>
-        <div class="accept-rejection">
-          <div class="accept-rejection__title subtitle-font">Не принимаем</div>
-          <div class="accept-rejection__items">
-            <div class="accept-rejection__img">
-              <img src="assets/images/icons/the-cross.svg">
-            </div>
-            <p class="accept-rejection__item text-font">Б/У и использованные картриджи</p>
-          </div>
-          <div class="accept-rejection__items">
-            <div class="accept-rejection__img">
-              <img src="assets/images/icons/the-cross.svg">
-            </div>
-            <p class="accept-rejection__item text-font">Совместимые, подделки и реплики</p>
-          </div>
-          <div class="accept-rejection__items">
-            <div class="accept-rejection__img">
-              <img src="assets/images/icons/the-cross.svg">
-            </div>
-            <p class="accept-rejection__item text-font">Заправленные и восстановленные</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accept-more "><a href="#" class="text-font">Подробные условия приемки и уценки</a></div>
-
     </div>
-  </div>
 </div>
 <div class="application margin-bottom">
-  <div class="wrap">
-    <div class="application-wrap">
-      <form action="" class="application-form">
-        <div class="application-form__info">
-          <div class="application-form__title">Оставьте свою заявку</div>
-          <div class="application-form__description">и наш менеджер свяжется с вами в течение 10 минут</div>
-        </div>
+    <div class="wrap">
+        <div class="application-wrap">
+            <form action="" class="application-form">
+                <div class="application-form__info">
+                    <div class="application-form__title">Оставьте свою заявку</div>
+                    <div class="application-form__description">и наш менеджер свяжется с вами в течение 10 минут</div>
+                </div>
 
-        <input type="text" placeholder="Имя" class="application-form__name input-hover">
-        <input type="number" placeholder="Телефон" class="application-form__phone input-hover">
-        <input type="email" placeholder="Email" class="application-form__email input-hover">
-        <input type="text" placeholder="Регион" class="application-form__region input-hover">
-        <textarea placeholder="Ваше предложение" class="application-form__proposal input-hover"></textarea>
+                <input type="text" placeholder="Имя" class="application-form__name input-hover">
+                <input type="number" placeholder="Телефон" class="application-form__phone input-hover">
+                <input type="email" placeholder="Email" class="application-form__email input-hover">
+                <input type="text" placeholder="Регион" class="application-form__region input-hover">
+                <textarea placeholder="Ваше предложение" class="application-form__proposal input-hover"></textarea>
 
-        <div>
-          <input type="file" id="file" hidden="hidden">
-          <label for="file" class="application-form__file"><span class="application-form__proposal_left">Добавить файл</span><span
-                  class="application-form__proposal_right btn-hover">Обзор</span></label>
-          <div class="application-form__button btn-hover">
-            <input type="submit" value="Оставить заявку">
-          </div>
+                <div>
+                    <input type="file" id="file" hidden="hidden">
+                    <label for="file" class="application-form__file"><span class="application-form__proposal_left">Добавить файл</span><span
+                            class="application-form__proposal_right btn-hover">Обзор</span></label>
+                    <div class="application-form__button btn-hover">
+                        <input type="submit" value="Оставить заявку">
+                    </div>
+                </div>
+            </form>
         </div>
-      </form>
     </div>
-  </div>
 </div>
 <div class="articles margin-bottom">
-  <div class="wrap">
-    <p class="articles-title heading">Полезные статьи</p>
-    <div class="articles-cards">
-      <div class="articles-cards__item">
-        <img src="assets/images/others/purchase1.svg">
-        <div class="articles-cards__opacity"></div>
-        <div class="articles-cards__info">
-          <!--					@todo add link for title-->
-          <div class="articles-cards__title"><a href="#" class="subtitle-font">Заголовок</a></div>
-          <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
+    <div class="wrap">
+        <p class="articles-title heading">Полезные статьи</p>
+        <div class="articles-cards">
+            <div class="articles-cards__item">
+                <img src="assets/images/others/purchase1.svg">
+                <div class="articles-cards__opacity"></div>
+                <div class="articles-cards__info">
+                    <!--					@todo add link for title-->
+                    <div class="articles-cards__title"><a href="#" class="subtitle-font">Заголовок</a></div>
+                    <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
+                </div>
+            </div>
+            <div class="articles-cards__item">
+                <img src="assets/images/others/purchase1.svg">
+                <div class="articles-cards__opacity"></div>
+                <div class="articles-cards__info">
+                    <div class="articles-cards__title"><a href="#" class="subtitle-font">Заголовок</a></div>
+                    <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
+                </div>
+            </div>
+            <div class="articles-cards__item">
+                <img src="assets/images/others/purchase1.svg">
+                <div class="articles-cards__opacity"></div>
+                <div class="articles-cards__info">
+                    <div class="articles-cards__title"><a href="#" class="subtitle-font">Заголовок</a></div>
+                    <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="articles-cards__item">
-        <img src="assets/images/others/purchase1.svg">
-        <div class="articles-cards__opacity"></div>
-        <div class="articles-cards__info">
-          <div class="articles-cards__title"><a href="#" class="subtitle-font">Заголовок</a></div>
-          <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
-        </div>
-      </div>
-      <div class="articles-cards__item">
-        <img src="assets/images/others/purchase1.svg">
-        <div class="articles-cards__opacity"></div>
-        <div class="articles-cards__info">
-          <div class="articles-cards__title"><a href="#" class="subtitle-font">Заголовок</a></div>
-          <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
 
 <footer>
-  <div class="wrap">
-    <div class="footer-menu">
-      <nav>
-        <ul class="footer-navigation footer-font">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Статьи</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Прайс</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Бренды</a></li>
-          <li><a href="#">Полезные статьи</a></li>
-          <li><a href="#">Нам доверяют</a></li>
-          <li><a href="#">Формат работы</a></li>
-        </ul>
-        <div class="footer-politics">
-          <a href="#" class="politic-font">Все права защищены</a>
-          <a href="#" class="politic-font">Политика конфиденциальности </a>
+    <div class="wrap">
+        <div class="footer-menu">
+            <nav>
+                <ul class="footer-navigation footer-font">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Бренды</a></li>
+                    <li><a href="#">Полезные статьи</a></li>
+                    <li><a href="#">Нам доверяют</a></li>
+                    <li><a href="#">Формат работы</a></li>
+                </ul>
+                <div class="footer-politics">
+                    <a href="#" class="politic-font">Все права защищены</a>
+                    <a href="#" class="politic-font">Политика конфиденциальности </a>
+                </div>
+            </nav>
+            <div class="footer-line__one"></div>
+
+            <div class="footer-cartridges footer-font">
+                <div class="footer-cartridges__title footer-font-title">Представленные бренды</div>
+                <ul class="footer-cartridges__navigation ">
+                    <!--					@todo ссылки должны быть-->
+                    <li><a href="#">Brother</a></li>
+                    <li><a href="#">XEROX</a></li>
+                    <li><a href="#">Kyocera Mita</a></li>
+                    <li><a href="#">Бренд</a></li>
+                    <li><a href="#">Бренд</a></li>
+                    <li><a href="#">Бренд</a></li>
+                    <li><a href="#">Samsung</a></li>
+                    <li><a href="#">Panasonic</a></li>
+                    <li><a href="#">Бренд</a></li>
+                    <li><a href="#">Бренд</a></li>
+                    <li><a href="#">Бренд</a></li>
+                    <li><a href="#">Бренд</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-line__two"></div>
+
+            <div class="footer-info">
+                <div class="footer-info__description">
+                    <div class="logo">
+                        <img src="assets/images/icons/footer-logo.svg">
+                    </div>
+                    <div class="footer-info__title">
+                        <div class="footer-info__title_img"><img src="assets/images/icons/stark-footer.png"></div>
+                        <p> Открой новые горизонты с нами!</p></div>
+                    <div class="footer-info__address">г. Санкт-Петербург Рижский пр. д.37Т</div>
+                    <div class="footer-info__mode">Пн-Пт С 10 до 18 Сб-Вс выходной</div>
+                </div>
+                <div class="footer-contacts">
+                    <div class="contacts__number">
+                        <div class="contacts__img">
+                            <img src="assets/images/icons/phone.svg">
+                        </div>
+                        <a href="tel:" class="text-font">+7(953)363-50-50</a>
+                    </div>
+                    <div class="contacts__button">
+                        <a href="#" class="menu-font">ЗАКАЗАТЬ ЗВОНОК</a>
+                    </div>
+                    <div class="contacts-icons">
+                        <div class="contacts-icons__item">
+                            <a href="#"><img src="assets/images/icons/mail.svg"></a>
+                        </div>
+                        <div class="contacts-icons__item">
+                            <a href="#"><img src="assets/images/icons/tg.svg"></a>
+                        </div>
+                        <div class="contacts-icons__item">
+                            <a href="#"><img src="assets/images/icons/whats.svg"></a>
+                        </div>
+                    </div>
+                    <div class="footer-contacts__mail">
+                        <div class="footer-contacts__mail-img"><img src="assets/images/icons/mail-icon.png" alt="">
+                        </div>
+                        <a href="mailto:" class="text-font">info@tonerburg.ru</a>
+                    </div>
+                    <div class="footer-politics-phone">
+                        <a href="#" class="politic-font">Все права защищены</a>
+                        <a href="#" class="politic-font">Политика конфиденциальности </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </nav>
-      <div class="footer-line__one"></div>
-
-      <div class="footer-cartridges footer-font">
-        <div class="footer-cartridges__title footer-font-title">Представленные бренды</div>
-        <ul class="footer-cartridges__navigation ">
-          <!--					@todo ссылки должны быть-->
-          <li><a href="#">Brother</a></li>
-          <li><a href="#">XEROX</a></li>
-          <li><a href="#">Kyocera Mita</a></li>
-          <li><a href="#">Бренд</a></li>
-          <li><a href="#">Бренд</a></li>
-          <li><a href="#">Бренд</a></li>
-          <li><a href="#">Samsung</a></li>
-          <li><a href="#">Panasonic</a></li>
-          <li><a href="#">Бренд</a></li>
-          <li><a href="#">Бренд</a></li>
-          <li><a href="#">Бренд</a></li>
-          <li><a href="#">Бренд</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-line__two"></div>
-
-      <div class="footer-info">
-        <div class="footer-info__description">
-          <div class="logo">
-            <img src="assets/images/icons/footer-logo.svg">
-          </div>
-          <div class="footer-info__title"><div class="footer-info__title_img"> <img src="assets/images/icons/stark-footer.png"></div> <p> Открой новые горизонты с нами!</p></div>
-          <div class="footer-info__address">г. Санкт-Петербург Рижский пр. д.37Т</div>
-          <div class="footer-info__mode">Пн-Пт С 10 до 18 Сб-Вс выходной</div>
-        </div>
-        <div class="footer-contacts">
-          <div class="contacts__number">
-            <div class="contacts__img">
-              <img src="assets/images/icons/phone.svg">
-            </div>
-            <a href="tel:" class="text-font">+7(953)363-50-50</a>
-          </div>
-          <div class="contacts__button">
-            <a href="#" class="menu-font">ЗАКАЗАТЬ ЗВОНОК</a>
-          </div>
-          <div class="contacts-icons">
-            <div class="contacts-icons__item">
-              <a href="#"><img src="assets/images/icons/mail.svg"></a>
-            </div>
-            <div class="contacts-icons__item">
-              <a href="#"><img src="assets/images/icons/tg.svg"></a>
-            </div>
-            <div class="contacts-icons__item">
-              <a href="#"><img src="assets/images/icons/whats.svg"></a>
-            </div>
-          </div>
-          <div class="footer-contacts__mail">
-            <div class="footer-contacts__mail-img"><img src="assets/images/icons/mail-icon.png" alt=""></div>
-            <a href="mailto:" class="text-font">info@tonerburg.ru</a>
-          </div>
-          <div class="footer-politics-phone">
-            <a href="#" class="politic-font">Все права защищены</a>
-            <a href="#" class="politic-font">Политика конфиденциальности </a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
