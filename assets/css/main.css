@@ -342,7 +342,7 @@ header {
     display: flex;
     position: relative;
     flex-grow: 1;
-    max-width: 323px;
+    /*max-width: 323px;*/
 }
 
 .form-search__input {
@@ -1563,6 +1563,7 @@ footer {
 .brand-info-wrap .cartridge-cards-item {
     width: 231px;
     height: 192px;
+    flex-shrink: 0;
 }
 
 .brand-info {
@@ -1572,16 +1573,18 @@ footer {
 .brand-info-wrap {
     margin-top: 40px;
     display: flex;
+    gap: 30px;
     justify-content: space-between;
 }
 
 .brand-info__description {
-    max-width: 899px;
-    white-space: pre-line;
 }
 
 .catalog-search {
     padding-bottom: 50px;
+}
+.catalog-search-total{
+    margin-top: 40px;
 }
 
 
@@ -1592,20 +1595,35 @@ footer {
 .catalog-search__title {
     text-align: left;
 }
-
-.catalog-search-wrap {
+.search-catalog{
+    margin-top: 13px;
     display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+    position: relative;
+    flex-grow: 1;
 }
 
-.catalog-search-wrap .form-search {
-    margin: 0;
-}
-
-.catalog-search-wrap .form-search__input {
-    width: 656px;
+.catalog-search__input {
     height: 53px;
+    display: flex;
+    flex-grow: 1;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #8194A6;
+    background: #FFF;
+    transition: all 0.2s ease;
+}
+.catalog-search__img {
+    width: 24px;
+    height: 25px;
+    position: absolute;
+    top: 13px;
+    right: 12px;
+}
+
+.catalog-search__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 .catalog-wrap{
     display: flex;
@@ -1616,6 +1634,7 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
 
 table {
     margin: 0 auto;
@@ -1628,7 +1647,7 @@ table {
 }
 
 th {
-    height: 80px;
+    height: 75px;
 }
 
 th:not(:last-child) {
@@ -1636,19 +1655,11 @@ th:not(:last-child) {
 }
 
 .catalog-table__column_one {
-    padding: 0px 63px 0px 62px;
+    padding: 0px 64px 0px 66px;
 }
 
 .catalog-table__column_two {
-    padding: 0px 106px 0px 106px;
-}
-
-.catalog-table__column_three {
-    padding: 0px 133px 0px 132px;
-}
-
-.catalog-table__column_four {
-    padding: 0px 35px 0px 37px;
+    padding: 0px 72px 0px 76px;
 }
 
 td {
@@ -1674,11 +1685,13 @@ td {
 }
 
 .catalog-table__line_one {
-    padding: 0px 62px 0px 63px;
+    width: 100%;
 }
 
 .catalog-table__line_two {
-    padding: 0px 99px 0px 100px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
 }
 
 .btn-hover:hover {
@@ -1690,26 +1703,60 @@ td {
     border: 1px solid var(--azure, #0085FF);
 }
 .catalog-contact{
+    margin-top: 95px;
     width: 100%;
     padding: 40px;
     height: 300px;
     border-radius: 10px;
     background: var(--white_blue, #D5ECFE);
 }
+.catalog-contact_title{
+    text-align: right;
+}
 .catalog-contact .contacts-icons{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 .catalog-contact-wrap{
     margin-top: 40px;
-    height: 150px;
+    gap: 10px 50px;
     display: flex;
-    flex-direction: column;
+    align-items: flex-end;
     flex-wrap: wrap;
 }
+.catalog-contact_column-one{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .catalog-contact-wrap .contacts-icons__item{
     width: 64px;
     height: 64px;
+}
+.catalog-contact-wrap .contacts__number{
+    margin-top: 25px
+}
+.catalog-contact-wrap .contacts__button{
+    margin-top: 10px;
+}
+.catalog-contact-wrap .contacts-contacts-item{
+    margin-top: 0;
+    max-width: 200px;
+    text-align: right;
+}
+.catalog-contact-wrap .contacts-contacts-item__title{
+    justify-content: flex-end;
+}
+.catalog-contact-wrap .contacts-contacts-item__description{
+    /*margin-top: 10px;*/
+    padding: 0;
+}
+.catalog-contact_column-two{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media (max-width: 768px) {
@@ -2320,6 +2367,7 @@ td {
     .brand-info-wrap .cartridge-cards-item {
         width: 160px;
         height: 153px;
+        flex-shrink: 0;
     }
 
     .brand-info__description {
@@ -2331,12 +2379,9 @@ td {
         padding-bottom: 30px;
     }
 
-    .catalog-search-wrap {
-        display: block;
-    }
 
-    .catalog-search__total {
-        margin-top: 15px;
+    .catalog-search-total{
+        margin-top: 40px;
     }
 
     .catalog-search-wrap .form-search__input {
