@@ -1607,8 +1607,12 @@ footer {
     width: 656px;
     height: 53px;
 }
-
-.catalog-table-wrap {
+.catalog-wrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+}
+.catalog-table {
     display: flex;
     flex-direction: column;
 }
@@ -1685,7 +1689,28 @@ td {
 .input-hover:hover {
     border: 1px solid var(--azure, #0085FF);
 }
-
+.catalog-contact{
+    width: 100%;
+    padding: 40px;
+    height: 300px;
+    border-radius: 10px;
+    background: var(--white_blue, #D5ECFE);
+}
+.catalog-contact .contacts-icons{
+    display: flex;
+    flex-direction: column;
+}
+.catalog-contact-wrap{
+    margin-top: 40px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.catalog-contact-wrap .contacts-icons__item{
+    width: 64px;
+    height: 64px;
+}
 
 @media (max-width: 768px) {
     .margin-bottom {
