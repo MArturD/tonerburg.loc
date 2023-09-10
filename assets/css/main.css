@@ -791,6 +791,7 @@ header {
     display: flex;
     flex-direction: row-reverse;
     text-align: right;
+    justify-content: right;
     gap: 45px;
 }
 
@@ -826,7 +827,7 @@ header {
 
 
 .purchase-cards__img img {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -1821,11 +1822,17 @@ td {
     .heading{
         font-size: 26px;
     }
+    .button-font{
+        font-size: 20px;
+    }
+    .footer-font{
+        font-size: 18px;
+    }
 
     .wrap {
-        max-width: 728px;
+        max-width: 768px;
         margin: 0 auto;
-        /*padding: 0 20px;*/
+        padding: 0 20px;
     }
 
     .logo-none {
@@ -1985,8 +1992,9 @@ td {
         max-width: 228px;
 
     }
-
-
+    .accept-more{
+        margin-top: 13px;
+    }
     .benefit {
         margin-bottom: 80px;
     }
@@ -2012,7 +2020,7 @@ td {
     }
 
     .benefit-cards__description {
-        gap: 10px;
+        gap: 0;
     }
 
     .benefit-cards__title {
@@ -2045,6 +2053,12 @@ td {
 
     .purchase-cards {
         margin-top: 40px;
+        max-width: 728px;
+        gap: 30px;
+    }
+    .purchase-cards__item .purchase-cards__img[data-count]:after{
+        width: 110px;
+        height: 98px;
     }
 
     .purchase-cards__img {
@@ -2054,11 +2068,14 @@ td {
 
     .purchase-cards__item {
         gap: 48px;
+        justify-content: start;
     }
 
     .purchase-cards__info {
         gap: 15px;
-        width: 340px;
+    }
+    .purchase-cards__item:nth-child(even) .purchase-cards__info{
+        align-items: flex-end;
     }
 
     .purchase-cards__title {
@@ -2247,13 +2264,16 @@ td {
     }
 
     .feedback-form__description {
-        max-width: 333px;
+        max-width: 330px;
         font-size: 20px;
+        margin-top: 25px;
     }
 
     .feedback-form__input {
-        max-width: 298px;
+        margin: 0;
+        max-width: 300px;
         display: flex;
+        flex-grow: 1;
         flex-wrap: wrap;
         gap: 30px;
         flex-direction: column;
@@ -2261,13 +2281,16 @@ td {
 
     .feedback-form__name,
     .feedback-form__number {
-        width: 292px;
+        width: 100%;
         height: 60px;
     }
 
     .feedback-form__button {
-        width: 292px;
+        width: 100%;
         height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer-menu {
@@ -2300,7 +2323,7 @@ td {
     }
 
     .footer-navigation {
-        gap: 22px 55px;
+        gap: 18px 55px;
         height: 277px;
     }
 
