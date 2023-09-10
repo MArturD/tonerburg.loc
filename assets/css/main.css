@@ -1157,9 +1157,10 @@ input::placeholder, textarea::placeholder {
 .articles {
     margin-bottom: 100px;
 }
-
+.articles-title{
+    margin-bottom: 50px;
+}
 .articles-cards {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -1182,7 +1183,7 @@ input::placeholder, textarea::placeholder {
 .articles-cards__item img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 10px;
 }
 

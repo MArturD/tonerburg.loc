@@ -13,7 +13,7 @@
 <body background="assets/images/icons/background.svg">
 <header>
     <div class="wrap">
-        <div class="header-wrap">
+        <div class="header-wrap ">
 
             <div class="logo">
                 <img src="assets/images/icons/header-logo.svg">
@@ -23,7 +23,7 @@
                 <ul>
                     <!--					@todo поставить href="#" если нет ссылки, аттрибут href надо заполнить-->
                     <li><a href="#">Главная</a></li>
-
+                    <!--@todo ссылкой сделать-->
                     <li class="menu__item_drop-down"><p>Прайс <img src="assets/images/icons/arrow1.svg"></p>
 
                         <div class="menu__item_drop-down_block-close">
@@ -90,9 +90,8 @@
             </div>
         </div>
     </div>
-    <div class="line">
-    </div>
 </header>
+
 
 
 <div class="pages">
@@ -117,34 +116,34 @@
             <div class="cartridge-cards">
                 <!--				@todo поставить обрезанный png (Яна обновит в фигме, или сам сделай)-->
                 <div class="cartridge-cards-item">
-                    <a href="#"><img src="assets/images/others/cartrige1.svg"></a>
+                    <a href="#"><img src="assets/images/others/cartrige1.png"></a>
                 </div>
                 <div class="cartridge-cards-item">
-                    <a href="#"><img src="assets/images/others/cartrige2.svg"></a>
+                    <a href="#"><img src="assets/images/others/cartrige2.png"></a>
                 </div>
                 <div class="cartridge-cards-item">
-                    <a href="#"><img src="assets/images/others/cartrige3.svg"></a>
+                    <a href="#"><img src="assets/images/others/cartrige3.png"></a>
                 </div>
                 <div class="cartridge-cards-item">
-                    <a href="#"><img src="assets/images/others/cartrige4.svg"></a>
+                    <a href="#"><img src="assets/images/others/cartrige4.png"></a>
                 </div>
                 <div class="cartridge-cards-item">
-                    <a href="#"><img src="assets/images/others/cartrige5.svg"></a>
+                    <a href="#"><img src="assets/images/others/cartrige5.png"></a>
                 </div>
                 <div class="cartridge-cards-item">
-                    <a href="#"><img src="assets/images/others/cartrige6.svg"></a>
+                    <a href="#"><img src="assets/images/others/cartrige6.png"></a>
                 </div>
                 <div class="cartridge-cards-item">
-                    <a href="#"><img src="assets/images/others/cartrige7.svg"></a>
+                    <a href="#"><img src="assets/images/others/cartrige7.png"></a>
                 </div>
                 <div class="cartridge-cards-item">
-                    <a href="#"><img src="assets/images/others/cartrige8.svg"></a>
+                    <a href="#"><img src="assets/images/others/cartrige8.png"></a>
                 </div>
                 <div class="cartridge-cards-item">
-                    <a href="#"><img src="assets/images/others/cartrige9.svg"></a>
+                    <a href="#"><img src="assets/images/others/cartrige9.png"></a>
                 </div>
                 <div class="cartridge-cards-item">
-                    <a href="#"><img src="assets/images/others/cartrige10.svg"></a>
+                    <a href="#"><img src="assets/images/others/cartrige10.png"></a>
                 </div>
             </div>
         </div>
@@ -213,23 +212,30 @@
         <div class="application-wrap">
             <form action="" class="application-form">
                 <div class="application-form__info">
-                    <div class="application-form__title">Оставьте свою заявку</div>
-                    <div class="application-form__description">и наш менеджер свяжется с вами в течение 10 минут</div>
+                    <p class="application-form__title heading">Оставьте свою заявку</p>
+                    <p class="application-form__description text-font">и наш менеджер свяжется с вами в течение 10 минут</p>
+                </div>
+                <div class="application-form-left">
+
+                    <input type="text" placeholder="Имя" class="application-form__name input-hover">
+                    <input type="email" placeholder="Email" class="application-form__email input-hover">
+                    <textarea placeholder="Ваше предложение" class="application-form__proposal input-hover"></textarea>
                 </div>
 
-                <input type="text" placeholder="Имя" class="application-form__name input-hover">
-                <input type="number" placeholder="Телефон" class="application-form__phone input-hover">
-                <input type="email" placeholder="Email" class="application-form__email input-hover">
-                <input type="text" placeholder="Регион" class="application-form__region input-hover">
-                <textarea placeholder="Ваше предложение" class="application-form__proposal input-hover"></textarea>
+                <div class="application-form-right">
 
-                <div>
+                    <input type="number" placeholder="Телефон" class="application-form__phone input-hover">
+                    <input type="text" placeholder="Регион" class="application-form__region input-hover">
+
+
                     <input type="file" id="file" hidden="hidden">
                     <label for="file" class="application-form__file"><span class="application-form__proposal_left">Добавить файл</span><span
                             class="application-form__proposal_right btn-hover">Обзор</span></label>
-                    <div class="application-form__button btn-hover">
+                    <div class="application-form__button btn-hover button-font">
                         <input type="submit" value="Оставить заявку">
                     </div>
+
+
                 </div>
             </form>
         </div>
@@ -240,29 +246,34 @@
         <p class="articles-title heading">Полезные статьи</p>
         <div class="articles-cards">
             <div class="articles-cards__item">
-                <img src="assets/images/others/purchase1.svg">
-                <div class="articles-cards__opacity"></div>
-                <div class="articles-cards__info">
-                    <!--					@todo add link for title-->
-                    <div class="articles-cards__title"><a href="#" class="subtitle-font">Заголовок</a></div>
-                    <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
-                </div>
+                <a href="#">
+                    <img src="assets/images/others/purchase1.svg">
+                    <div class="articles-cards__opacity"></div>
+                    <div class="articles-cards__info">
+                        <div class="articles-cards__title subtitle-font">Заголовок</div>
+                        <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
+                    </div>
+                </a>
             </div>
             <div class="articles-cards__item">
-                <img src="assets/images/others/purchase1.svg">
-                <div class="articles-cards__opacity"></div>
-                <div class="articles-cards__info">
-                    <div class="articles-cards__title"><a href="#" class="subtitle-font">Заголовок</a></div>
-                    <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
-                </div>
+                <a href="#">
+                    <img src="assets/images/others/purchase1.svg">
+                    <div class="articles-cards__opacity"></div>
+                    <div class="articles-cards__info">
+                        <div class="articles-cards__title subtitle-font">Заголовок</div>
+                        <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
+                    </div>
+                </a>
             </div>
             <div class="articles-cards__item">
-                <img src="assets/images/others/purchase1.svg">
-                <div class="articles-cards__opacity"></div>
-                <div class="articles-cards__info">
-                    <div class="articles-cards__title"><a href="#" class="subtitle-font">Заголовок</a></div>
-                    <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
-                </div>
+                <a href="#">
+                    <img src="assets/images/others/purchase1.svg">
+                    <div class="articles-cards__opacity"></div>
+                    <div class="articles-cards__info">
+                        <div class="articles-cards__title subtitle-font">Заголовок</div>
+                        <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -293,7 +304,6 @@
             <div class="footer-cartridges footer-font">
                 <div class="footer-cartridges__title footer-font-title">Представленные бренды</div>
                 <ul class="footer-cartridges__navigation ">
-                    <!--					@todo ссылки должны быть-->
                     <li><a href="#">Brother</a></li>
                     <li><a href="#">XEROX</a></li>
                     <li><a href="#">Kyocera Mita</a></li>
@@ -316,7 +326,9 @@
                     <div class="logo">
                         <img src="assets/images/icons/footer-logo.svg">
                     </div>
-                    <div class="footer-info__title"><div class="footer-info__title_img"> <img src="assets/images/icons/stark-footer.png"></div> <p> Открой новые горизонты с нами!</p></div>
+                    <div class="footer-info__title">
+                        <div class="footer-info__title_img"><img src="assets/images/icons/stark-footer.png"></div>
+                        <p> Открой новые горизонты с нами!</p></div>
                     <div class="footer-info__address">г. Санкт-Петербург Рижский пр. д.37Т</div>
                     <div class="footer-info__mode">Пн-Пт С 10 до 18 Сб-Вс выходной</div>
                 </div>
@@ -342,7 +354,8 @@
                         </div>
                     </div>
                     <div class="footer-contacts__mail">
-                        <div class="footer-contacts__mail-img"><img src="assets/images/icons/mail-icon.png" alt=""></div>
+                        <div class="footer-contacts__mail-img"><img src="assets/images/icons/mail-icon.png" alt="">
+                        </div>
                         <a href="mailto:" class="text-font">info@tonerburg.ru</a>
                     </div>
                     <div class="footer-politics-phone">
@@ -355,6 +368,7 @@
         </div>
     </div>
 </footer>
+
 
 
 
