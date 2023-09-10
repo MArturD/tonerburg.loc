@@ -2704,8 +2704,7 @@ td {
     }
 
     .wrap {
-        max-width: 320px;
-        /*margin: 0 auto;*/
+        max-width: 360px;
     }
 
 
@@ -2800,6 +2799,9 @@ td {
     .accept-approval__title, .accept-rejection__title {
         margin-bottom: 7px;
     }
+    .accept-rejection__item{
+        text-align: left;
+    }
 
     .accept-more {
         margin-top: 25px;
@@ -2872,7 +2874,10 @@ td {
         flex-direction: column;
         gap: 15px;
     }
-
+    .purchase-cards__item:nth-child(even){
+        flex-direction: column;
+        gap: 14px;
+    }
     .purchase-cards__item .purchase-cards__img[data-count]:after {
         width: 104px;
         height: 76px;
@@ -2901,7 +2906,6 @@ td {
     }
 
     .purchase-cards__info p {
-        text-align: left;
     }
 
     .purchase-cards__item_right {
