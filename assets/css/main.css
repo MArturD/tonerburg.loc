@@ -1090,7 +1090,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .rating-slider-arrow {
-    width: 1160px;
+    width: 100%;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -1116,6 +1116,7 @@ input::placeholder, textarea::placeholder {
 
 .slider-wrap {
     width: 1000px;
+    width: calc(100% - 160px);
     margin: 0 auto;
 }
 
@@ -2302,10 +2303,13 @@ td {
         width: 100%;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;
-        gap: 290px;
+        justify-content: space-between;
+        /*gap: 290px;*/
     }
-
+    nav{
+        max-width: 240px;
+        width: 100%;
+    }
     .footer-line__one {
         height: 277px;
     }
@@ -2333,8 +2337,8 @@ td {
 
     .footer-cartridges__navigation {
         max-width: 267px;
-        height: 255px;
-        gap: 22px 50px;
+        height: 253px;
+        gap: 21px 75px;
     }
 
     .footer-politics {
@@ -2349,13 +2353,12 @@ td {
     }
 
     .footer-contacts {
-        margin-top: 40px;
+        margin: 0;
         align-items: start;
     }
 
     .footer-info__description {
         max-width: 182px;
-        margin-top: 40px;
     }
 
 
@@ -2497,6 +2500,9 @@ td {
     .catalog-search-wrap .form-search__input {
         max-width: 728px;
         width: 100%;
+    }
+    .catalog-contact{
+        display: none;
     }
 
     .form-search__input input {
