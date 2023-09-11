@@ -1068,7 +1068,7 @@ input::placeholder, textarea::placeholder {
     margin-top: 50px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    /*gap: 20px;*/
     justify-content: center;
 }
 
@@ -1077,16 +1077,24 @@ input::placeholder, textarea::placeholder {
     gap: 50px;
 }
 
-.prev, .next {
+.prev, .next{
     cursor: pointer;
     position: static;
     width: 60px;
     height: 68px;
     background: var(--light_blue);
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     padding: 15px 16px;
+}
+.prev{
+    background-image: url("../images/icons/prev.svg");
+}
+.next{
+    background-image: url("../images/icons/next.svg");
 }
 
 .rating-slider-arrow {
@@ -1240,6 +1248,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .feedback-form__input {
+    width: 100%;
     display: flex;
     margin-top: 15px;
     gap: 29px;
@@ -1252,7 +1261,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .feedback-form__name, .feedback-form__number {
-    width: 367px;
+    width: 100%;
     height: 70px;
     padding-left: 13px;
     border-radius: 10px;
@@ -1270,7 +1279,7 @@ input {
 }
 
 .feedback-form__button {
-    width: 367px;
+    width: 100%;
     height: 70px;
     border-radius: 10px;
     background: var(--light_blue);
@@ -1455,7 +1464,7 @@ footer {
 
 .article-block__img {
     margin-top: 75px;
-    width: 1160px;
+    width: 100%;
     height: 402px;
 }
 
@@ -1739,7 +1748,7 @@ td {
 
 .btn-hover:hover {
     transition: all 0.3s;
-    background: var(--light_gray_blue);
+    background-color: var(--light_gray_blue);
 }
 
 .input-hover:hover {
@@ -2207,7 +2216,7 @@ td {
         width: 318px;
     }
 
-    .prev, .next {
+    .prev, .ч {
         width: 47px;
         height: 68px;
     }
@@ -2435,7 +2444,7 @@ td {
 
     .article-block__img {
         margin-top: 40px;
-        width: 728px;
+        width: 100%;
         height: 402px;
         border-radius: 10px;
     }
@@ -2955,18 +2964,30 @@ td {
     }
 
     .slider-wrap {
-        width: 320px;
+        width: 305px;
     }
 
     .rating-slider-arrow {
         width: 320px;
-        position: absolute;
-        bottom: -95px;
-        left: 0;
+        margin-top: 20px;
+        position: inherit;
         display: flex;
         justify-content: center;
     }
-
+    .prev, .next{
+        /*width: 93px;*/
+        /*height: auto;*/
+        background: inherit ;
+    }
+    .prev {
+        background: url(../images/icons/prev-phone.svg) no-repeat center;
+    }
+    .next {
+        background: url(../images/icons/next-phone.svg) no-repeat center;
+    }
+    .prev:hover, .next:hover{
+        background-color: transparent;
+    }
     .articles-cards {
         margin-top: 30px;
         gap: 25px;

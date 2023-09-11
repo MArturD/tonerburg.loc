@@ -58,6 +58,14 @@ $('.autoplay').slick({
     slidesToScroll: 1,
     variableWidth: true,
     // centerMode: true,
+    responsive: [
+        {
+            breakpoint: 390,
+            settings: {
+                centerMode: true,
+            }
+        }
+        ]
 });
 
 // $('.autoplay').slick({
