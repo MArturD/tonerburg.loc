@@ -349,7 +349,8 @@ header {
     display: flex;
     position: relative;
     flex-grow: 1;
-    /*max-width: 323px;*/
+    max-width: 323px;
+    height: 53px;
 }
 
 .form-search__input {
@@ -2546,9 +2547,9 @@ td {
     }
 
     .burger-btn {
+        display: flex;
         height: 40px;
         width: 68px;
-        margin-top: 16px;
         position: relative;
     }
 
@@ -2716,7 +2717,9 @@ td {
         max-width: 360px;
     }
 
-
+    .header-wrap{
+        align-items: center;
+    }
     .form-search input {
         display: none;
     }
@@ -3262,7 +3265,7 @@ td {
 
     .catalog-search-wrap .form-search input {
         display: flex;
-        width: 320px;
+        max-width: 320px;
     }
 
     .catalog-search__total {
