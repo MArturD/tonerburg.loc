@@ -695,6 +695,10 @@ header {
 .accept-more {
     margin-top: 30px;
 }
+.accept-more a{
+    font-weight: 600;
+    text-decoration-line: underline;
+}
 
 
 .benefit {
@@ -2007,6 +2011,11 @@ td {
     .accept-more{
         margin-top: 13px;
     }
+    .accept-more a{
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration-line: underline;
+    }
     .benefit {
         margin-bottom: 80px;
     }
@@ -2542,8 +2551,8 @@ td {
     }
 
     .form-none .form-search__img {
-        left: 224px;
-        right: 0;
+        /*left: 224px;*/
+        /*right: 0;*/
     }
 
     .burger-btn {
@@ -2611,7 +2620,7 @@ td {
         transition: transform 0.6s ease-in-out;
         padding: 90px 20px 0 20px;
         position: fixed;
-        width: 360px;
+        width: 61%;
         background-color: #FFF;
         right: 0;
         top: 0;
@@ -2673,7 +2682,7 @@ td {
         margin: 0;
         padding: 48px 20px 10px 0;
         position: fixed;
-        width: 360px;
+        width: 61.5%;
         background-color: #FFF;
         right: 0;
         top: 260px;
@@ -2719,9 +2728,14 @@ td {
 
     .header-wrap{
         align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form-search{
+        order: 3;
     }
     .form-search input {
-        display: none;
+        display: flex;
     }
 
     .banner-wrap {
@@ -3270,6 +3284,20 @@ td {
 
     .catalog-search__total {
         text-align: left;
+    }
+    .catalog-table__column_one{
+        padding: 0 34px;
+        font-size: 20px;
+    }
+    .catalog-table__column_two {
+        padding: 0 46px;
+        font-size: 20px;
+    }
+    .catalog-table__line_one, .catalog-table__line_two {
+        font-size: 20px;
+    }
+    .accept-more a{
+        font-size: 16px;
     }
 }
 
