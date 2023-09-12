@@ -2737,6 +2737,9 @@ td {
     .form-search input {
         display: flex;
     }
+    .form-none{
+
+    }
 
     .banner-wrap {
         margin-top: 50px;
