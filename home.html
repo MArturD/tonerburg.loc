@@ -19,7 +19,7 @@
 <header>
     <div class="wrap">
         <div class="header-wrap ">
-
+<!--оставляем логотип при отображении поиска -->
             <div class="logo">
                 <img src="assets/images/icons/header-logo.svg">
             </div>
@@ -61,10 +61,14 @@
             </nav>
 
             <form action="" class="form-search ">
-                <input type="text" class="form-search__input" placeholder="Поиск">
+<!--				@todo фиксим ширину -->
+                <input name="search" type="text" class="form-search__input" placeholder="Поиск">
                 <div class="form-search__img">
                     <img alt="" src="assets/images/icons/search.svg">
                 </div>
+				<div class="form-search__result">
+					Ответ от сервера
+				</div>
             </form>
 
             <div class="contacts ">
@@ -413,7 +417,7 @@
                     <p class="application-form__description text-font">и наш менеджер свяжется с вами в течение 10 минут</p>
                 </div>
                 <div class="application-form-left">
-
+<!--@todo цвет вводимого текста-->
                     <input type="text" placeholder="Имя" class="application-form__name input-hover">
                     <input type="email" placeholder="Email" class="application-form__email input-hover">
                     <textarea placeholder="Ваше предложение" class="application-form__proposal input-hover"></textarea>

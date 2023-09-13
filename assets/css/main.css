@@ -245,6 +245,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    /*@todo высота одна*/
     padding: 40px 0 17.3px 0;
 }
 
@@ -349,7 +350,6 @@ header {
     display: flex;
     position: relative;
     flex-grow: 1;
-    max-width: 323px;
     height: 53px;
 }
 
@@ -365,12 +365,18 @@ header {
 
 }
 
+.form-search__result{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    outline: 1px solid red;
+}
+
 .menu-block {
     display: none;
 }
 
 .search-aaa {
-    max-width: 823px;
     flex-grow: 1;
 }
 
@@ -873,7 +879,7 @@ header {
 }
 
 .cartridge-cards-item {
-    padding: 0 13px;
+    padding: 13px;
     width: 199px;
     height: 173px;
     border-radius: 10px;
@@ -1832,7 +1838,16 @@ td {
     gap: 10px;
 }
 
-@media (max-width: 768px) {
+
+/*
+
+9999 - 1180
+1180 - 760 width:728px;
+760 - 360 width:calc(100% - 20px)
+
+*/
+
+@media (max-width: 1180px) {
     .margin-bottom {
         margin-bottom: 80px;
     }
@@ -1856,7 +1871,6 @@ td {
     .wrap {
         max-width: 768px;
         margin: 0 auto;
-        padding: 0 20px;
     }
 
     .logo-none {
@@ -2726,7 +2740,11 @@ td {
 
 }
 
-@media (max-width: 390px) {
+@media (max-width: 760px) {
+
+    .wrap {
+        width: calc(100% - 40px);
+    }
     .margin-bottom {
         margin-bottom: 50px;
     }
@@ -2752,9 +2770,6 @@ td {
         font-size: 16px;
     }
 
-    .wrap {
-        max-width: 360px;
-    }
 
     .header-wrap {
         align-items: center;
@@ -2762,9 +2777,9 @@ td {
         flex-wrap: wrap;
     }
 
-    .form-search {
-        order: 3;
-    }
+    /*.form-search {*/
+    /*    order: 3;*/
+    /*}*/
 
     .form-search input {
         display: flex;
