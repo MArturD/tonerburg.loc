@@ -10,7 +10,7 @@
     <div class="wrap">
         <div class="banner-wrap">
             <div class="banner-wrap-left">
-                <div class="banner-wrap-left__title ">Продайте новые и оригинальные картриджи быстро и по выгодной цене
+                <div class="banner-wrap-left__title "><?php echo get_field("test", "options") ?>Продайте новые и оригинальные картриджи быстро и по выгодной цене
                 </div>
                 <div class="banner-wrap-left__information">По фото
                     в Whatsapp или Telegram или позвонив нам на телефон</div>
