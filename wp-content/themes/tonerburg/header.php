@@ -39,37 +39,45 @@
             </div>
 
             <nav class="menu  menu-font">
-                <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li class="menu__item_drop-down"><a>Прайс <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/arrow1.svg"></a>
-
-                        <div class="menu__item_drop-down_block-close">
-                            <ul>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                                <li><a href="#">Прайс-лист БРЕНД</a></li>
-                            </ul>
-                        </div>
-
-                    </li>
-
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#conditions">Условия
-                            приемки</a></li>
-                </ul>
+<!--                <ul>-->
+<!--                    <li><a href="#">Главная</a></li>-->
+<!--                    <li class="menu__item_drop-down"><a>Прайс <img src="--><?php //bloginfo('template_url'); ?><!--/assets/images/icons/arrow1.svg"></a>-->
+<!---->
+<!--                        <div class="menu__item_drop-down_block-close">-->
+<!--                            <ul>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!---->
+<!--                    </li>-->
+<!---->
+<!--                    <li><a href="#">Статьи</a></li>-->
+<!--                    <li><a href="#">Контакты</a></li>-->
+<!--                    <li><a href="#conditions">Условия-->
+<!--                            приемки</a></li>-->
+<!--                </ul>-->
+                <?php
+                wp_nav_menu([
+                   'theme_location' => 'top',
+                    'container' => '',
+                    'menu_class' => '',
+                    'menu_id' => ''
+                ]);
+                ?>
             </nav>
 
             <form action="" class="form-search ">

@@ -127,7 +127,7 @@
 <div class="accept margin-bottom" id="conditions">
     <div class="wrap">
         <div class="accept-wrap">
-            <p class="accept-wrap-title heading">Какие картриджи</p>
+            <p class="accept-wrap-title heading">Какие dsvedfvsdfvкартриджи</p>
 
             <div class="acceptance-conditions">
                 <div class="accept-approval">

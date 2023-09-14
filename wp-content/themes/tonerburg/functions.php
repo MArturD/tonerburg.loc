@@ -14,7 +14,11 @@ add_theme_support( 'custom-logo', [
     'flex-height' => false,
     'header-text' => '',
 ] );
-
+add_action('after_setup_theme', 'add_menu');
+function add_menu(){
+    register_nav_menu('top', 'Главное меню сайта');
+    register_nav_menu('bottom', 'Нижнее меню сайта');
+}
 add_filter( 'upload_mimes', 'svg_upload_allow' );
 
 # Добавляет SVG в список разрешенных для загрузки файлов.
