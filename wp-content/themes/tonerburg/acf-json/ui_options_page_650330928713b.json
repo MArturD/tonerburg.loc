@@ -1,0 +1,22 @@
+{
+    "key": "ui_options_page_650330928713b",
+    "title": "Настройка темы",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Настройка темы",
+    "menu_slug": "theme_setting",
+    "parent_slug": "none",
+    "advanced_configuration": 0,
+    "icon_url": "",
+    "menu_title": "",
+    "position": "",
+    "redirect": 0,
+    "description": "",
+    "update_button": "Обновить",
+    "updated_message": "Настройки были обновлены",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1694709156
+}
