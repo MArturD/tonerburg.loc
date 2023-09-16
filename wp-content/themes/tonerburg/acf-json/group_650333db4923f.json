@@ -23,6 +23,28 @@
             "step": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_6504e22b081e0",
+            "label": "Артикул",
+            "name": "article",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -43,5 +65,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1694708893
+    "modified": 1694818880
 }

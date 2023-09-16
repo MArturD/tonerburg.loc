@@ -47,6 +47,9 @@ input, textarea, button, select {
     border: none;
     cursor: pointer;
 }
+input[type="file"]{
+    display: none;
+}
 
 textarea {
     resize: none
@@ -790,10 +793,10 @@ header {
     max-width: 330px;
     display: flex;
 }
-
-.benefit-cards__info_left {
+.benefit-cards__item:nth-child(odd) .benefit-cards__info{
     text-align: left;
 }
+
 
 .benefit-cards__item:nth-child(even) p {
     text-align: right;
@@ -1169,7 +1172,7 @@ input::placeholder, textarea::placeholder {
     padding: 23px 25px 25px 25px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /*gap: 20px;*/
     border-radius: 10px;
     background: #D9D9D9;
 }
@@ -1307,6 +1310,9 @@ input::placeholder, textarea::placeholder {
     margin-top: 15px;
     gap: 29px;
 }
+.feedback-form__input div{
+    width: 100%;
+}
 
 .feedback-form__description {
     font-size: 24px;
@@ -1341,7 +1347,6 @@ input {
     padding: 21px 0;
     cursor: pointer;
 }
-
 
 footer {
     background: var(--light_blue);
@@ -2178,13 +2183,13 @@ textarea {
         font-size: 18px;
     }
 
-    .benefit-cards__info_left {
+    .benefit-cards__item:nth-child(odd) .benefit-cards__info{
         max-width: 162px;
     }
-
-    .benefit-cards__info_right {
+    .benefit-cards__item:nth-child(even) .benefit-cards__info{
         max-width: 206px;
     }
+
 
     .purchase {
         margin-bottom: 80px;

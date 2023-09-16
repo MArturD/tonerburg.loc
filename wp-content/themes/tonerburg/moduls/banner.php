@@ -2,29 +2,27 @@
     <div class="wrap">
         <div class="banner-wrap">
             <div class="banner-wrap-left">
-                <div class="banner-wrap-left__title "><?php echo get_field("test", "options") ?> 1 Продайте новые и оригинальные картриджи быстро и по выгодной цене
+                <div class="banner-wrap-left__title "><?php echo get_field("title", "options") ?>
                 </div>
-                <div class="banner-wrap-left__information">По фото
-                    в Whatsapp или Telegram или позвонив нам на телефон</div>
+                <div class="banner-wrap-left__information"><?php echo get_field("title", "options") ?></div>
                 <div class="banner-wrap-left__description">
                     <div class="banner-wrap-left__img">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/printer-icon.svg">
+                        <img src="<?php echo get_field("img_small", "options") ?>">
                     </div>
                     <div class="banner-wrap-left__description-title text-font">
-                        Пришлите фото или название в чат и узнайте стоимость выкупа в <span
-                            class="banner-wrap-left_fat">течение 10 минут</span>
+                        <?php echo get_field("description", "options") ?>
                     </div>
                 </div>
                 <div class="banner-contacts">
                     <div class="contacts-icons">
                         <div class="contacts-icons__item">
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/mail.svg"></a>
+                            <a href="mailto:<?php echo get_field("mail_link", "options")?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/mail.svg"></a>
                         </div>
                         <div class="contacts-icons__item">
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/tg.svg"></a>
+                            <a href="<?php echo get_field("tg_link", "options")?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/tg.svg"></a>
                         </div>
                         <div class="contacts-icons__item">
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/whats.svg"></a>
+                            <a href="<?php echo get_field("whats_link", "options")?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/whats.svg"></a>
                         </div>
                     </div>
 
@@ -34,7 +32,7 @@
                             <div class="contacts__img">
                                 <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/phone.svg">
                             </div>
-                            <a href="tel:">+7(953)363-50-50</a>
+                            <a href="tel:<?php echo get_field("number_link", "options")?>"><?php echo get_field("number_link", "options")?></a>
                         </div>
                         </a>
                     </div>
@@ -44,7 +42,7 @@
 
             </div>
             <div class="banner-wrap-right">
-                <img src="<?php bloginfo('template_url'); ?>/assets/images/others/banner.svg">
+                <img src="<?php echo get_field("banner_img", "options") ?>">
             </div>
 
         </div>

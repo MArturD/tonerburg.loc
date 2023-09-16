@@ -1,6 +1,7 @@
 <?php
 
-
+add_filter( 'wpcf7_load_js', '__return_false' );
+add_theme_support( 'post-thumbnails' );
 add_action('wp_print_styles', 'add_styles'); // приклеем ф-ю на добавление стилей в хедер
 if (!function_exists('add_styles')) { // если ф-я уже есть в дочерней теме - нам не надо её определять
     function add_styles() { // добавление стилей

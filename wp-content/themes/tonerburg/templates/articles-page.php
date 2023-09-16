@@ -56,66 +56,9 @@
         </div>
     </div>
 </div>
-<div class="cartridge-brands margin-bottom">
-    <div class="wrap">
-        <div class="cartridge-brands-wrap">
-            <p class="cartridge-brands-wrap__title heading">Покупаем картриджи следующих брендов</p>
-            <div class="cartridge-cards">
-                <div class="cartridge-cards-item">
-                    <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/others/cartrige1.png"></a>
-                </div>
-                <div class="cartridge-cards-item">
-                    <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/others/cartrige2.png"></a>
-                </div>
-                <div class="cartridge-cards-item">
-                    <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/others/cartrige3.png"></a>
-                </div>
-                <div class="cartridge-cards-item">
-                    <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/others/cartrige4.png"></a>
-                </div>
-                <div class="cartridge-cards-item">
-                    <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/others/cartrige5.png"></a>
-                </div>
-                <div class="cartridge-cards-item">
-                    <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/others/cartrige6.png"></a>
-                </div>
-                <div class="cartridge-cards-item">
-                    <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/others/cartrige7.png"></a>
-                </div>
-                <div class="cartridge-cards-item">
-                    <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/others/cartrige8.png"></a>
-                </div>
-                <div class="cartridge-cards-item">
-                    <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/others/cartrige9.png"></a>
-                </div>
-                <div class="cartridge-cards-item">
-                    <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/others/cartrige10.png"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="feedback margin-bottom">
-    <div class="wrap">
-        <form action="" class="feedback-form">
-            <div class="feedback-form__info">
-                <div class="feedback-form__title heading">Остались вопросы?</div>
-                <div class="feedback-form__description text-font">Оставьте свои контактные данные и наш менеджер вам
-                    перезвонит в течение 10
-                    минут
-                </div>
-            </div>
-            <div class="feedback-form__input">
+<?php include get_template_directory() . "/moduls/cartridge-brands.php"; ?>
+<?php include get_template_directory() . "/moduls/feedback.php"; ?>
 
-                <input type="text" placeholder="Имя" class="feedback-form__name input-hover">
-                <input type="number" placeholder="Телефон" class="feedback-form__number input-hover">
-                <div class="feedback-form__button  btn-hover button-font">
-                    <input type="submit" value="Оставить">
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
 
 
 <?php get_footer(); ?>
