@@ -23,36 +23,39 @@
 <div class="articles margin-bottom">
     <div class="wrap">
         <div class="articles-cards">
-            <div class="articles-cards__item">
-                <a href="#">
-                    <img src="../<?php bloginfo('template_url'); ?>/assets/images/others/purchase1.svg">
-                    <div class="articles-cards__opacity"></div>
-                    <div class="articles-cards__info">
-                        <div class="articles-cards__title subtitle-font">Заголовок</div>
-                        <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
+	        <?php
+	        global $post;
+
+	        $myposts = get_posts([
+//                'numberposts' => 5,
+//                'offset'      => 1,
+		        'category'    => 'articles'
+	        ]);
+
+	        if( $myposts ){
+		        foreach( $myposts as $post ){
+			        setup_postdata( $post );
+			        ?>
+
+                    <div class="articles-cards__item">
+                        <a href="#">
+                            <img src="<?php the_post_thumbnail_url(); ?>">
+                            <div class="articles-cards__opacity"></div>
+                            <div class="articles-cards__info">
+                                <div class="articles-cards__title subtitle-font"><?php the_title(); ?></div>
+                                <div class="articles-cards__description text-font"><?php the_content(); ?></div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="articles-cards__item">
-                <a href="#">
-                    <img src="../<?php bloginfo('template_url'); ?>/assets/images/others/purchase1.svg">
-                    <div class="articles-cards__opacity"></div>
-                    <div class="articles-cards__info">
-                        <div class="articles-cards__title subtitle-font">Заголовок</div>
-                        <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
-                    </div>
-                </a>
-            </div>
-            <div class="articles-cards__item">
-                <a href="#">
-                    <img src="../<?php bloginfo('template_url'); ?>/assets/images/others/purchase1.svg">
-                    <div class="articles-cards__opacity"></div>
-                    <div class="articles-cards__info">
-                        <div class="articles-cards__title subtitle-font">Заголовок</div>
-                        <div class="articles-cards__description text-font">Текст, текст текст текст текст ...</div>
-                    </div>
-                </a>
-            </div>
+
+			        <?php
+		        }
+	        } else {
+		        // Постов не найдено
+	        }
+
+	        wp_reset_postdata(); // Сбрасываем $post
+	        ?>
         </div>
     </div>
 </div>

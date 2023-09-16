@@ -98,7 +98,7 @@
                     <a href="tel:<?php echo get_field("number_link", "options")?>" class="text-font"><?php echo get_field("number_link", "options")?></a>
                 </div>
                 <div class="contacts__button">
-                    <a href="#" class="menu-font">ЗАКАЗАТЬ ЗВОНОК</a>
+                    <a href="#" class="menu-font popmake-168" >ЗАКАЗАТЬ ЗВОНОК</a>
                 </div>
                 <div class="contacts-icons">
                     <div class="contacts-icons__item">

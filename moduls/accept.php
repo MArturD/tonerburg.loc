@@ -1,4 +1,5 @@
-<div class="accept margin-bottom" id="conditions">
+
+<div class="accept margin-bottom" id="accept">
     <div class="wrap">
         <div class="accept-wrap">
             <p class="accept-wrap-title heading"><?php echo get_field("accept_title", "options") ?></p>

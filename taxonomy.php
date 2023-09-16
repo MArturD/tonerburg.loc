@@ -31,8 +31,8 @@
 <?php
 $term = get_terms();
 //echo $term->count;
-$terms = get_terms( 'brand');
-var_dump($terms['count']);?>
+$terms = get_terms();
+var_dump($terms[3]->count);?>
                         <p class="catalog-search__title button-font">Быстрый поиск</p>
                         <p class="catalog-search-total text-font-two">Всего в базе: <span
                                     class="text-bold">1567 </span>картриджей
