@@ -29,7 +29,7 @@ if ($query->have_posts()) {
 	while ($query->have_posts()) {
 		$query->the_post();
 		?>
-		<li><?php the_title() ?></li>
+		<li><?php the_title() ?><?php echo get_field('price');?></li>
 		<?php
 	}
 } else {
