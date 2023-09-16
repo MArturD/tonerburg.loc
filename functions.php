@@ -72,7 +72,7 @@ function fix_svg_mime_type($data, $file, $filename, $mimes, $real_mime = '') {
  *
  * @return void
  */
-function get_image($name_field, $element_id = false, $default_image_in_theme = "/assets/images/others/location-img.png",) {
+function get_image($name_field, $element_id = false, $default_image_in_theme = "/assets/images/others/location-img.png") {
 	$image = get_field($name_field, $element_id);
 	if ($image) {
 		$logo = wp_get_attachment_image_url($image, 'brand-logo');
