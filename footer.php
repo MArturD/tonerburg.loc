@@ -2,17 +2,26 @@
     <div class="wrap">
         <div class="footer-menu">
             <nav>
-                <ul class="footer-navigation footer-font">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Бренды</a></li>
-                    <li><a href="#">Полезные статьи</a></li>
-                    <li><a href="#">Нам доверяют</a></li>
-                    <li><a href="#">Формат работы</a></li>
-                </ul>
+<!--                <ul class="footer-navigation footer-font">-->
+<!--                    <li><a href="#">Главная</a></li>-->
+<!--                    <li><a href="#">Статьи</a></li>-->
+<!--                    <li><a href="#">О нас</a></li>-->
+<!--                    <li><a href="#">Прайс</a></li>-->
+<!--                    <li><a href="#">Контакты</a></li>-->
+<!--                    <li><a href="#">Бренды</a></li>-->
+<!--                    <li><a href="#">Полезные статьи</a></li>-->
+<!--                    <li><a href="#">Нам доверяют</a></li>-->
+<!--                    <li><a href="#">Формат работы</a></li>-->
+<!--                </ul>-->
+	                <?php
+	                wp_nav_menu([
+		                'theme_location' => 'bottom-navigation',
+		                'container' => '',
+		                'menu_class' => 'footer-navigation footer-font',
+		                'menu_id' => ''
+	                ]);
+	                ?>
+
                 <div class="footer-politics">
                     <a href="#" class="politic-font">Все права защищены</a>
                     <a href="#" class="politic-font">Политика конфиденциальности </a>
@@ -22,20 +31,29 @@
 
             <div class="footer-cartridges footer-font">
                 <div class="footer-cartridges__title footer-font-title">Представленные бренды</div>
-                <ul class="footer-cartridges__navigation ">
-                    <li><a href="#">Brother</a></li>
-                    <li><a href="#">XEROX</a></li>
-                    <li><a href="#">Kyocera Mita</a></li>
-                    <li><a href="#">Бренд</a></li>
-                    <li><a href="#">Бренд</a></li>
-                    <li><a href="#">Бренд</a></li>
-                    <li><a href="#">Samsung</a></li>
-                    <li><a href="#">Panasonic</a></li>
-                    <li><a href="#">Бренд</a></li>
-                    <li><a href="#">Бренд</a></li>
-                    <li><a href="#">Бренд</a></li>
-                    <li><a href="#">Бренд</a></li>
-                </ul>
+<!--                <ul class="footer-cartridges__navigation">-->
+<!--                    <li><a href="#">Brother</a></li>-->
+<!--                    <li><a href="#">XEROX</a></li>-->
+<!--                    <li><a href="#">Kyocera Mita</a></li>-->
+<!--                    <li><a href="#">Бренд</a></li>-->
+<!--                    <li><a href="#">Бренд</a></li>-->
+<!--                    <li><a href="#">Бренд</a></li>-->
+<!--                    <li><a href="#">Samsung</a></li>-->
+<!--                    <li><a href="#">Panasonic</a></li>-->
+<!--                    <li><a href="#">Бренд</a></li>-->
+<!--                    <li><a href="#">Бренд</a></li>-->
+<!--                    <li><a href="#">Бренд</a></li>-->
+<!--                    <li><a href="#">Бренд</a></li>-->
+<!--                </ul>-->
+
+	            <?php
+	            wp_nav_menu([
+		            'theme_location' => 'bottom-brands',
+		            'container' => '',
+		            'menu_class' => 'footer-cartridges__navigation',
+		            'menu_id' => ''
+	            ]);
+	            ?>
             </div>
 
             <div class="footer-line__two"></div>

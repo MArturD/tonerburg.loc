@@ -18,7 +18,9 @@ add_theme_support('custom-logo', [
 add_action('after_setup_theme', 'add_menu');
 function add_menu() {
 	register_nav_menu('top', 'Главное меню сайта');
-	register_nav_menu('bottom', 'Нижнее меню сайта');
+	register_nav_menu('bottom-navigation', 'Нижнее меню сайта - Навигация');
+	register_nav_menu('bottom-brands', 'Нижнее меню сайта - Бренды');
+	register_nav_menu('bottom-politics', 'Нижнее меню сайта- Политика');
 }
 
 add_filter('upload_mimes', 'svg_upload_allow');

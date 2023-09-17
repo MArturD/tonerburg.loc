@@ -180,7 +180,7 @@ button:focus, button:active {
     line-height: normal;
 }
 
-.footer-font {
+.footer-font{
     color: var(--dark_blue);
     font-family: 'Karla', sans-serif;
     font-size: 20px;
@@ -1388,7 +1388,7 @@ footer {
     background: #8194A6;
 }
 
-.footer-navigation {
+.footer-navigation{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1421,7 +1421,7 @@ footer {
 }
 
 
-.footer-cartridges__navigation {
+.footer-cartridges__navigation{
     margin-top: 19px;
     display: flex;
     flex-direction: column;
@@ -1928,7 +1928,7 @@ textarea {
         font-size: 20px;
     }
 
-    .footer-font {
+    .footer-font{
         font-size: 18px;
     }
 
@@ -2501,7 +2501,7 @@ textarea {
         font-size: 18px;
     }
 
-    .footer-navigation {
+    .footer-navigation{
         gap: 18px 55px;
         height: 277px;
     }
@@ -2510,7 +2510,7 @@ textarea {
         width: 288px;
     }
 
-    .footer-cartridges__navigation {
+    .footer-cartridges__navigation{
         max-width: 267px;
         height: 253px;
         gap: 21px 75px;
@@ -2615,15 +2615,6 @@ textarea {
     }
 
 
-    .article-block-info__heading {
-        margin-top: 30px;
-        font-size: 20px;
-    }
-
-    .article-block-info__description {
-        margin-top: 20px;
-        font-size: 18px;
-    }
 
 
     .price-info__title {
@@ -3225,12 +3216,12 @@ textarea {
         display: none;
     }
 
-    .footer-navigation {
+    .footer-navigation{
         gap: 10px 122px;
         height: 201px;
     }
 
-    .footer-cartridges__navigation {
+    .footer-cartridges__navigation{
         gap: 11px 75px;
         height: 201px;
     }
