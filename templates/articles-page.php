@@ -43,7 +43,12 @@
                             <div class="articles-cards__opacity"></div>
                             <div class="articles-cards__info">
                                 <div class="articles-cards__title subtitle-font"><?php the_title(); ?></div>
-                                <div class="articles-cards__description text-font"><?php the_content(); ?></div>
+                                <div class="articles-cards__description text-font">
+	                                <?php
+	                                $text = get_the_content();
+	                                echo wp_trim_words( $text, 3, ' ...' );
+	                                ?>
+                                </div>
                             </div>
                         </a>
                     </div>

@@ -4,7 +4,7 @@
  */
 ?>
 
-<?php echo do_shortcode('[contact-form-7 id="593f7fb" title="Заказать звонок" html_class="feedback-form"]')?>
+<?php //echo do_shortcode('[contact-form-7 id="593f7fb" title="Заказать звонок" html_class="feedback-form"]')?>
 
 <?php //echo do_shortcode('[contact-form-7 id="593f7fb" title="Заказать звонок" html_class="feedback-form"]')?>
 
