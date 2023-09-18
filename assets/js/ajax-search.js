@@ -7,8 +7,8 @@ jQuery(function ($){
         var data = {
             s:search,
             action: 'search-ajax',
-            nonce : search.nonce
+            nonce : searchForm.nonce
         }
-        console.log(data['nonce'])
+        console.log(data)
     });
 });
