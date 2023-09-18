@@ -9,6 +9,6 @@ jQuery(function ($){
             action: 'search-ajax',
             nonce : search.nonce
         }
-        console.log(data)
+        console.log(data['nonce'])
     });
 });
