@@ -7,19 +7,17 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 	function add_styles() { // добавление стилей
 		if (is_admin()) return false; // если мы в админке - ничего не делаем
 		wp_enqueue_style('main', get_template_directory_uri() . '/assets/css/main.css');
+		wp_enqueue_script('main.js', get_template_directory_uri() . '/assets/js/main.js', array(), '20151215', true);
+		wp_enqueue_script('ajax-search', get_template_directory_uri() . '/assets/js/ajax-search.js', array(), '20151215', true);
+		wp_localize_script('ajax-search','searchForm', array(
+			'url' => admin_url('admin-ajax.php'),
+			'nonce' => wp_create_nonce('search-none')
+		));
 	}
-}
+//	wp_enqueue_script('ajax.php', get_template_directory_uri() . '/ajax.php', array(), '20151215', true);
 
-add_action('wp_enqueue_scripts', 'my_js');
-function my_js() {
-	wp_enqueue_script('main.js', get_template_directory_uri() . '/assets/js/main.js', array(), date("U"), true);
-	wp_enqueue_script('ajax.js', get_template_directory_uri() . '/assets/js/ajax-search.js', array(), date("U"), true);
-	wp_localize_script('ajax.js', 'searchForm', array(
-		'url'   => admin_url('admin-ajax.php'),
-		'nonce' => wp_create_nonce('search-none')
-	));;
 }
-
+//require get_template_directory() . '/ajax.php';
 
 add_theme_support('custom-logo', [
 	'flex-width'  => false,
@@ -96,4 +94,4 @@ function get_image($name_field, $element_id = false, $default_image_in_theme = "
 	return $logo;
 }
 
-add_image_size('brand-logo', 190, 179);
+add_image_size( 'brand-logo', 190, 179);
