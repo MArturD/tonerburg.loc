@@ -9,12 +9,12 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 		wp_enqueue_style('main', get_template_directory_uri() . '/assets/css/main.css');
 		wp_enqueue_script('main.js', get_template_directory_uri() . '/assets/js/main.js', array(), '20151215', true);
 		wp_enqueue_script('ajax-search', get_template_directory_uri() . '/assets/js/ajax-search.js', array(), '20151215', true);
-		wp_localize_script('ajax-search','searchForm', array(
-			'url' => admin_url('admin-ajax.php'),
-			'nonce' => wp_create_nonce('search-none')
+		wp_localize_script('ajax-search', 'searchForm', array(
+			'url'   => admin_url('admin-ajax.php'),
+			'nonce' => wp_create_nonce('search-none'),
 		));
 	}
-//	wp_enqueue_script('ajax.php', get_template_directory_uri() . '/ajax.php', array(), '20151215', true);
+	//	wp_enqueue_script('ajax.php', get_template_directory_uri() . '/ajax.php', array(), '20151215', true);
 
 }
 //require get_template_directory() . '/ajax.php';
@@ -94,4 +94,50 @@ function get_image($name_field, $element_id = false, $default_image_in_theme = "
 	return $logo;
 }
 
-add_image_size( 'brand-logo', 190, 179);
+add_image_size('brand-logo', 190, 179);
+
+
+add_action('wp_ajax_search-ajax', 'ii_esp_search_ajax_action_callback');
+add_action('wp_ajax_nopriv_search-ajax', 'ii_esp_search_ajax_action_callback');
+
+function ii_esp_search_ajax_action_callback() {
+	check_ajax_referer("search-none", "nonce");
+
+	$arg             = [
+		'post_type'   => 'cartridge',
+		'post_status' => 'publish',
+		's'           => sanitize_post($_POST['s'])
+	];
+	$url_page_search = add_query_arg('s', urlencode(sanitize_post($_POST['s'])), home_url());
+
+	$query_ajax       = new WP_Query($arg);
+	$json_data['out'] = ob_start();
+	if ($query_ajax->have_posts()) {
+		?>
+		<div class="ii-search-result__items">
+			<?php
+			while ($query_ajax->have_posts()) {
+				$query_ajax->the_post();
+
+				?>
+
+				<p><?php the_title(); ?> - <?php the_ID() ?></p>
+			<?php } ?>
+		</div>
+		<div class="ii-search-result__footer">
+			<a href="<?php echo $url_page_search; ?>" class="ii-search-result__all-results" target="_blank">All search results >></a>
+		</div>
+		<?php
+	} else { ?>
+		<div class="ii-search-result__no-results">
+			<p>Search results not found... Try again</p>
+		</div>
+	<?php }
+	$json_data['out'] .= ob_get_clean();
+
+
+	wp_send_json($json_data);
+
+	wp_die();
+}
+

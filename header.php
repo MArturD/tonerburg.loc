@@ -192,3 +192,6 @@
         </div>
     </div>
 </header>
+<hr>
+
+<?php the_title(); ?>
