@@ -2815,6 +2815,59 @@ textarea {
     }
 
 }
+header {
+    position: relative;
+}
+.menu-triger {
+    background: red;
+    display: block;
+    width: 25px;
+    height: 17px;
+    position: absolute;
+    right: 15px;
+    top: 28px;
+}
+.menu-close {
+    background: red;
+    display: block;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+}
+.menu-popup {
+    background: #2c2e3e;
+    display: none;
+    position: absolute;
+    right: -110%;
+    top: 100%;
+    width: 250px;
+    box-sizing: border-box;
+    padding: 30px;
+    z-index: 9999;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.menu-popup ul {
+    margin: 0;
+    padding: 0;
+}
+.menu-popup li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+.menu-popup li a {
+    font-size: 18px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.4;
+    text-decoration: none;
+}
+.body_pointer * {
+    cursor: pointer;
+}
 
 @media (max-width: 770px) {
 

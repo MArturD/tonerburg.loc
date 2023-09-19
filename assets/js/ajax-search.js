@@ -8,7 +8,18 @@ jQuery(function ($){
             s:search,
             action: 'search-ajax',
             nonce : searchForm.nonce
-        }
-        console.log(data)
+        };
+        $.ajax({
+            url: searchForm.url,
+            // url: 'http://tonerburg/wp-admin/admin-ajax.php',
+            data :data,
+            type: 'POST',
+            dataType : 'json',
+            beforeSend:function(xhr){
+            },
+            success: function (data){
+                console.log(data)
+            }
+        });
     });
 });
