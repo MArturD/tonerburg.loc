@@ -420,9 +420,27 @@ header {
 
 .form-search__result{
     position: absolute;
-    top: 80px;
+    top: 60px;
     width: 100%;
-    outline: 1px solid red;
+    border-radius: 10px;
+    border: 1px solid #8A97B3;
+    background: #FFF;
+    padding: 10px;
+}
+.ii-search-result__items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ii-search-result__items p{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8A97B3;
+    color: var(--dark_blue, #041D4D);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .menu-block {

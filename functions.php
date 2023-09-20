@@ -120,12 +120,17 @@ function ii_esp_search_ajax_action_callback() {
 				$query_ajax->the_post();
 
 				?>
-
 				<p><?php the_title(); ?> - <?php the_ID() ?></p>
-			<?php } ?>
+                <?php
+                var_dump(the_permalink());
+                ?>
+<!--                <a href="--><?php //the_permalink() ?><!--"ааа></a>-->
+			<?php
+            } ?>
 		</div>
 		<div class="ii-search-result__footer">
-			<a href="<?php echo $url_page_search; ?>" class="ii-search-result__all-results" target="_blank">All search results >></a>
+			<a href="<?php echo $url_page_search; ?>/155" class="ii-search-result__all-results" target="_blank">All search results >></a>
+            <?php var_dump($url_page_search); ?>
 		</div>
 		<?php
 	} else { ?>
