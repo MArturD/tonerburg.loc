@@ -1,6 +1,7 @@
 function searchClick() {
     $('.form-search').click(function() {
         $('.menu').addClass('menu-block');
+        $('.form-search__result').addClass('search-block');
     });
 }
 searchClick();
@@ -30,6 +31,8 @@ $(document).click(function (e) {
     }
     // клик снаружи элемента
     $(".menu").removeClass('menu-block');
+    $('.form-search__result').removeClass('search-block');
+
 });
 }
 searchClose();

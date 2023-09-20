@@ -86,9 +86,9 @@
                     <img alt="" src="<?php bloginfo('template_url'); ?>/assets/images/icons/search.svg">
                 </div>
                 <div class="form-search__result">
-                    Ответ от сервера
                 </div>
             </form>
+
 
             <div class="contacts">
                 <div class="contacts__number">
@@ -173,20 +173,20 @@
 <!--                </div>-->
 <!--            </div>-->
 
-                <div class="menua">
-                    <a class="menu-triger" href="#"></a>
-                    <div class="menu-popup">
-                        <a class="menu-close" href="#"></a>
-                        <ul>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Прайс-лист</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Гарантии</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-                </div>
+<!--                <div class="menua">-->
+<!--                    <a class="menu-triger" href="#"></a>-->
+<!--                    <div class="menu-popup">-->
+<!--                        <a class="menu-close" href="#"></a>-->
+<!--                        <ul>-->
+<!--                            <li><a href="#">О компании</a></li>-->
+<!--                            <li><a href="#">Услуги</a></li>-->
+<!--                            <li><a href="#">Прайс-лист</a></li>-->
+<!--                            <li><a href="#">Услуги</a></li>-->
+<!--                            <li><a href="#">Гарантии</a></li>-->
+<!--                            <li><a href="#">Контакты</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
 
         </div>
     </div>

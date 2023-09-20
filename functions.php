@@ -139,7 +139,7 @@ function ii_esp_search_ajax_action_callback() {
 		<?php
 	} else { ?>
 		<div class="ii-search-result__no-results">
-			<p>Search results not found... Try again</p>
+			<p>По запросу ничего не найдено</p>
 		</div>
 	<?php }
 	$json_data['out'] .= ob_get_clean();
