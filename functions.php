@@ -115,23 +115,27 @@ function ii_esp_search_ajax_action_callback() {
 	if ($query_ajax->have_posts()) {
 		?>
 		<div class="ii-search-result__items">
+
 			<?php
 			while ($query_ajax->have_posts()) {
 				$query_ajax->the_post();
 
 				?>
-				<p><?php the_title(); ?> - <?php the_ID() ?></p>
+
                 <?php
-                var_dump(the_permalink());
+				$cur_terms = get_the_terms( get_the_ID(), 'brand' );
+				if( is_array( $cur_terms ) ){
+
+						echo '<div class="search-item"><a href="'. get_term_link( $cur_terms[0]->term_id, $cur_terms[0]->taxonomy ) .'">'. get_the_title() .  '</a> <p>'. get_field('price') .'</p> </div>';
+
+				}
                 ?>
-<!--                <a href="--><?php //the_permalink() ?><!--"ааа></a>-->
+
 			<?php
             } ?>
+
 		</div>
-		<div class="ii-search-result__footer">
-			<a href="<?php echo $url_page_search; ?>/155" class="ii-search-result__all-results" target="_blank">All search results >></a>
-            <?php var_dump($url_page_search); ?>
-		</div>
+
 		<?php
 	} else { ?>
 		<div class="ii-search-result__no-results">
@@ -139,7 +143,7 @@ function ii_esp_search_ajax_action_callback() {
 		</div>
 	<?php }
 	$json_data['out'] .= ob_get_clean();
-
+	$json_data['out'] = substr($json_data['out'], 1);
 
 	wp_send_json($json_data);
 
