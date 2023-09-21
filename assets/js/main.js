@@ -13,14 +13,14 @@ searchClick();
 //     });
 // }
 // burgerClose()
-function burgerClose() {
-    $('.burger-btn').click(function() {
-        $('.burger-btn').toggleClass('active-burger');
-        $('.burger-wrap').toggleClass('burger-wrap-active');
-        $('.form-search').toggleClass('form-none');
-    });
-}
-burgerClose()
+// function burgerClose() {
+//     $('.burger-btn').click(function() {
+//         $('.burger-btn').toggleClass('active-burger');
+//         $('.burger-wrap').toggleClass('burger-wrap-active');
+//         $('.form-search').toggleClass('form-none');
+//     });
+// }
+// burgerClose()
 
 
 function searchClose(){

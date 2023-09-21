@@ -39,37 +39,6 @@
             </div>
 
             <nav class="menu  menu-font">
-<!--                <ul>-->
-<!--                    <li><a href="#">Главная</a></li>-->
-<!--                    <li class="menu__item_drop-down"><a>Прайс <img src="--><?php //bloginfo('template_url'); ?><!--/assets/images/icons/arrow1.svg"></a>-->
-<!---->
-<!--                        <div class="menu__item_drop-down_block-close">-->
-<!--                            <ul>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!---->
-<!--                    </li>-->
-<!---->
-<!--                    <li><a href="#">Статьи</a></li>-->
-<!--                    <li><a href="#">Контакты</a></li>-->
-<!--                    <li><a href="#conditions">Условия-->
-<!--                            приемки</a></li>-->
-<!--                </ul>-->
                 <?php
                 wp_nav_menu([
                    'theme_location' => 'top',
@@ -113,80 +82,50 @@
                 </div>
             </div>
 
-            <div class="burger-btn menu-triger menu-close">
-                <span></span>
-            </div>
-<!--            <div class="burger-wrap">-->
-<!--                <nav class="menu-burger  menu-font">-->
-<!--                    <ul>-->
-<!--                        <li><a href="../index.php">Главная</a></li>-->
-<!--                        <li><a href="templates/articles-page.php">Статьи</a></li>-->
-<!--                        <li><a href="templates/contact.php">Контакты</a></li>-->
-<!--                        <li><a href="#conditions">Условия-->
-<!--                                приемки</a></li>-->
-<!--                        <li class="menu__item_drop-down"><a href="templates/catalog.php">Прайс <img src="--><?php //bloginfo('template_url'); ?><!--/assets/images/icons/arrow1.svg"></a>-->
-<!---->
-<!--                            <div class="menu__item_drop-down_block-close">-->
-<!--                                <ul>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                    <li><a href="#">Прайс-лист БРЕНД</a></li>-->
-<!--                                </ul>-->
-<!--                            </div>-->
-<!---->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </nav>-->
-<!--                <div class="contacts-burger">-->
-<!--                    <div class="contacts__number">-->
-<!--                        <div class="contacts__img">-->
-<!--                            <img src="--><?php //bloginfo('template_url'); ?><!--/assets/images/icons/phone.svg">-->
-<!--                        </div>-->
-<!--                        <a href="tel:" class="text-font">+7(953)363-50-50</a>-->
-<!--                    </div>-->
-<!--                    <div class="contacts__button">-->
-<!--                        <a href="#" class="menu-font">ЗАКАЗАТЬ ЗВОНОК</a>-->
-<!--                    </div>-->
-<!--                    <div class="contacts-icons">-->
-<!--                        <div class="contacts-icons__item">-->
-<!--                            <a href="#"><img src="--><?php //bloginfo('template_url'); ?><!--/assets/images/icons/mail.svg"></a>-->
-<!--                        </div>-->
-<!--                        <div class="contacts-icons__item">-->
-<!--                            <a href="#"><img src="--><?php //bloginfo('template_url'); ?><!--/assets/images/icons/tg.svg"></a>-->
-<!--                        </div>-->
-<!--                        <div class="contacts-icons__item">-->
-<!--                            <a href="#"><img src="--><?php //bloginfo('template_url'); ?><!--/assets/images/icons/whats.svg"></a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
 
-<!--                <div class="menua">-->
-<!--                    <a class="menu-triger" href="#"></a>-->
-<!--                    <div class="menu-popup">-->
-<!--                        <a class="menu-close" href="#"></a>-->
-<!--                        <ul>-->
-<!--                            <li><a href="#">О компании</a></li>-->
-<!--                            <li><a href="#">Услуги</a></li>-->
-<!--                            <li><a href="#">Прайс-лист</a></li>-->
-<!--                            <li><a href="#">Услуги</a></li>-->
-<!--                            <li><a href="#">Гарантии</a></li>-->
-<!--                            <li><a href="#">Контакты</a></li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="burger-btn">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/open.svg" alt="">
+                </div>
+                <div class="burger-btn">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/close.svg" alt="">
+                </div>
+            <div class="burger-wrap">
+                <div class="burger-menu">
+                    <nav class="menu  menu-font">
+		                <?php
+		                wp_nav_menu([
+			                'theme_location' => 'top',
+			                'container' => '',
+			                'menu_class' => '',
+			                'menu_id' => ''
+		                ]);
+		                ?>
+                    </nav>
+                    <div class="contacts">
+                        <div class="contacts__number">
+                            <div class="contacts__img">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/phone.svg">
+                            </div>
+                            <a href="tel:<?php echo get_field("number_link", "options")?>" class="text-font"><?php echo get_field("number_link", "options")?></a>
+                        </div>
+                        <div class="contacts__button">
+                            <a href="#" class="menu-font popmake-168" >ЗАКАЗАТЬ ЗВОНОК</a>
+                        </div>
+                        <div class="contacts-icons">
+                            <div class="contacts-icons__item">
+                                <a href="mailto:<?php echo get_field("mail_link", "options")?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/mail.svg"></a>
+                            </div>
+                            <div class="contacts-icons__item">
+                                <a href="<?php echo get_field("tg_link", "options")?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/tg.svg"></a>
+                            </div>
+                            <div class="contacts-icons__item">
+                                <a href="<?php echo get_field("whats_link", "options")?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/whats.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </div>
