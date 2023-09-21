@@ -29,18 +29,33 @@
                 <div class="catalog-table-wrap">
                     <div class="catalog-search">
 <?php
-$term = get_terms();
-//echo $term->count;
-$terms = get_terms();
-var_dump($terms[3]->count);?>
+$queried_object = get_queried_object();
+$taxonomy       = $queried_object->taxonomy;
+$term_id        = $queried_object->term_id;
+// задаем нужные нам критерии выборки данных из БД
+$args = array(
+	'post_type' => 'cartridge',
+	'tax_query' => [
+		'relation' => 'AND',
+		[
+			'taxonomy' => 'brand',
+			'field'    => 'id',
+			'terms'    => array($term_id),
+		]
+	]
+);
+
+$query = new WP_Query($args);
+
+?>
                         <p class="catalog-search__title button-font">Быстрый поиск</p>
                         <p class="catalog-search-total text-font-two">Всего в базе: <span
-                                    class="text-bold">1567 </span>картриджей
+                                    class="text-bold"><?php echo $query->found_posts; ?></span>картриджей
                         </p>
                         <form action="" class="search-catalog">
                             <input type="text" class="catalog-search__input" placeholder="Поиск">
                             <div class="catalog-search__img">
-                                <img alt="" src="../<?php bloginfo('template_url'); ?>/assets/images/icons/search.svg">
+                                <img alt="" src="<?php bloginfo('template_url'); ?>/assets/images/icons/search.svg">
                             </div>
                         </form>
 
@@ -56,28 +71,11 @@ var_dump($terms[3]->count);?>
 
                         <?php
 
-                        $queried_object = get_queried_object();
-                        $taxonomy       = $queried_object->taxonomy;
-                        $term_id        = $queried_object->term_id;
-                        // задаем нужные нам критерии выборки данных из БД
-                        $args = array(
-	                        'post_type' => 'cartridge',
-	                        'tax_query' => [
-		                        'relation' => 'AND',
-		                        [
-			                        'taxonomy' => 'brand',
-			                        'field'    => 'id',
-			                        'terms'    => array($term_id),
-		                        ]
-	                        ]
-                        );
 
-                        $query = new WP_Query($args);
                         // Цикл
                         if ($query->have_posts()) {
 	                        while ($query->have_posts()) {
 		                        $query->the_post();
-//        var_dump(the_title());
 		                        ?>
                                 <tr>
                                     <td class="catalog-table__line_one"><?php echo get_field('article');?></td>
@@ -105,10 +103,10 @@ var_dump($terms[3]->count);?>
 
                         <div class="contacts-icons">
                             <div class="contacts-icons__item">
-                                <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/icons/tg.svg"></a>
+                                <a href="<?php echo get_field("tg_link", "options")?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/tg.svg"></a>
                             </div>
                             <div class="contacts-icons__item">
-                                <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/icons/whats.svg"></a>
+                                <a href="<?php echo get_field("whats_link", "options")?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/whats.svg"></a>
                             </div>
                         </div>
                         <div class="catalog-contact_column-one">
@@ -117,20 +115,20 @@ var_dump($terms[3]->count);?>
                                 <div class="contacts-contacts-item__info">
                                     <div class="contacts-contacts-item__title button-font">
                                         <div class="contacts-contacts-item__img"><img
-                                                    src="../<?php bloginfo('template_url'); ?>/assets/images/icons/mail-contact.svg"></div>
+                                                    src="<?php bloginfo('template_url'); ?>/assets/images/icons/mail-contact.svg"></div>
                                         Почта
                                     </div>
-                                    <div class="contacts-contacts-item__description text-font">info@tonerburg.ru</div>
+                                    <div class="contacts-contacts-item__description"><a href="mailto:<?php echo get_field("mail_link", "options")?>" class="text-font"><?php echo get_field("mail_link", "options")?></a></div>
                                 </div>
                             </div>
                             <div class="contacts__number">
                                 <div class="contacts__img">
-                                    <img src="../<?php bloginfo('template_url'); ?>/assets/images/icons/phone.svg">
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/phone.svg">
                                 </div>
-                                <a href="tel:" class="text-font">+7(953)363-50-50</a>
+                                <a href="tel:<?php echo get_field("number_link", "options")?>" class="text-font"><?php echo get_field("number_link", "options")?></a>
                             </div>
                             <div class="contacts__button">
-                                <a href="#" class="menu-font">ЗАКАЗАТЬ ЗВОНОК</a>
+                                <a href="#" class="menu-font popmake-168" >ЗАКАЗАТЬ ЗВОНОК</a>
                             </div>
                         </div>
 
@@ -138,7 +136,7 @@ var_dump($terms[3]->count);?>
                             <div class="contacts-contacts-item">
                                 <div class="contacts-contacts-item__info">
                                     <div class="contacts-contacts-item__title button-font">
-                                        <div class="contacts-contacts-item__img"><img src="../<?php bloginfo('template_url'); ?>/assets/images/icons/address.svg">
+                                        <div class="contacts-contacts-item__img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/address.svg">
                                         </div>
                                         Адрес
                                     </div>

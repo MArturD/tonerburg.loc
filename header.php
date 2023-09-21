@@ -81,7 +81,7 @@
             </nav>
             <form action="<?php esc_url( home_url( '/' ) ); ?>" class="form-search " method="post">
 <!--                --><?php // get_search_form() ?>
-                <input name="s" value="<?php get_search_query(); ?>" type="text" class="form-search__input" placeholder="Поиск">
+                <input name="s" value="<?php get_search_query(); ?>" type="text" class="form-search__input" placeholder="Поиск" autocomplete="off">
                 <div class="form-search__img">
                     <img alt="" src="<?php bloginfo('template_url'); ?>/assets/images/icons/search.svg">
                 </div>

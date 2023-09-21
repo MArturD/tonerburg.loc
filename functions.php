@@ -126,7 +126,7 @@ function ii_esp_search_ajax_action_callback() {
 				$cur_terms = get_the_terms( get_the_ID(), 'brand' );
 				if( is_array( $cur_terms ) ){
 
-						echo '<div class="search-item"><a href="'. get_term_link( $cur_terms[0]->term_id, $cur_terms[0]->taxonomy ) .'">'. get_the_title() .  '</a> <p>'. get_field('price') .'</p> </div>';
+						echo '<a href="'. get_term_link( $cur_terms[0]->term_id, $cur_terms[0]->taxonomy ) .'" class="search-item"><p>'. get_the_title() .  '</p> <p>'. get_field('price') .'</p> </a>';
 
 				}
                 ?>
