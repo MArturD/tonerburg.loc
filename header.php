@@ -83,13 +83,16 @@
             </div>
 
 
-                <div class="burger-btn">
+
+            <div class="burger-wrap">
+
+                <div class="burger-btn open">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/open.svg" alt="">
                 </div>
-                <div class="burger-btn">
+                <div class="burger-btn close">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/close.svg" alt="">
                 </div>
-            <div class="burger-wrap">
+
                 <div class="burger-menu">
                     <nav class="menu  menu-font">
 		                <?php

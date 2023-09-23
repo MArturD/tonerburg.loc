@@ -313,6 +313,7 @@ header {
 }
 
 .menu li:hover .sub-menu {
+    z-index: 1;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #8A97B3;
@@ -579,12 +580,22 @@ header {
     height: 100%;
 }
 .burger-wrap{
-    position: relative;
+    /*position: relative;*/
 }
 .burger-btn{
     z-index: 99;
-    width: 68px;
+
+}
+.open{
+    width: 50px;
     height: 40px;
+}
+.close{
+    width: 32px;
+    height: 32px;
+}
+.close{
+    display: none;
 }
 .burger-btn img{
     object-fit: contain;
@@ -592,13 +603,28 @@ header {
     width: 100%;
 }
 .burger-menu{
-    z-index: 1;
+    z-index: -1;
+    display: none;
+    width: 40%;
+    background: white;
+    padding: 85px 20px;
     position: absolute;
-    right: 0;
     top: 0;
+    right: -10px;
+}
+.burger-wrap .menu{
+    max-width: unset;
+    display: block;
+    width: 100%;
+}
+.burger-wrap-active .burger-menu{
     display: flex;
-    flex-direction: column;
-    background: #FFF;
+}
+.burger-wrap-active .open{
+    display: none;
+}
+.burger-wrap-active .close{
+    display: block;
 }
 .burger-menu ul{
     display: flex;
@@ -2047,6 +2073,7 @@ textarea {
 
     .header-wrap {
         position: relative;
+        align-items: center;
     }
 
     .menu {
@@ -2743,6 +2770,7 @@ textarea {
     }
 
     .header-wrap {
+        align-items: center;
         position: relative;
         padding: 10px 0 10px 0;
 
