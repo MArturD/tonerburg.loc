@@ -126,7 +126,7 @@ function ii_esp_search_ajax_action_callback() {
 				$cur_terms = get_the_terms( get_the_ID(), 'brand' );
 				if( is_array( $cur_terms ) ){
 
-						echo '<a href="'. get_term_link( $cur_terms[0]->term_id, $cur_terms[0]->taxonomy ) .'" class="search-item"><p>'. get_the_title() .  '</p> <p>'. get_field('price') .'</p> </a>';
+						echo '<a href="'. get_term_link( $cur_terms[0]->term_id, $cur_terms[0]->taxonomy ) .'" class="search-item"><p>'. get_the_title() .  '</p> <p>'. get_field('article') .'</p> </a>';
 
 				}
                 ?>
@@ -150,3 +150,55 @@ function ii_esp_search_ajax_action_callback() {
 	wp_die();
 }
 
+add_action('wp_ajax_search-catalog-ajax', 'ii_esp_search_catalog_ajax_action_callback');
+add_action('wp_ajax_nopriv_search-catalog-ajax', 'ii_esp_search_catalog_ajax_action_callback');
+
+function ii_esp_search_catalog_ajax_action_callback() {
+	check_ajax_referer("search-none", "nonce");
+
+	$arg             = [
+		'post_type'   => 'cartridge',
+		'post_status' => 'publish',
+		's'           => sanitize_post($_POST['s'])
+	];
+	$url_page_search = add_query_arg('s', urlencode(sanitize_post($_POST['s'])), home_url());
+
+	$query_ajax       = new WP_Query($arg);
+	$json_data['out'] = ob_start();
+	if ($query_ajax->have_posts()) {
+		?>
+        <div class="ii-search-catalog-result__items">
+
+			<?php
+			while ($query_ajax->have_posts()) {
+				$query_ajax->the_post();
+
+				?>
+
+				<?php
+				$cur_terms = get_the_terms( get_the_ID(), 'brand' );
+				if( is_array( $cur_terms ) ){
+
+					echo '<a href="'. get_term_link( $cur_terms[0]->term_id, $cur_terms[0]->taxonomy ) .'" class="search-item"><p>'. get_field('article') .  '</p> <p>'. get_the_ID() .'</p> </a>';
+
+				}
+				?>
+
+				<?php
+			} ?>
+
+        </div>
+
+		<?php
+	} else { ?>
+        <div class="ii-search-catalog-result__no-results">
+            <p>По запросу ничего не найдено</p>
+        </div>
+	<?php }
+	$json_data['out'] .= ob_get_clean();
+	$json_data['out'] = substr($json_data['out'], 1);
+
+	wp_send_json($json_data);
+
+	wp_die();
+}

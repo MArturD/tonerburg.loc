@@ -50,14 +50,17 @@ $query = new WP_Query($args);
 ?>
                         <p class="catalog-search__title button-font">Быстрый поиск</p>
                         <p class="catalog-search-total text-font-two">Всего в базе: <span
-                                    class="text-bold"><?php echo $query->found_posts; ?></span>картриджей
+                                    class="text-bold"><?php echo $query->found_posts; ?> картриджей</span>
                         </p>
-                        <form action="" class="search-catalog">
-                            <input type="text" class="catalog-search__input" placeholder="Поиск">
+                        <form action="<?php esc_url( home_url( '/' ) ); ?>" class="search-catalog">
+                            <input type="text" name="s" value="<?php get_search_query(); ?>" class="catalog-search__input" placeholder="Поиск">
                             <div class="catalog-search__img">
                                 <img alt="" src="<?php bloginfo('template_url'); ?>/assets/images/icons/search.svg">
                             </div>
+                            <div class="form-catalog__result">
+                            </div>
                         </form>
+
 
                     </div>
                     <table class="catalog-table__one">

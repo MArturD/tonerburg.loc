@@ -85,7 +85,9 @@
 
 
             <div class="burger-wrap">
-
+                <div class="search__img">
+                    <img alt="" src="<?php bloginfo('template_url'); ?>/assets/images/icons/search.svg">
+                </div>
                 <div class="burger-btn open">
                     <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/open.svg" alt="">
                 </div>
