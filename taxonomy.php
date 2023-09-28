@@ -66,7 +66,7 @@ $query = new WP_Query($args);
                     <table class="catalog-table__one">
                         <thead>
                         <tr>
-                            <th class="catalog-table__column_one subtitle-font">Артикул</th>
+                            <th class="catalog-table__column_one subtitle-font">Название</th>
                             <th class="catalog-table__column_two subtitle-font">Цена</th>
                         </tr>
                         </thead>
@@ -81,8 +81,8 @@ $query = new WP_Query($args);
 		                        $query->the_post();
 		                        ?>
                                 <tr>
-                                    <td class="catalog-table__line_one"><?php echo get_field('article');?></td>
-                                    <td class="catalog-table__line_two"><?php echo get_field('price');?></td>
+                                    <td class="catalog-table__line_one"><?php the_title() ?></td>
+                                    <td class="catalog-table__line_two"><?php echo get_field('price');?> ₽</td>
                                 </tr>
 		                        <?php
 	                        }

@@ -24,39 +24,39 @@
 
       <div class="contacts-contacts-item">
         <div class="contacts-contacts-item__info">
-          <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="../<?php bloginfo('template_url'); ?>/assets/images/icons/address.svg"></div>Адрес</div>
-          <div class="contacts-contacts-item__description text-font">г.Санкт-Петербург Рижский пр. д.37Т</div>
+          <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/address.svg"></div>Адрес</div>
+          <div class="contacts-contacts-item__description text-font"><?php echo get_field('adress', 'options') ?></div>
         </div>
       </div>
 
       <div class="contacts-contacts-item">
         <div class="contacts-contacts-item__info">
-          <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="../<?php bloginfo('template_url'); ?>/assets/images/icons/phone.svg"></div>Телефон</div>
-          <div class="contacts-contacts-item__description text-font">+7(953)363-50-50</div>
+          <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/phone.svg"></div>Телефон</div>
+          <div class="contacts-contacts-item__description text-font"><?php echo get_field('number_link', 'options') ?></div>
         </div>
       </div>
 
       <div class="contacts-contacts-item">
         <div class="contacts-contacts-item__info">
-          <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="../<?php bloginfo('template_url'); ?>/assets/images/icons/mail-contact.svg"></div>Почта</div>
-          <div class="contacts-contacts-item__description text-font">info@tonerburg.ru</div>
+          <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/mail-contact.svg"></div>Почта</div>
+          <div class="contacts-contacts-item__description text-font"><?php echo get_field('mail_link', 'options') ?></div>
         </div>
       </div>
 
       <div class="contacts-contacts-item">
         <div class="contacts-contacts-item__info">
-          <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="../<?php bloginfo('template_url'); ?>/assets/images/icons/time.svg"></div>Часы работы</div>
-          <div class="contacts-contacts-item__description text-font">Пн-Пт С 10 До 18 Сб-Вс выходной</div>
+          <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/time.svg"></div>Часы работы</div>
+          <div class="contacts-contacts-item__description text-font"><?php echo get_field('time_jobs', 'options') ?></div>
         </div>
       </div>
       <div class="contacts-contact-icons">
 
       <div class="contacts-icons">
         <div class="contacts-icons__item">
-          <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/icons/tg.svg"></a>
+          <a href="<?php echo get_field('tg_link', 'options') ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/tg.svg"></a>
         </div>
         <div class="contacts-icons__item">
-          <a href="#"><img src="../<?php bloginfo('template_url'); ?>/assets/images/icons/whats.svg"></a>
+          <a href="<?php echo get_field('whats_link', 'options') ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/whats.svg"></a>
         </div>
       </div>
 
@@ -71,22 +71,22 @@
     <p class="location-imt__title heading">Где мы находимся</p>
     <div class="location-img-cards">
       <div class="location-img-cards__item">
-        <img src="../<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
       </div>
       <div class="location-img-cards__item">
-        <img src="../<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
       </div>
       <div class="location-img-cards__item">
-        <img src="../<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
       </div>
       <div class="location-img-cards__item">
-        <img src="../<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
       </div>
       <div class="location-img-cards__item">
-        <img src="../<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
       </div>
       <div class="location-img-cards__item">
-        <img src="../<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
       </div>
     </div>
   </div>
@@ -94,7 +94,7 @@
 <div class="location-map margin-bottom">
   <div class="wrap">
     <div class="location-map-wrap">
-      <img src="../<?php bloginfo('template_url'); ?>/assets/images/others/location-card.png">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A182d713dca0ce66309c9c50b07b26a0f41f3eb4b62a4a5fb96fe1118a5a26b5d&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
   </div>
 </div>

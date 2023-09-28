@@ -465,10 +465,14 @@ header {
 }
 .search-catalog-block{
     display: block;
+    overflow: scroll;
+    max-height: 340px;
 }
 
 .search-block {
     display: block;
+    max-height: 344px;
+    overflow: scroll;
 }
 
 .ii-search-result__items {
@@ -493,7 +497,7 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding-right: 100px;
+    /*padding-right: 100px;*/
 }
 
 .ii-search-result__no-results {
@@ -515,9 +519,24 @@ header {
     justify-content: space-between;
     overflow: auto;
 }
+.pum-container{
+    max-width: 527px;
+}
+.pum-container.pum-responsive{
+    max-width: 527px !important;
+}
+.search-item{
+    color: var(--dark_blue);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
 .search-item:not(:last-child) {
     border-bottom: 1px solid #8A97B3;
+    justify-content: space-between;
 }
 
 .search-item:hover {
@@ -982,7 +1001,6 @@ header {
 
 
 .purchase-cards {
-    outline: 1px solid red;
     max-width: 840px;
     margin-right: auto;
     margin-left: auto;
@@ -1002,7 +1020,6 @@ header {
 }
 
 .purchase-cards__item:nth-child(even) {
-    outline: 1px solid red;
     display: flex;
     flex-direction: row-reverse;
     text-align: right;
@@ -1846,6 +1863,10 @@ footer {
 .catalog-search {
     padding-bottom: 50px;
 }
+tbody{
+    max-height: 800px;
+    overflow: scroll;
+}
 
 .catalog-search-total {
     display: flex;
@@ -1897,7 +1918,7 @@ footer {
 .catalog-wrap {
     display: flex;
     justify-content: space-between;
-    gap: 56px;
+    gap: 30px;
 }
 
 .catalog-table {
@@ -1925,11 +1946,11 @@ th:not(:last-child) {
 }
 
 .catalog-table__column_one {
-    padding: 0px 64px 0px 66px;
+    padding: 0px 64px;
 }
 
 .catalog-table__column_two {
-    padding: 0px 72px 0px 76px;
+    padding: 0px 65px;
 }
 
 td {
@@ -1994,7 +2015,7 @@ textarea {
 .catalog-contact {
     margin-top: 95px;
     width: 100%;
-    padding: 40px;
+    padding: 30px;
     height: 300px;
     border-radius: 10px;
     background: var(--white_blue, #D5ECFE);
@@ -2012,10 +2033,11 @@ textarea {
 
 .catalog-contact-wrap {
     margin-top: 40px;
-    gap: 10px 50px;
+    /*gap: 10px 50px;*/
     display: flex;
     align-items: flex-end;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
 }
 
 .catalog-contact_column-one {
@@ -2995,6 +3017,9 @@ header {
     display: block;
     margin-right: 10px;
 }
+    .search-block{
+        max-height: 290px;
+    }
 
 
     .burger-wrap{

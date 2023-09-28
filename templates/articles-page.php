@@ -38,7 +38,7 @@
 			        ?>
 
                     <div class="articles-cards__item">
-                        <a href="#">
+                        <a href="<?php get_permalink() ?>">
                             <img src="<?php the_post_thumbnail_url(); ?>">
                             <div class="articles-cards__opacity"></div>
                             <div class="articles-cards__info">
