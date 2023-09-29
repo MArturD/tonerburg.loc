@@ -80,7 +80,8 @@ $query = new WP_Query($args);
 	                        while ($query->have_posts()) {
 		                        $query->the_post();
 		                        ?>
-                                <tr>
+
+                                <tr class=".tr">
                                     <td class="catalog-table__line_one"><?php the_title() ?></td>
                                     <td class="catalog-table__line_two"><?php echo get_field('price');?> ₽</td>
                                 </tr>
@@ -131,7 +132,7 @@ $query = new WP_Query($args);
                                 <a href="tel:<?php echo get_field("number_link", "options")?>" class="text-font"><?php echo get_field("number_link", "options")?></a>
                             </div>
                             <div class="contacts__button">
-                                <a href="#" class="menu-font popmake-168" >ЗАКАЗАТЬ ЗВОНОК</a>
+                                <a href="#" class="menu-font popmake-2319" >ЗАКАЗАТЬ ЗВОНОК</a>
                             </div>
                         </div>
 

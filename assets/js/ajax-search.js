@@ -1,7 +1,7 @@
 jQuery(function ($) {
 	$('.form-search input[name="s"]').on('keyup', function () {
 		var search = $('.form-search input[name="s"]').val();
-		if (search.length < 1) {
+		if (search.length < 2) {
 			return false;
 		}
 		var data = {
@@ -30,7 +30,7 @@ jQuery(function ($) {
 jQuery(function ($) {
 	$('.search-catalog input[name="s"]').on('keyup', function () {
 		var search = $('.search-catalog input[name="s"]').val();
-		if (search.length < 1) {
+		if (search.length < 2) {
 			return false;
 		}
 		var data = {
@@ -51,6 +51,7 @@ jQuery(function ($) {
 			success: function (data) {
 				// console.log('asdfa');
 				$(".form-catalog__result").html(data.out);
+				$(".tr").html(data.out);
 			}
 		});
 	});

@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="banner-contacts__phone">
-                        <a href="#" class="banner-contacts__buttom btn-hover button-font">Позвонить нам</a>
+                        <a href="#" class="banner-contacts__buttom btn-hover button-font popmake-2319">Позвонить нам</a>
                         <div class="banner-contacts__number">
                             <div class="contacts__img">
                                 <img src="<?php bloginfo('template_url'); ?>/assets/images/icons/phone.svg">
