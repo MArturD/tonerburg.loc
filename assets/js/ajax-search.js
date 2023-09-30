@@ -17,7 +17,11 @@ jQuery(function ($) {
 			dataType: 'json',
 
 			beforeSend: function (xhr) {
-				$(".form-search__result").html('Загрузка...');
+				$(".form-search__result").html(
+					'<div class="ii-search-result__no-results">\n' +
+					'            <p>Загрузка...</p>\n' +
+					'        </div>'
+				);
 			},
 			success: function (data) {
 				// console.log('asdfa');
@@ -35,6 +39,7 @@ jQuery(function ($) {
 		}
 		var data = {
 			s: search,
+			term_id: term_id,
 			action: 'search-catalog-ajax',
 			nonce: searchForm.nonce
 		};
@@ -46,12 +51,13 @@ jQuery(function ($) {
 			dataType: 'json',
 
 			beforeSend: function (xhr) {
-				$(".form-catalog__result").html('Загрузка...');
+				$(".catalog-table__one tbody").html(`<tr>
+                                    <td colspan="2" class="catalog-table__line_one">Загрузка...</td>
+                                  
+                                </tr>`);
 			},
 			success: function (data) {
-				// console.log('asdfa');
-				$(".form-catalog__result").html(data.out);
-				$(".tr").html(data.out);
+				$(".catalog-table__one tbody").html(data.out);
 			}
 		});
 	});

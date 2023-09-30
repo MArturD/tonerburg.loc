@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <?php wp_head(); // необходимо для работы плагинов и функционала ?>
 </head>
-<body background="<?php bloginfo('template_url'); ?>/assets/images/icons/background.svg" class="body"  <?php body_class(); // все классы для body ?>>
+<body background="<?php bloginfo('template_url'); ?>/assets/images/icons/background.svg" <?php body_class(); // все классы для body ?>>
 <header>
     <div class="wrap">
         <div class="header-wrap ">

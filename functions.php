@@ -158,12 +158,20 @@ add_action( 'wp_ajax_nopriv_search-catalog-ajax', 'ii_esp_search_catalog_ajax_ac
 
 function ii_esp_search_catalog_ajax_action_callback() {
 	check_ajax_referer( "search-none", "nonce" );
-
+	$term_id = $_POST['term_id'];
 	$arg             = [
 		'posts_per_page' => - 1,
 		'post_type'      => 'cartridge',
 		'post_status'    => 'publish',
-		's'              => sanitize_post( $_POST['s'] )
+		's'              => sanitize_post( $_POST['s'] ),
+		'tax_query' => [
+			'relation' => 'AND',
+			[
+				'taxonomy' => 'brand',
+				'field'    => 'id',
+				'terms'    => array($term_id),
+			]
+		]
 	];
 	$url_page_search = add_query_arg( 's', urlencode( sanitize_post( $_POST['s'] ) ), home_url() );
 
@@ -183,9 +191,10 @@ function ii_esp_search_catalog_ajax_action_callback() {
 				$cur_terms = get_the_terms( get_the_ID(), 'brand' );
 				if ( is_array( $cur_terms ) ) {
 
-					echo '<a href="' . get_term_link( $cur_terms[0]->term_id, $cur_terms[0]->taxonomy ) . '" class="search-item"><p>' . get_the_title() . '</p>  <p>' . get_field( 'price' ) . ' ₽</p> </a>';
-//					echo '<td class="catalog-table__line_one">' . get_the_title() . '</td>';
-//					echo '<td class="catalog-table__line_two">' . get_field( 'price' ) . ' ₽</td>';
+					echo '<tr class="tr">
+                                    <td class="catalog-table__line_one">'. get_the_title(). '</td>
+                                    <td class="catalog-table__line_two">' . get_field( 'price' ). ' ₽</td>
+                                </tr>';
 				}
 				?>
 
@@ -195,11 +204,12 @@ function ii_esp_search_catalog_ajax_action_callback() {
         </div>
 
 		<?php
-	} else { ?>
-        <div class="ii-search-catalog-result__no-results">
-            <p>По запросу ничего не найдено</p>
-        </div>
-	<?php }
+	} else {
+
+		echo '<tr class="tr">
+				<td colspan="2" class="catalog-table__line_one">По запросу ни чего не найдено</td>
+			</tr>';
+	}
 	$json_data['out'] .= ob_get_clean();
 	$json_data['out'] = substr( $json_data['out'], 1 );
 

@@ -6,10 +6,6 @@ function searchClick() {
 }
 searchClick();
 
-$('.search-catalog').on('click', function (){
-    $('.form-catalog__result').toggleClass('search-catalog-block');
-})
-
 $('.burger-btn').on('click', function () {
 
     $('.burger-menu').slideToggle(function (){
