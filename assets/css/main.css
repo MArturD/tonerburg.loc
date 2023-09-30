@@ -19,12 +19,21 @@
 	font-family: 'Montserrat';
 }
 
+body {
+	font-family: 'Karla', Arial, sans-serif;
+}
+
+.popup-container{
+background: white;
+	outline: 1px solid red;
+}
+
 .wpcf7-spinner {
-	position: absolute;
+	/*position: absolute;*/
 }
 
 .form-container {
-	max-width: 447px;
+	/*max-width: 447px;*/
 	padding: 40px;
 	border-radius: 10px;
 	background: var(--white_blue, #D5ECFE);
@@ -67,8 +76,16 @@ a:hover {
 	text-decoration: none;
 }
 
-input, textarea, button, select {
-	font-family: inherit;
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+input,
+textarea,
+button,
+select {
+	font-family: 'Montserrat', sans-serif;
 	font-size: inherit;
 	cursor: pointer;
 	color: inherit;
