@@ -9,6 +9,7 @@ if ( ! function_exists( 'add_styles' ) ) { // если ф-я уже есть в 
 			return false;
 		} // если мы в админке - ничего не делаем
 		wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css', array(), date( 'U' ) );
+		wp_enqueue_style( 'media', get_template_directory_uri() . '/assets/css/media.css', array(), date( 'U' ) );
 		wp_enqueue_script( 'main.js', get_template_directory_uri() . '/assets/js/main.js', array(), '20151215', true );
 		wp_enqueue_script( 'ajax-search', get_template_directory_uri() . '/assets/js/ajax-search.js', array(), '20151215', true );
 		wp_localize_script( 'ajax-search', 'searchForm', array(

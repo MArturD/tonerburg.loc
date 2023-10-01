@@ -2,7 +2,8 @@
     <div class="wrap">
         <div class="application-wrap">
 
-            <?php echo do_shortcode( '[contact-form-7 id="c92b537" title="Форма Заявки " html_class="application-form"]' ); ?>
+<!--            --><?php //echo do_shortcode( '[contact-form-7 id="c92b537" title="Форма Заявки " html_class="application-form"]' ); ?>
+	        <?php echo do_shortcode('[contact-form-7 id="eeb5f65" title="text2" html_class="application-form"]')?>
 
 <!--            <form action="" class="application-form">-->
 <!---->

@@ -1,47 +1,47 @@
-<div class="test_form wrap">
-	<div class="popup-container">
-		<div class="wpcf7 js" id="wpcf7-f2333-o1" lang="ru-RU" dir="ltr">
-			<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-			<form action="/#wpcf7-f2333-o1" method="post" class="wpcf7-form init" aria-label="Контактная форма" novalidate="novalidate" data-status="init">
-				<div style="display: none;">
-					<input type="hidden" name="_wpcf7" value="2333">
-					<input type="hidden" name="_wpcf7_version" value="5.8">
-					<input type="hidden" name="_wpcf7_locale" value="ru_RU">
-					<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f2333-o1">
-					<input type="hidden" name="_wpcf7_container_post" value="0">
-					<input type="hidden" name="_wpcf7_posted_data_hash" value="">
-				</div>
-				<p class="form__input"><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="name" aria-required="true" aria-invalid="false" placeholder="Имя" value="" type="text" name="your-name"></span>
-				</p>
-				<p class="form__input"><span class="wpcf7-form-control-wrap" data-name="tel-382"><input size="40" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="телефон" value="" type="tel" name="tel-382"></span>
-				</p>
-				<p class="form__input form__input_submit"><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Отправить"><span class="wpcf7-spinner"></span>
-				</p><input type="hidden" class="wpcf7-pum" value="{&quot;closepopup&quot;:false,&quot;closedelay&quot;:0,&quot;openpopup&quot;:false,&quot;openpopup_id&quot;:0}"><div class="wpcf7-response-output" aria-hidden="true"></div>
-				<input type="hidden" name="pum_form_popup_id" value="2319"></form>
-		</div>
-	</div>
-	<div class="popup-container">
-		<div class="wpcf7 js" id="wpcf7-f2333-o1" lang="ru-RU" dir="ltr">
-			<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true">Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.</p> <ul><li id="wpcf7-f2333-o1-ve-your-name">Важно заполнить это поле.</li><li id="wpcf7-f2333-o1-ve-tel-382">Важно заполнить это поле.</li></ul></div>
-			<form action="/#wpcf7-f2333-o1" method="post" class="wpcf7-form invalid" aria-label="Контактная форма" novalidate="novalidate" data-status="invalid">
-				<div style="display: none;">
-					<input type="hidden" name="_wpcf7" value="2333">
-					<input type="hidden" name="_wpcf7_version" value="5.8">
-					<input type="hidden" name="_wpcf7_locale" value="ru_RU">
-					<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f2333-o1">
-					<input type="hidden" name="_wpcf7_container_post" value="0">
-					<input type="hidden" name="_wpcf7_posted_data_hash" value="">
-				</div>
-				<p class="form__input"><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required wpcf7-not-valid" autocomplete="name" aria-required="true" aria-invalid="true" placeholder="Имя" value="" type="text" name="your-name" aria-describedby="wpcf7-f2333-o1-ve-your-name"><span class="wpcf7-not-valid-tip" aria-hidden="true">Важно заполнить это поле.</span></span>
-				</p>
-				<p class="form__input"><span class="wpcf7-form-control-wrap" data-name="tel-382"><input size="40" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel wpcf7-not-valid" aria-required="true" aria-invalid="true" placeholder="телефон" value="" type="tel" name="tel-382" aria-describedby="wpcf7-f2333-o1-ve-tel-382"><span class="wpcf7-not-valid-tip" aria-hidden="true">Важно заполнить это поле.</span></span>
-				</p>
-				<p class="form__input form__input_submit"><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Отправить"><span class="wpcf7-spinner"></span>
-				</p><input type="hidden" class="wpcf7-pum" value="{&quot;closepopup&quot;:false,&quot;closedelay&quot;:0,&quot;openpopup&quot;:false,&quot;openpopup_id&quot;:0}"><div class="wpcf7-response-output" aria-hidden="true">Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.</div>
-				<input type="hidden" name="pum_form_popup_id" value="2319"></form>
-		</div>
-	</div>
-</div>
+<!--<div class="test_form wrap">-->
+<!--	<div class="popup-container">-->
+<!--		<div class="wpcf7 js" id="wpcf7-f2333-o1" lang="ru-RU" dir="ltr">-->
+<!--			<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>-->
+<!--			<form action="/#wpcf7-f2333-o1" method="post" class="wpcf7-form init" aria-label="Контактная форма" novalidate="novalidate" data-status="init">-->
+<!--				<div style="display: none;">-->
+<!--					<input type="hidden" name="_wpcf7" value="2333">-->
+<!--					<input type="hidden" name="_wpcf7_version" value="5.8">-->
+<!--					<input type="hidden" name="_wpcf7_locale" value="ru_RU">-->
+<!--					<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f2333-o1">-->
+<!--					<input type="hidden" name="_wpcf7_container_post" value="0">-->
+<!--					<input type="hidden" name="_wpcf7_posted_data_hash" value="">-->
+<!--				</div>-->
+<!--				<p class="form__input"><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="name" aria-required="true" aria-invalid="false" placeholder="Имя" value="" type="text" name="your-name"></span>-->
+<!--				</p>-->
+<!--				<p class="form__input"><span class="wpcf7-form-control-wrap" data-name="tel-382"><input size="40" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="телефон" value="" type="tel" name="tel-382"></span>-->
+<!--				</p>-->
+<!--				<p class="form__input form__input_submit"><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Отправить"><span class="wpcf7-spinner"></span>-->
+<!--				</p><input type="hidden" class="wpcf7-pum" value="{&quot;closepopup&quot;:false,&quot;closedelay&quot;:0,&quot;openpopup&quot;:false,&quot;openpopup_id&quot;:0}"><div class="wpcf7-response-output" aria-hidden="true"></div>-->
+<!--				<input type="hidden" name="pum_form_popup_id" value="2319"></form>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div class="popup-container">-->
+<!--		<div class="wpcf7 js" id="wpcf7-f2333-o1" lang="ru-RU" dir="ltr">-->
+<!--			<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true">Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.</p> <ul><li id="wpcf7-f2333-o1-ve-your-name">Важно заполнить это поле.</li><li id="wpcf7-f2333-o1-ve-tel-382">Важно заполнить это поле.</li></ul></div>-->
+<!--			<form action="/#wpcf7-f2333-o1" method="post" class="wpcf7-form invalid" aria-label="Контактная форма" novalidate="novalidate" data-status="invalid">-->
+<!--				<div style="display: none;">-->
+<!--					<input type="hidden" name="_wpcf7" value="2333">-->
+<!--					<input type="hidden" name="_wpcf7_version" value="5.8">-->
+<!--					<input type="hidden" name="_wpcf7_locale" value="ru_RU">-->
+<!--					<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f2333-o1">-->
+<!--					<input type="hidden" name="_wpcf7_container_post" value="0">-->
+<!--					<input type="hidden" name="_wpcf7_posted_data_hash" value="">-->
+<!--				</div>-->
+<!--				<p class="form__input"><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required wpcf7-not-valid" autocomplete="name" aria-required="true" aria-invalid="true" placeholder="Имя" value="" type="text" name="your-name" aria-describedby="wpcf7-f2333-o1-ve-your-name"><span class="wpcf7-not-valid-tip" aria-hidden="true">Важно заполнить это поле.</span></span>-->
+<!--				</p>-->
+<!--				<p class="form__input"><span class="wpcf7-form-control-wrap" data-name="tel-382"><input size="40" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel wpcf7-not-valid" aria-required="true" aria-invalid="true" placeholder="телефон" value="" type="tel" name="tel-382" aria-describedby="wpcf7-f2333-o1-ve-tel-382"><span class="wpcf7-not-valid-tip" aria-hidden="true">Важно заполнить это поле.</span></span>-->
+<!--				</p>-->
+<!--				<p class="form__input form__input_submit"><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Отправить"><span class="wpcf7-spinner"></span>-->
+<!--				</p><input type="hidden" class="wpcf7-pum" value="{&quot;closepopup&quot;:false,&quot;closedelay&quot;:0,&quot;openpopup&quot;:false,&quot;openpopup_id&quot;:0}"><div class="wpcf7-response-output" aria-hidden="true">Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.</div>-->
+<!--				<input type="hidden" name="pum_form_popup_id" value="2319"></form>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
 <footer>
     <div class="wrap">
         <div class="footer-menu">

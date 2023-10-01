@@ -6,7 +6,7 @@
 
 <?php //echo do_shortcode('[contact-form-7 id="593f7fb" title="Заказать звонок" html_class="feedback-form"]')?>
 
-<?php //echo do_shortcode('[contact-form-7 id="593f7fb" title="Заказать звонок" html_class="feedback-form"]')?>
+<?php //echo do_shortcode('[contact-form-7 id="eeb5f65" title="text2"]')?>
 
 <?php include get_template_directory() . "/moduls/banner.php"; ?>
 <?php include get_template_directory() . "/moduls/advantages.php"; ?>
