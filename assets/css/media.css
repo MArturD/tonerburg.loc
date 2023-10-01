@@ -792,7 +792,7 @@ header {
 	}
 
 	.catalog-contact {
-		display: none;
+		/*display: none;*/
 	}
 
 	.form-search__input input {

@@ -10,7 +10,7 @@
     <div class="pages-name">
       <a href="#">Главная</a>
       <span>|</span>
-      <a href="#">Прайс</a>
+      <a href="#">Контакты</a>
     </div>
   </div>
 </div>
@@ -32,14 +32,18 @@
       <div class="contacts-contacts-item">
         <div class="contacts-contacts-item__info">
           <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/phone.svg"></div>Телефон</div>
-          <div class="contacts-contacts-item__description text-font"><?php echo get_field('number_link', 'options') ?></div>
+          <div class="contacts-contacts-item__description text-font">
+              <a href="tel:<?php echo get_field("number_link", "options")?>" class="text-font"><?php echo get_field("number_link", "options")?></a>
+          </div>
         </div>
       </div>
 
       <div class="contacts-contacts-item">
         <div class="contacts-contacts-item__info">
           <div class="contacts-contacts-item__title subtitle-font"><div class="contacts-contacts-item__img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/mail-contact.svg"></div>Почта</div>
-          <div class="contacts-contacts-item__description text-font"><?php echo get_field('mail_link', 'options') ?></div>
+          <div class="contacts-contacts-item__description text-font">
+              <a href="mailto:<?php echo get_field("mail_link", "options")?>" class="text-font"><?php echo get_field("mail_link", "options")?></a>
+          </div>
         </div>
       </div>
 
@@ -70,24 +74,34 @@
   <div class="wrap">
     <p class="location-imt__title heading">Где мы находимся</p>
     <div class="location-img-cards">
-      <div class="location-img-cards__item">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
-      </div>
-      <div class="location-img-cards__item">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
-      </div>
-      <div class="location-img-cards__item">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
-      </div>
-      <div class="location-img-cards__item">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
-      </div>
-      <div class="location-img-cards__item">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
-      </div>
-      <div class="location-img-cards__item">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/others/location-img.png">
-      </div>
+	    <?php if( have_rows('contacts-img', 'options') ): ?>
+			    <?php while( have_rows('contacts-img', 'options') ): the_row();
+				    // переменные
+				    $image = get_sub_field('img');
+				    ?>
+                              <div class="location-img-cards__item">
+	                              <?php if( $image ): ?>
+                                <img src="<?php echo $image; ?>">
+	                              <?php endif; ?>
+                              </div>
+			    <?php endwhile; ?>
+	    <?php endif; ?>
+<!--      <div class="location-img-cards__item">-->
+<!--        <img src="--><?php //bloginfo('template_url'); ?><!--/assets/images/others/location-img.png">-->
+<!--      </div>-->
+<!--      <div class="location-img-cards__item">-->
+<!--        <img src="--><?php //bloginfo('template_url'); ?><!--/assets/images/others/location-img.png">-->
+<!--      </div>-->
+<!--      <div class="location-img-cards__item">-->
+<!--        <img src="--><?php //bloginfo('template_url'); ?><!--/assets/images/others/location-img.png">-->
+<!--      </div>-->
+<!--      <div class="location-img-cards__item">-->
+<!--        <img src="--><?php //bloginfo('template_url'); ?><!--/assets/images/others/location-img.png">-->
+<!--      </div>-->
+<!--      <div class="location-img-cards__item">-->
+<!--        <img src="--><?php //bloginfo('template_url'); ?><!--/assets/images/others/location-img.png">-->
+<!--      </div>-->
+
     </div>
   </div>
 </div>

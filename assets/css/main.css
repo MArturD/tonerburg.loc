@@ -534,10 +534,19 @@ header {
 }
 
 .search-item {
+    width: 100%;
     display: flex;
     overflow: auto;
     justify-content: space-between;
     padding: 10px;
+}
+.search-item p:first-child{
+    width: 65%;
+}
+.search-item p:last-child{
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .pum-container {
@@ -1561,6 +1570,8 @@ input::placeholder, textarea::placeholder {
 }
 
 .feedback-form input {
+    display: block;
+    width: 100%;
 	max-width: 370px;
 	padding-left: 15px;
     height: 70px;
@@ -1796,6 +1807,9 @@ footer {
     display: flex;
     margin: 100px 0px 50px 0px;
 }
+.pages-name span{
+    height: 100%;
+}
 
 .pages-name a {
     font-family: Montserrat;
@@ -1938,7 +1952,7 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 
@@ -2931,9 +2945,11 @@ textarea {
         width: 100%;
         max-width: 728px;
     }
-
-    .catalog-contact {
+    .catalog__col-sibebar{
         display: none;
+    }
+    .catalog-contact {
+        /*display: none;*/
     }
 
     .form-search__input input {
@@ -3656,7 +3672,7 @@ textarea {
     }
 
     .location-map-wrap {
-        width: 320px;
+        width: 100%;
         height: 402px;
     }
 
@@ -3678,7 +3694,12 @@ textarea {
         width: 320px;
         height: 153px;
     }
-
+    .catalog__col-sibebar{
+        display: none;
+    }
+    .catalog-contact{
+        display: none;
+    }
     .catalog-search-wrap {
         display: flex;
         align-items: start;

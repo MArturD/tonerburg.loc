@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="<?php bloginfo('charset'); // кодировка ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
