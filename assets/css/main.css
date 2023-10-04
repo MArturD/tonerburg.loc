@@ -843,7 +843,7 @@ header {
     color: var(--purple_blue);
 }
 
-.advantages {
+.advantages .advantages-mobile{
     margin-bottom: 100px;
 }
 
@@ -903,7 +903,7 @@ header {
     white-space: pre-line;
 }
 
-.accept {
+.accept .accept-mobile{
     margin-bottom: 100px;
 }
 
@@ -1942,6 +1942,7 @@ footer {
     gap: 40px;
 }
 
+
 .location-img-cards__item {
     width: 360px;
     height: 300px;
@@ -2162,7 +2163,13 @@ textarea {
 .catalog__col-sibebar {
     flex: 0 0 650px;
 }
-
+.catalog__col-sibebar .cartridge-cards{
+    gap: 25px;
+}
+.catalog__col-sibebar .cartridge-brands-wrap__title{
+    margin-top: 20px;
+    font-size: 24px;
+}
 .catalog-contact_title {
     text-align: right;
 }
@@ -2221,9 +2228,12 @@ textarea {
     flex-direction: column;
     gap: 10px;
 }
-
+.accept-mobile, .advantages-mobile{
+    display: none;
+}
 
 @media (max-width: 1180px) {
+
     .margin-bottom {
         margin-bottom: 80px;
     }
@@ -2315,7 +2325,7 @@ textarea {
         display: none;
     }
 
-    .advantages {
+    .advantages .advantages-mobile {
         margin-bottom: 80px;
     }
 
@@ -2359,7 +2369,7 @@ textarea {
         white-space: normal;
     }
 
-    .accept {
+    .accept .accept-mobile {
         margin-bottom: 80px;
     }
 
@@ -3042,7 +3052,12 @@ textarea {
 
 }
 @media (max-width: 770px) {
-
+    .accept-mobile, .advantages-mobile{
+        display: block;
+    }
+    .accept,.advantages{
+        display: none;
+    }
     .wrap {
         width: calc(100% - 70px);
         margin: 0 auto;

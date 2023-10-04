@@ -167,6 +167,8 @@ echo "<script>term_id=" . $term_id ." </script>"
 
 						</div>
 					</div>
+					<?php include get_template_directory() . "/moduls/cartridge-brands.php"; ?>
+
 				</div>
 
 
