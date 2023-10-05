@@ -22,6 +22,11 @@ $(document).ready(function () {
     // Устанавливаем значение в .catalog-search__input
     // $('.catalog-search__input').val(searchInputValue);
 });
+$(document).ready(function () {
+    $('.form-search__img').on('click', function () {
+        $('.form-search__input').focus().select();
+    });
+});
 
 function searchClick() {
     $('.form-search').click(function() {

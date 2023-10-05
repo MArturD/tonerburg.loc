@@ -1,5 +1,5 @@
 jQuery(function ($) {
-	$('.form-search input[name="s"]').on('keyup', function () {
+	$('.form-search input[name="s"]').on('click keyup', function () {
 		var search = $('.form-search input[name="s"]').val();
 		if (search.length < 2) {
 			return false;
