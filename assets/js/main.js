@@ -17,10 +17,10 @@
 // retrieveData.js
 $(document).ready(function () {
     // Извлекаем значение из localStorage
-    var searchInputValue = localStorage.getItem('searchInputValue');
+    // var searchInputValue = localStorage.getItem('searchInputValue');
 
     // Устанавливаем значение в .catalog-search__input
-    $('.catalog-search__input').val(searchInputValue);
+    // $('.catalog-search__input').val(searchInputValue);
 });
 
 function searchClick() {

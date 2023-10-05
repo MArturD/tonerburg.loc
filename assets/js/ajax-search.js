@@ -34,9 +34,9 @@ jQuery(function ($) {
 jQuery(function ($) {
 	$('.search-catalog input[name="s"]').on('keyup', function () {
 		var search = $('.search-catalog input[name="s"]').val();
-		if (search.length < 2) {
-			return false;
-		}
+		// if (search.length < 2) {
+		// 	return false;
+		// }
 		var data = {
 			s: search,
 			term_id: term_id,
