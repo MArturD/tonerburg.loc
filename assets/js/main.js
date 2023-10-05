@@ -33,25 +33,32 @@ searchClick();
 
 $('.burger-btn').on('click', function () {
 
-    $('.burger-menu').slideToggle(function (){
-        if ($(this).is(':visible'))
-            $(this).css('display', 'flex');
-    });
-    $('.form-search').slideToggle(function (){
-        if ($(this).is(':visible'))
-            $(this).css('display', 'none');
-    });
-    $('.burger-wrap').toggleClass('burger-wrap-active')
+    $('.form-search').addClass('dn_mobile').removeAttr('style');
+
+    var burder = $('.burger-menu');
+    if (burder.is(':visible')){
+        burder.slideUp(300);
+    } else{
+        burder.slideDown(300);
+    }
+    // $('.burger-menu').slideToggle(function (){
+    //     console.log('222');
+    //
+    //     if ($(this).is(':visible'))
+    //         $(this).css('display', 'flex');
+    // });
+    // $('.form-search').slideToggle(function (){
+    //     if ($(this).is(':visible'))
+    //         $(this).css('display', 'none');
+    // });
+    // $('.burger-wrap').toggleClass('burger-wrap-active')
 
 })
 function search_close() {
     $('.form-search__img').click(function() {
         $('.burger-wrap').removeClass('burger-wrap-active');
         $('.form-search').removeClass('form-search-none');
-        $('.burger-menu').slideToggle(function (){
-            if ($(this).is(':visible'))
-                $(this).css('display', 'none');
-        });
+        $('.burger-menu').css('display', 'none');
     });
 }
 search_close();

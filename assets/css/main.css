@@ -1433,11 +1433,10 @@ input::placeholder, textarea::placeholder {
     padding: 23px 25px 25px 25px;
     /*gap: 20px;*/
     border-radius: 10px;
-    background: #D9D9D9;
+    background: #94c7ea82;
 }
 
 .slider-wrap {
-    width: 1000px;
     width: calc(100% - 160px);
     margin: 0 auto;
 }
@@ -3052,6 +3051,10 @@ textarea {
 
 }
 @media (max-width: 770px) {
+
+    .dn_mobile{
+        display: none;
+    }
     .accept-mobile, .advantages-mobile{
         display: block;
     }
