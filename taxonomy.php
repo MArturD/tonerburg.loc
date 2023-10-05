@@ -53,15 +53,17 @@ echo "<script>term_id=" . $term_id ." </script>"
 							<span class="text-bold"><?php echo $query->found_posts; ?> картриджей</span>
 						</p>
 						<form action="<?php esc_url(home_url('/')); ?>" class="search-catalog">
-							<input type="text" name="s" value="<?php get_search_query(); ?>" class="catalog-search__input" placeholder="Поиск">
+							<input type="text" name="s" value="" class="catalog-search__input" placeholder="Поиск">
 							<div class="catalog-search__img">
+<!--								--><?php //get_search_query(); ?>
 								<img alt="" src="<?php bloginfo('template_url'); ?>/assets/images/icons/search.svg">
 							</div>
 							<div class="form-catalog__result"></div>
 						</form>
 
 
-					</div>
+
+                    </div>
 
 					<div class="catalog__price">
 						<table class="catalog-table__header">
@@ -176,8 +178,10 @@ echo "<script>term_id=" . $term_id ." </script>"
 		</div>
 	</div>
 
-
 <?php include get_template_directory() . "/moduls/accept.php"; ?><?php include get_template_directory() . "/moduls/application.php"; ?><?php include get_template_directory() . "/moduls/articles.php"; ?>
 
-
+<script>
+    jQuery('.catalog-search__input').val(s).trigger('keyup')
+</script>
 <?php get_footer(); ?>
+

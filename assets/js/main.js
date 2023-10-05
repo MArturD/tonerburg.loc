@@ -1,3 +1,28 @@
+// saveData.js
+// $(document).ready(function () {
+//     // При отправке формы
+//     $('.form-search').on('submit', function (e) {
+//         e.preventDefault(); // Предотвращаем отправку формы, чтобы не перейти на другую страницу
+//
+//         // Получаем значение из form-search__input
+//         var inputValue = $('.form-search__input').val();
+//
+//         // Сохраняем значение в localStorage
+//         localStorage.setItem('searchInputValue', inputValue);
+//
+//         // Переходим на другую страницу
+//         window.location.href = 'другая_страница.html'; // Замените на реальный URL другой страницы
+//     });
+// });
+// retrieveData.js
+$(document).ready(function () {
+    // Извлекаем значение из localStorage
+    var searchInputValue = localStorage.getItem('searchInputValue');
+
+    // Устанавливаем значение в .catalog-search__input
+    $('.catalog-search__input').val(searchInputValue);
+});
+
 function searchClick() {
     $('.form-search').click(function() {
         $('.menu').addClass('menu-block');
