@@ -131,9 +131,9 @@ function ii_esp_search_ajax_action_callback() {
 				<?php
 				$cur_terms = get_the_terms(get_the_ID(), 'brand');
 				if (is_array($cur_terms)) {
-
-					echo '<a href="' . get_term_link($cur_terms[0]->term_id, $cur_terms[0]->taxonomy) . '?s=' . $_POST['s'] . '" class="search-item"><p>' . get_the_title() . '</p> <p>' . get_field('price') . ' ₽</p> </a>';
-
+					if (get_the_title()) {
+						echo '<a href="' . get_term_link($cur_terms[0]->term_id, $cur_terms[0]->taxonomy) . '?s=' . $_POST['s'] . '" class="search-item"><p>' . get_the_title() . '</p> <p>' . get_field('price') . ' ₽</p> </a>';
+					}
 				}
 				?>
 
@@ -195,12 +195,14 @@ function ii_esp_search_catalog_ajax_action_callback() {
 				<?php
 				$cur_terms = get_the_terms(get_the_ID(), 'brand');
 				if (is_array($cur_terms)) {
-
-					echo '<tr class="tr">
+					if (get_the_title()) {
+						echo '<tr class="tr">
                                     <td class="catalog-table__line_one">' . get_the_title() . '</td>
                                     <td class="catalog-table__line_two">' . get_field('price') . ' ₽</td>
                                 </tr>';
+					}
 				}
+
 				?>
 
 				<?php
