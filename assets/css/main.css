@@ -594,6 +594,8 @@ header {
     right: 20px;
     width: 24px;
     height: 25px;
+    cursor: pointer;
+    pointer-events: none;
 }
 
 .form-search__img img {
@@ -2037,6 +2039,7 @@ tbody {
     right: 12px;
     width: 24px;
     height: 25px;
+    pointer-events: none;
 }
 
 .catalog-search__img img {
@@ -3112,6 +3115,7 @@ textarea {
     .search__img {
         display: block;
         margin-right: 10px;
+        pointer-events: auto;
     }
 
     .search-block {
