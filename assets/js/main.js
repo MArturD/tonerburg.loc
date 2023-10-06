@@ -96,11 +96,12 @@ jQuery(document).ready(function ($) { //ожидание полной загру
 
 		$('.form-search').slideToggle(function () {
 			if ($(this).is(':visible')) {
-				console.log(107)
+				console.log(99)
 				$(this).css('display', 'flex');
 				input.trigger('click');
 			} else {
-				// console.log(111)
+				$(this).addClass('dn_mobile').removeAttr('style');
+				console.log(104)
 
 			}
 		})

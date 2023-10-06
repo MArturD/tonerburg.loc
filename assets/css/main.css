@@ -3080,9 +3080,6 @@ textarea {
 
 @media (max-width: 770px) {
 
-	.dn_mobile {
-		display: none;
-	}
 
 	.accept-mobile, .advantages-mobile {
 		display: block;
@@ -3140,11 +3137,6 @@ textarea {
 		order: 2;
 	}
 
-	.search__img {
-		display: block;
-		margin-right: 10px;
-		pointer-events: auto;
-	}
 
 	.search-block {
 		max-height: 290px;
@@ -3155,9 +3147,6 @@ textarea {
 		order: 2;
 	}
 
-	.form-search {
-		display: none;
-	}
 
 	.burger-menu {
 		width: calc(100% + 2rem);
@@ -3795,5 +3784,19 @@ textarea {
 	.form-search {
 		order: 3;
 		width: 100%;
+	}
+
+	.search__img {
+		display: block;
+		margin-right: 10px;
+		pointer-events: auto;
+	}
+
+	.dn_mobile {
+		display: none;
+	}
+
+	.form-search {
+		display: none;
 	}
 }
