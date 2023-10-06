@@ -2217,7 +2217,8 @@ textarea {
 }
 
 .catalog-contact-wrap .contacts-contacts-item__title {
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
+    justify-content: center;
 }
 
 .catalog-contact-wrap .contacts-contacts-item__description {
