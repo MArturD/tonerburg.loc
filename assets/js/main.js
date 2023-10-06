@@ -17,14 +17,12 @@
 // retrieveData.js
 
 function myFocus($input) {
-	var $input = jQuery($input);
-
-	// Сфокусируемся на поле ввода
 	$input.focus();
 
 	// Переместим курсор в конец текста
 	var inputLength = $input.val().length;
-	$input[0].setSelectionRange(inputLength, inputLength);
+	if (inputLength) $input[0].setSelectionRange(inputLength, inputLength);
+	$('.burger-menu').slideUp(200);
 }
 
 jQuery(document).ready(function ($) { //ожидание полной загрузки дом дерева и возвожность работы со знаком доллара, в движках
@@ -94,14 +92,17 @@ jQuery(document).ready(function ($) { //ожидание полной загру
 
 	$('.search__img').on('click', function () {
 
-		var input = $('.form-search__input');
-		if (input.val().length) {
-			input.trigger('click');
-		}
+		var input = $('.form-search input');
 
 		$('.form-search').slideToggle(function () {
-			if ($(this).is(':visible'))
+			if ($(this).is(':visible')) {
+				console.log(107)
 				$(this).css('display', 'flex');
+				input.trigger('click');
+			} else {
+				// console.log(111)
+
+			}
 		})
 
 		$('.burger-menu').removeClass(function () {

@@ -5,6 +5,7 @@ jQuery(document).ready(function ($) { //ожидание полной загру
 		var search = $('.form-search input[name="s"]').val();
 
 		var result = $(".form-search__result");
+		myFocus(input);
 
 		if (!search.length) {
 			result.html('');
