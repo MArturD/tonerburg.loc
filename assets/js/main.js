@@ -18,7 +18,6 @@
 
 function myFocus($input) {
 	$input.focus();
-
 	// Переместим курсор в конец текста
 	var inputLength = $input.val().length;
 	if (inputLength) $input[0].setSelectionRange(inputLength, inputLength);
@@ -90,21 +89,33 @@ jQuery(document).ready(function ($) { //ожидание полной загру
 
 	search_close();
 
-	$('.search__img').on('click', function () {
-
+	$('.search__img').on('click', function (e) {
+		e.preventDefault();
 		var input = $('.form-search input');
+		$form = $('.form-search');
+		// $('.form-search').on('click', function (e){
+		if ($form.is(':visible')) {
+			$form.addClass('dn_mobile').removeAttr('style');
+			// console.log(1)
+		} else {
+			$(".form-search").css({"display": 'flex'})
+			input.trigger('click');
+			// console.log(2)
+		}
+		// })
 
-		$('.form-search').slideToggle(function () {
-			if ($(this).is(':visible')) {
-				console.log(99)
-				$(this).css('display', 'flex');
-				input.trigger('click');
-			} else {
-				$(this).addClass('dn_mobile').removeAttr('style');
-				console.log(104)
-
-			}
-		})
+		// .slideToggle({
+		// duration: 200, // продолжительность анимации
+		// easing: "linear", // скорость анимации
+		// complete: function () {
+		// 	if ($(this).is(':visible')) {
+		// 		$(this).css('display', 'flex');
+		// 		input.trigger('click');
+		// 	} else {
+		// 		$(this).addClass('dn_mobile').removeAttr('style');
+		// 	}
+		// }
+		// })
 
 		$('.burger-menu').removeClass(function () {
 			if ($(this).is(':visible'))
