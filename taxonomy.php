@@ -8,6 +8,8 @@ $term_id        = $queried_object->term_id;
 $args = array(
 	'post_type' => 'cartridge',
 	'posts_per_page' => - 1,
+	'order'          => 'ASC',
+	'orderby'        => 'title',
 	'tax_query' => [
 		'relation' => 'AND',
 		[
